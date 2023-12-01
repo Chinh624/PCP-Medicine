@@ -5,11 +5,10 @@ import Content from "./components/Content/content";
 import Shop from "./components/Navbar/Menu/Shop/shop";
 import Aboutus from "./components/Navbar/Menu/AboutUs/aboutus";
 import Ourteam from "./components/Navbar/Menu/OurTeam/ourteam";
-import EventCha from "./components/Navbar/Menu/Event/EvenCha";
 import OurTherapies from "./components/Navbar/Menu/OurTherapies/ourtherapies";
 import ExploreMedicine from "./components/Navbar/Menu/Explore/explore";
 import Footer from "./components/Footer/footer";
-
+import EventCha from "./components/Navbar/Menu/Event/EvenCha";
 function App() {
   return (
     <>
