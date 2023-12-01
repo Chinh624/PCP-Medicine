@@ -6,9 +6,9 @@ const ExploreMedicine = () => {
   const [selectedMedicine, setSelectedMedicine] = useState(null);
 
   const medicineData = [
-    { id: 1, name: "picture medicine", image: "medicine1.jpg", description: "Description of Medicine 1." },
-    { id: 2, name: "picture medicine", image: "medicine2.jpg", description: "Description of Medicine 2." },
-    { id: 3, name: "picture medicine", image: "medicine3.jpg", description: "Description of Medicine 3." },
+    { id: 1, name: "picture medicine", image: "medicine1.jpg", description: "Description " },
+    { id: 2, name: "picture medicine", image: "medicine2.jpg", description: "Description " },
+    { id: 3, name: "picture medicine", image: "medicine3.jpg", description: "Description " },
   ];
 
   const handleSearch = (e) => {
