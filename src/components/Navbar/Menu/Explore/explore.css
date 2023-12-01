@@ -1,0 +1,107 @@
+
+.body-explore{
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header-explore {
+    border-top: #fff solid;
+    border-right: none;
+    background-color: #028174;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  .search-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .search-input {
+    padding: 10pt 80pt;
+    font-size: 17px;
+    border: none;
+    border-radius: 17pt;
+    outline: none;
+    color: #fff;
+    background-color: #028174;
+  }
+
+  
+  .explore-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  .medicine-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+
+  
+
+  
+  .medicine-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .medicine-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #028174;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+ 
+  

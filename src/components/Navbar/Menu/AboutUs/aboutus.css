@@ -1,0 +1,29 @@
+.body-aboutus {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0px 0px 30px 0px;
+}
+
+.title-aboutus{
+    text-align: center;
+    color: #5689C0;
+    padding: 20px 0px 0px 0px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section-aboutus {
+    width: 800px;
+}
+
+h2 {
+    color: #028174;
+}
+
+p {
+    line-height: 1.6;
+}
