@@ -19,11 +19,13 @@
 }
 
 .container-navbar-shop {
-    display: grid;    align-items: center;
+    display: grid;    
+    align-items: center;
     justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
-    grid-template-columns: auto 300px 400px auto;
+    grid-template-columns: auto 640px 200px;
+    Gap:20px
 
 }
 

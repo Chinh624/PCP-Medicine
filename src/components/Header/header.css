@@ -27,7 +27,7 @@ header{
     height: 50px;
 }
 .button-menu-search{
-    width: 299px;
+    width: 620px;
     height: 50px;
     color: #ffff;
     outline: none;
@@ -35,7 +35,7 @@ header{
     border: solid 2px whitesmoke;
     padding: 20px;
     font-size: 20px;
-    background-color: transparent;
+    background-color: #028174;
 }
 
 .button-menu-search::-webkit-search-cancel-button{

@@ -24,6 +24,8 @@ class Header extends Component {
                 );
               })}
             </div>
+
+            
             <div className="container-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -3,7 +3,8 @@ import "../Shop/shop.css";
 import Data from "../../../../Database/data.json";
 import "../../../Button/buttoncart.css";
 import ButtonClick from "../../../Button/button";
-function Shop() {
+import "../../../Header/header.css";
+const Shop = () => {
   const product2 = [
     {
       img: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
@@ -39,41 +40,64 @@ function Shop() {
       price: 12.0,
     },
   ];
-
   const [cart, setCart] = useState(false);
+  // set search
+  const [searchItem, setSearchItem] = useState("");
+  const [selected, setSelected] = useState(null);
   // set show hide cart
   const showCart = () => {
     setCart(!cart);
   };
+  // set change from input
+  const handleSearch = (e) => {
+    setSearchItem(e.target.value.toLowerCase());
+  };
+
+  const openMedicine = (medicine) => {
+    setSelected(medicine);
+  };
+  
 
   return (
     <div className="Body-shop">
       <div className="container-navbar-shop">
         <h2 className="Title-shop">Product in PCP Medicine</h2>
-        <div></div>
-        <div></div>
+        <div className="container-button-search">
+          <input
+            type="search"
+            className="button-menu-search"
+            placeholder="Search..."
+            onChange={handleSearch}
+          ></input>
+        </div>
         <div onClick={showCart}>
           <ButtonClick text="Cart" />
         </div>
       </div>
+      {/* show find */}
       <div className="container-item">
-        {Data.product.map((product) => (
-          <div className="product" key={product.id}>
-            <div className="product-item">
-              <h3 className="product-item-name">{product.name}</h3>
-              <img
-                className="product-img"
-                src={product.img}
-                alt={product.name}
-              />
-              <h4 className="product-item-price">{product.price}</h4>
-              <button type="button" className="product-button">
-                Add to cart
-              </button>
+        {Data.product
+          .filter((medicine) =>
+            medicine.name.toLowerCase().includes(searchItem)
+          )
+          .map((product) => (
+            <div className="product" key={product.id} onClick={openMedicine}>
+              <div className="product-item">
+                <h3 className="product-item-name">{product.name}</h3>
+                <img
+                  className="product-img"
+                  src={product.img}
+                  alt={product.name}
+                />
+                <h4 className="product-item-price">{product.price}</h4>
+                <button type="button" className="product-button">
+                  Add to cart
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
+
       {/* show cart */}
       {cart && (
         <>
@@ -135,6 +159,6 @@ function Shop() {
       )}
     </div>
   );
-}
+};
 
 export default Shop;
