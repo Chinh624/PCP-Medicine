@@ -4,11 +4,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  overflow: scroll;
 }
 
 
-::-webkit-scrollbar {
+::-webkit-scrollbar  {
   width: 5px;
 }
 

@@ -1,5 +1,5 @@
 import "./footer.css";
-import React, { useState } from "react";
+import React, { useState} from "react";
 
 export default function Footer() {
   const [showErrorAlert, setShowErrorAlert] = useState(false);
@@ -21,14 +21,25 @@ export default function Footer() {
     if (emailInput.trim() !== "" && emailInput.includes("@")) {
       const isConfirmed = window.confirm(`Do you want to join with us?`);
       if (isConfirmed) {
+        //confirm when ok
         setShowSuccessConfirm(true);
         setEmail("");
+
+          setTimeout(() => {
+          setShowSuccessConfirm(false);
+        }, 2000);
+
       } else {
+        // confirm when cancel
+        // visit website
         setEmail("");
         setShowErrorConfirm(true);
       }
     } else {
       setShowErrorAlert(true);
+      setTimeout(() => {
+        setShowErrorAlert(false);
+      }, 2000);
     }
   };
 
@@ -95,10 +106,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="footer-soure">
-         <div>&copy;2023 PCP Medicine.</div>
-         <div>All rights reserved.</div>
       </div>
     </div>
   );

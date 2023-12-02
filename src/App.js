@@ -9,11 +9,13 @@ import OurTherapies from "./components/Navbar/Menu/OurTherapies/ourtherapies";
 import ExploreMedicine from "./components/Navbar/Menu/Explore/explore";
 import Footer from "./components/Footer/footer";
 import EventCha from "./components/Navbar/Menu/Event/EvenCha";
+// import Cart from "./components/Navbar/Menu/Shop/Cart/cart";
 function App() {
   return (
     <>
         <div>
           <Header />
+          {/* <Cart /> */}
           <Routes>
             <Route path="/" element={<Content />} />
             <Route path="/shop" element={<Shop />} />

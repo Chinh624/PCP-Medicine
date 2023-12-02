@@ -1,5 +1,5 @@
 import bestseller from "../img-icon/bestseller.png";
-import hand from "../img-icon/hand.png";
+import hand from "../img-icon/hand.png"
 import mother from "../img-icon/mother.png";
 import notes from "../img-icon/notes.png";
 import Ellipse44 from "../img/Ellipse44.png";

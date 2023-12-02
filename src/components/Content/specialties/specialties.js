@@ -1,7 +1,7 @@
 import React from "react";
 import "../content.css";
+// import Data from "../../../Database/data";
 import Data from "../../../Database/data";
-
 function Specialties() {
   return (
     <>

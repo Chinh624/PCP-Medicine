@@ -115,7 +115,7 @@
     "information": [
         {
             "user": "1",
-            "img": "Ellipse44",
+            "img": "",
             "name": "Warso Setyo",
             "service": "Sr Manager, India"
         },
@@ -140,12 +140,12 @@
     ],
     "specialties": [
         {
-            "icon": "hand",
+            "icon": "bestseller.png",
             "text": "Our Journey",
             "slogan": "Delivering on our promise toward innovative science and healthcare"
         },
         {
-            "icon": "bestseller",
+            "icon": "bestseller.png",
             "text": "Quality",
             "slogan": "Our vision is to globalize, harmonize and simplify GxP processes to achieve sustainable quality culture"
         },
@@ -162,7 +162,7 @@
     ],
     "slides": [
         {
-            "img": "slide1"
+            "img": "../slide1"
         },
         {
             "img": "slide2"
