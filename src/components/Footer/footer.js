@@ -34,7 +34,7 @@ export default function Footer() {
         setEmail("");
 
 
-        setSuccessfulEmails((prevEmails) => {
+        setSuccessfulEmails((prevEmails,index) => {
           return [...prevEmails, showEmail];
         });
 
@@ -60,7 +60,9 @@ export default function Footer() {
     // swap array success email - >> string --> add localStorage
     const successEmailArray = JSON.stringify(successEmails);
     localStorage.setItem('DataSuccessEmails', successEmailArray);
-  }, [successEmails]);
+  }, [successEmails]
+  );
+  
 
 
   return (

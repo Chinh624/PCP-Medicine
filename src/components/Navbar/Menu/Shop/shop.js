@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "../Shop/shop.css";
 import Data from "../../../../Database/data.json";
 import "../../../Button/buttoncart.css";
-import ButtonClick from "../../../Button/button";
 import "../../../Header/header.css";
+import CustomDropdown from "../dropdown/CustomDropdown";
+import drugstore from '../../../../img-icon/drugstore.png'
 const Shop = () => {
   const product2 = [
     {
@@ -40,6 +41,13 @@ const Shop = () => {
       price: 12.0,
     },
   ];
+
+  const options = [
+    { value: "product-PCP", label: "Product PCP" },
+    { value: "skin-care", label: "Skin Care" },
+    { value: "vitamins", label: "Vitamins" },
+    { value: "health-condition", label: "Health Condition" },
+  ];
   const [cart, setCart] = useState(false);
   // set search
   const [searchItem, setSearchItem] = useState("");
@@ -56,7 +64,6 @@ const Shop = () => {
   const openMedicine = (medicine) => {
     setSelected(medicine);
   };
-  
 
   return (
     <div className="Body-shop">
@@ -70,8 +77,9 @@ const Shop = () => {
             onChange={handleSearch}
           ></input>
         </div>
-        <div onClick={showCart}>
-          <ButtonClick text="Cart" />
+        <CustomDropdown />
+        <div className="button-cart" onClick={showCart}>
+            <img src={drugstore} className="cart-icon"></img>
         </div>
       </div>
       {/* show find */}
@@ -83,15 +91,15 @@ const Shop = () => {
           .map((product) => (
             <div className="product" key={product.id} onClick={openMedicine}>
               <div className="product-item">
-                <h3 className="product-item-name">{product.name}</h3>
                 <img
                   className="product-img"
                   src={product.img}
                   alt={product.name}
                 />
+                <h3 className="product-item-name">{product.name}</h3>
                 <h4 className="product-item-price">{product.price}</h4>
                 <button type="button" className="product-button">
-                  Add to cart
+                  ADD TO CART
                 </button>
               </div>
             </div>
