@@ -1,13 +1,20 @@
 import "./footer.css";
-import React, { useState} from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Footer() {
+  // show alert when user imput valid
   const [showErrorAlert, setShowErrorAlert] = useState(false);
+  // show alert when click ok 
   const [showSuccessConfirm, setShowSuccessConfirm] = useState(false);
+  // show email if confirm cancel
   const [showErrorConfirm, setShowErrorConfirm] = useState(false);
-  const [emailInput, setEmail] = useState("");
-  const [emailShow, setShowEmail] = useState("");
-
+  // set input from email
+  const [inputEmail, setEmail] = useState("");
+  // show email
+  const [showEmail, setShowEmail] = useState("");
+  // show array of email success
+  const [successEmails, setSuccessfulEmails] = useState([]);
+  // input email
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
     setEmail(inputValue);
@@ -18,17 +25,22 @@ export default function Footer() {
   };
 
   const handleJoinNowClick = () => {
-    if (emailInput.trim() !== "" && emailInput.includes("@")) {
+    if (inputEmail !== "" && inputEmail.includes("@")) {
       const isConfirmed = window.confirm(`Do you want to join with us?`);
       if (isConfirmed) {
-        //confirm when ok
+        //confirm ok
         setShowSuccessConfirm(true);
+        // input ->> " "
         setEmail("");
 
-          setTimeout(() => {
+
+        setSuccessfulEmails((prevEmails) => {
+          return [...prevEmails, showEmail];
+        });
+
+        setTimeout(() => {
           setShowSuccessConfirm(false);
         }, 2000);
-
       } else {
         // confirm when cancel
         // visit website
@@ -42,6 +54,14 @@ export default function Footer() {
       }, 2000);
     }
   };
+  
+  // set change
+  useEffect(() => {
+    // swap array success email - >> string --> add localStorage
+    const successEmailArray = JSON.stringify(successEmails);
+    localStorage.setItem('DataSuccessEmails', successEmailArray);
+  }, [successEmails]);
+
 
   return (
     <div className="medicine-footer">
@@ -56,7 +76,7 @@ export default function Footer() {
                 type="text"
                 className="footer-input"
                 placeholder="Enter your email address"
-                value={emailInput}
+                value={inputEmail}
                 onChange={handleInputChange}
               ></input>
               <button className="footer-button" onClick={handleJoinNowClick}>
@@ -71,7 +91,7 @@ export default function Footer() {
 
             {showSuccessConfirm && (
               <div className="showAlert success center">
-                We have sent an invitation to your email: {emailShow}
+                We have sent an invitation to your email: {showEmail}
               </div>
             )}
 
@@ -110,3 +130,5 @@ export default function Footer() {
     </div>
   );
 }
+
+
