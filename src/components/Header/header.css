@@ -1,5 +1,3 @@
-header{
-}
 
 .container-menu{
     display: flex;
@@ -47,22 +45,6 @@ header{
     background: transparent;
 }
 
-/* input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    height: 1em;
-    width: 1em;
-    border-radius: 50em;
-    background: url() no-repeat 50% 50%;
-    background-size: contain;
-    opacity: 0;
-    pointer-events: none;
-  } */
-
-/* input[type="search"]:focus::-webkit-search-cancel-button {
-    opacity: 1;
-    background-color: white;
-    pointer-events: all;
-  } */
 
 
 .container-button-search{
