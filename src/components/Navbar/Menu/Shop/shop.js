@@ -3,7 +3,7 @@ import "../Shop/shop.css";
 import Data from "../../../../Database/data.json";
 import "../../../Button/buttoncart.css";
 import "../../../Header/header.css";
-import CustomDropdown from "../../../../../Dropdown/CustomDropdown";
+import CustomDropdown from "../Dropdown/CustomDropdown";
 import drugstore from "../../../../img-icon/drugstore.png";
 const Shop = () => {
   const product2 = [
