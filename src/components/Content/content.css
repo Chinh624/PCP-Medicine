@@ -36,11 +36,9 @@
 .information-section {
     display: flex;
     align-items: center;
-    background: #EAEBED;
+    background: transparent;
     justify-content: space-around;
-    max-width: 100%;
-    gap: 55px;
-    padding: 110px 50px 110px 50px;
+    /* width: 100%; */
 }
 
 .container-information-section-text {

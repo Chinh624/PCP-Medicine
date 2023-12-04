@@ -3,7 +3,7 @@ import "../Shop/shop.css";
 import Data from "../../../../Database/data.json";
 import "../../../Button/buttoncart.css";
 import "../../../Header/header.css";
-import CustomDropdown from "../dropdown/CustomDropdown";
+import CustomDropdown from "../Dropdown/CustomDropdown";
 import drugstore from '../../../../img-icon/drugstore.png'
 const Shop = () => {
   const product2 = [
@@ -41,13 +41,7 @@ const Shop = () => {
       price: 12.0,
     },
   ];
-
-  const options = [
-    { value: "product-PCP", label: "Product PCP" },
-    { value: "skin-care", label: "Skin Care" },
-    { value: "vitamins", label: "Vitamins" },
-    { value: "health-condition", label: "Health Condition" },
-  ];
+  
   const [cart, setCart] = useState(false);
   // set search
   const [searchItem, setSearchItem] = useState("");
@@ -68,7 +62,7 @@ const Shop = () => {
   return (
     <div className="Body-shop">
       <div className="container-navbar-shop">
-        <h2 className="Title-shop">Product in PCP Medicine</h2>
+        <h2 className="Title-shop">Product PCP Medicine</h2>
         <div className="container-button-search">
           <input
             type="search"

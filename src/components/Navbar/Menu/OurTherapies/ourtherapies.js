@@ -9,15 +9,13 @@ function OurTherapies() {
       </div>
 
       <div className="therapy-section">
-        {Data.ourtherapies.map((ourtherapy) => (
-          <div className="therapy-card" key={ourtherapy.id}>
-            <h2>{ourtherapy.name}</h2>
-            <p>{ourtherapy.description}</p>
+        {Data.ourtherapies.map((ourtherapies) => (
+          <div className="therapy-card" key={ourtherapies.id}>
+            <h2>{ourtherapies.name}</h2>
+            <p>{ourtherapies.description}</p>
           </div>
         ))}
       </div>
-
-
     </body>
   );
 }

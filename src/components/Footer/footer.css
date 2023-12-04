@@ -205,6 +205,7 @@ textarea {
 }
 
 .center {
+    z-index: 99999;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -213,16 +214,23 @@ textarea {
 }
 
 .error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    background-color: #028174;
+    color: #FFF;
+    border-radius: 22pt;
+    padding: 20px;
+    border: None;
+    font-size: 20px;
 }
 
 
 .success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
+    background-color: #028174;
+    color: #FFF;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    border-radius: 22pt;
+    font-size: 20px;
 }
 
 .footer-soure {

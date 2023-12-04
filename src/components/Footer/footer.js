@@ -62,7 +62,7 @@ export default function Footer() {
     localStorage.setItem('DataSuccessEmails', successEmailArray);
   }, [successEmails]
   );
-  
+
 
 
   return (
@@ -98,7 +98,7 @@ export default function Footer() {
             )}
 
             {showErrorConfirm && (
-              <div className="showAlert center">
+              <div className="showAlert success center">
                 Thanks for visiting our web.
               </div>
             )}
