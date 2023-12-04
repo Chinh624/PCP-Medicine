@@ -34,7 +34,7 @@ export default function Footer() {
         setEmail("");
 
 
-        setSuccessfulEmails((prevEmails,index) => {
+        setSuccessfulEmails((prevEmails) => {
           return [...prevEmails, showEmail];
         });
 

@@ -25,7 +25,7 @@
     justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
-    grid-template-columns: auto auto 200px auto;
+    grid-template-columns: auto auto auto auto;
     column-gap: 70px;
 }
 
@@ -318,3 +318,14 @@ nav {
 #touch {position: absolute; opacity: 0; height: 0px;}    
 
 #touch:checked + .slide {height: 300px;} 
+
+
+.Dropdown{
+    background-color: #028174;
+    color: #FFF;
+    border: none;
+    padding: 15px 15px;
+    outline: None;
+    border-radius: 22pt;
+    font-size: 15px;
+}
