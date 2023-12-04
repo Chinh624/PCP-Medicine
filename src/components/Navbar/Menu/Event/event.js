@@ -1,45 +1,50 @@
 import './even.css';
 import ProductList from "./Produc-list";
-import React, { useState } from 'react';
+import React from 'react';
 
 function Event({ eventType }) {
+    const handleButtonClick = () => {
+        // Redirect to the desired URL using href
+        window.location.href = 'https://shopee.vn';
+    };
+
     const initialState = {
         products: [
             {
-                id1: "Tìm hiểu thêm",
+                id: 1,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2023/thumbs/1500_crop_Hinh_1___Le_cong_bo_EU_GMP.jpg',
-                productName: 'LỄ CÔNG BỐ CHÚC MỪNG PCP MEDICINE ĐẠT TIÊU CHUẨN EU-GMP',
-
+                productName: ' LỄ CÔNG BỐ CHÚC MỪNG PCP MEDICINE ĐẠT TIÊU CHUẨN EU-GMP',
+                learnMoreLink: 'https://shopee.vn'
             },
             {
-                id2: "Tìm hiểu thêm",
+                id: 2,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2023/thumbs/1500_crop_Hinh_1___HNKH.jpg',
                 productName2: 'HỘI NGHỊ KHÁCH HÀNG 2023 KHU VỰC HỒ CHÍ MINH – MIỀN ĐÔNG',
-
+                learnMoreLink: 'https://www.lazada.vn'
             },
             {
-                id3: "Tìm hiểu thêm",
+                id: 3,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2023/thumbs/1500_crop_Kham_benh_nhan_dao_3_1.jpg',
                 productName3: 'PCP MEDICINE CHUNG TAY CÙNG HOẠT ĐỘNG KHÁM CHỮA',
-
+                learnMoreLink: 'https://tiki.vn'
             },
             {
-                id4: "Tìm hiểu thêm",
+                id: 4,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2023/thumbs/1500_crop_Hoc_bong___Hinh_1_1.jpg',
                 productName4: 'PCP MEDICINE TÀI TRỢ HỌC BỔNG DÀNH CHO SINH VIÊN KHOA',
-
+                learnMoreLink: 'https://tiki.vn'
             },
             {
-                id5: "Tìm hiểu thêm",
+                id: 5,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2023/thumbs/1500_crop_Thuc_tap___Hinh_1.jpg',
                 productName5: 'PCP MEDICINE CHÀO ĐÓN ĐOÀN THỰC TẬP SINH ĐẾN TỪ',
-
+                learnMoreLink: 'https://www.lazada.vn'
             },
             {
-                id6: "Tìm hiểu thêm",
+                id: 6,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2023/thumbs/1500_crop_Hinh_3.jpg',
                 productName6: 'PCP MEDICINE KÝ KẾT HỢP TÁC VỚI VIỆN KIỂM NGHIỆM THUỐC',
-
+                learnMoreLink: 'https://shopee.vn'
             },
 
         ],
@@ -52,10 +57,10 @@ function Event({ eventType }) {
                 <div className="TinTuc">TIN TỨC</div>
             </div>
             <div className="header-2">
-                <button className="list ">TẤT CẢ</button>
-                <button className="list ">KHOẺ MỖI NGÀY</button>
-                <button className="list ">HOẠT ĐỘNG CỦA PCP</button>
-                <button className="list ">KHO TÀI LIỆU Y DƯỢC</button>
+                <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
+                <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>
+                <a href="https://tiki.vn"><button className="list">HOẠT ĐỘNG PCP</button></a>
+                <a href="https://www.sendo.vn"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
             </div>
             <br></br>
             <div className="bodyy">
@@ -68,15 +73,15 @@ function Event({ eventType }) {
                         <h1>TUYỂN DỤNG NHÂN SỰ GIỮA PCP MEDICINE VỚI ĐẠI HỌC Y DƯỢC TP.HCM</h1>
                         <hr></hr>
                         <p>Tại PCP Medicine, Ban Giám đốc đề cao sự hợp tác cùng Đại Học Y Dược TP.HCM trong việc tư vấn, định hướng và tuyển dụng sinh viên mới tốt nghiệp</p>
-                        <button className="timhieuthem">TÌM HIỂU HÊM</button>
+                        <button className="timhieuthem" onClick={handleButtonClick} >TÌM HIỂU THÊM</button>
                     </div>
                 </div>
             </div >
             <div>
                 <ProductList products={initialState.products} />
-
             </div>
         </div>
-    )
+    );
 }
+
 export default Event;

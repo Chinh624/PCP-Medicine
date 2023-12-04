@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Select from 'react-select';
 
 const options = [
@@ -9,12 +9,31 @@ const options = [
 ];
 
 const CustomDropdown = () => {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleSelectChange = (selectedOption) => {
+    setSelectedOption(selectedOption);
+  };
+
   return (
-    <Select
-      options={options}
-      className="type-medicine"
-      menuPlacement="bottom"
-    />
+    <div>
+      <Select
+        options={options}
+        className="type-medicine"
+        menuPlacement="bottom"
+        onChange={handleSelectChange}
+      />
+
+      {/* {selectedOption && (
+        <div>
+          <ul>
+            {Data.product.map(product => (
+              <li key={product.id}>{product.name}</li>
+            ))}
+          </ul>
+        </div>
+      )} */}
+    </div>
   );
 };
 

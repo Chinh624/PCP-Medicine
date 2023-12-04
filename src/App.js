@@ -8,7 +8,7 @@ import Ourteam from "./components/Navbar/Menu/OurTeam/ourteam";
 import OurTherapies from "./components/Navbar/Menu/OurTherapies/ourtherapies";
 import ExploreMedicine from "./components/Navbar/Menu/Explore/explore";
 import Footer from "./components/Footer/footer";
-import EventCha from "./components/Navbar/Menu/Event/EvenCha";
+import EventchaEvent from "./components/Navbar/Menu/Event/eventchaevent";
 // import Cart from "./components/Navbar/Menu/Shop/Cart/cart";
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Content />} />
             <Route path="/shop" element={<Shop />} />
-            <Route path="/event" element={<EventCha />} />
+            <Route path="/event" element={<EventchaEvent/>} />
             <Route path="/aboutus" element={<Aboutus />} />
             <Route path="/ourteam" element={<Ourteam />} />
             <Route path="/explore" element={<ExploreMedicine />} />

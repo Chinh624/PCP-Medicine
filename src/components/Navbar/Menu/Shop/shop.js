@@ -4,7 +4,7 @@ import Data from "../../../../Database/data.json";
 import "../../../Button/buttoncart.css";
 import "../../../Header/header.css";
 import CustomDropdown from "../Dropdown/CustomDropdown";
-import drugstore from '../../../../img-icon/drugstore.png'
+import drugstore from "../../../../img-icon/drugstore.png";
 const Shop = () => {
   const product2 = [
     {
@@ -41,7 +41,7 @@ const Shop = () => {
       price: 12.0,
     },
   ];
-  
+  //  data example
   const [cart, setCart] = useState(false);
   // set search
   const [searchItem, setSearchItem] = useState("");
@@ -73,7 +73,7 @@ const Shop = () => {
         </div>
         <CustomDropdown />
         <div className="button-cart" onClick={showCart}>
-            <img src={drugstore} className="cart-icon"></img>
+          <img src={drugstore} className="cart-icon"></img>
         </div>
       </div>
       {/* show find */}
@@ -157,6 +157,11 @@ const Shop = () => {
           {/* <div className="cart-product-total">
             Overall Total: $
           </div> */}
+        </>
+      )}
+
+      {selected &&(
+        <>
         </>
       )}
     </div>

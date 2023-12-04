@@ -1,48 +1,56 @@
 import './even.css';
-import React, { useState } from 'react';
-import ProductList_2 from './Productlist2';
-import Event from './event';
-import { Routes, Route, Link } from "react-router-dom";
-import Event_1 from './event1';
+
+import React from 'react';
+import ProductList2 from './Productlist2';
+
+
+
 function Event_2() {
+    const handleButtonClick = () => {
+        // Redirect to the desired URL using href
+        window.location.href = 'https://tiki.vn';
+    };
     const initialState = {
+
         products: [
             {
                 id1: "Tìm hiểu thêm",
-                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2023/thumbs/1500_crop_Thuc_tap___Hinh_1.jpg',
-                productName: 'BOSTON PHARMA CHÀO ĐÓN ĐOÀN THỰC TẬP SINH ĐẾN TỪ',
-
+                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/06_2021/thumbs/1500_crop_Mini-game-checkin-28-06.jpg',
+                productName: 'MINIGAME CHECK-IN LIỀN TAY - ĐẨY LÙI DỊCH NGAY!!',
+                learnMoreLink: 'https://www.lazada.vn'
             },
             {
                 id2: "Tìm hiểu thêm",
-                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2023/thumbs/1500_crop_Hinh_3.jpg',
-                productName2: 'BOSTON PHARMA KÝ KẾT HỢP TÁC VỚI VIỆN KIỂM NGHIỆM THUỐC',
-
+                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/04_2022/thumbs/1500_crop_Eng_Paralmax_500_cap.jpg',
+                productName2: 'Paralmax 500 caps - Thêm quy cách mới - Thêm tiện lợi hơn!',
+                learnMoreLink: 'https://www.lazada.vn'
             },
             {
                 id3: "Tìm hiểu thêm",
-                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2023/thumbs/1500_crop_Banner.jpg',
-                productName3: 'BOSTON PHARMA ĐƯỢC CHỨNG NHẬN TUÂN THỦ CÁC HƯỚNG DẪN',
-
+                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/04_2022/thumbs/1500_crop_Eng_Khau_trang_y_te.jpg',
+                productName3: 'KHẨU TRANG Y TẾ PCP MEDICINE LỰA CHỌN AN TOÀN CHO',
+                learnMoreLink: 'https://www.lazada.vn'
             },
             {
                 id4: "Tìm hiểu thêm",
-                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/08_2023/thumbs/1500_crop_thumbnail_calciboston500.jpg',
-                productName4: 'BÍ QUYẾT BẢO VỆ XƯƠNG CHẮC KHỎE CHO CẢ GIA ĐÌNH',
-
+                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/07_2021/thumbs/1500_crop_Dat-app-tha-ga-don-oto-ve-nha.jpg',
+                productName4: 'HOT: CHƯƠNG TRÌNH ƯU ĐÃI ĐẶT APP THẢ GA – ĐÓN Ô TÔ VỀ NHÀ',
+                learnMoreLink: 'https://www.lazada.vn'
             },
             {
                 id5: "Tìm hiểu thêm",
-                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/08_2023/thumbs/1500_crop_EN_Thong_bao.jpg',
-                productName5: 'THÔNG BÁO LỊCH NGHỈ LỄ QUỐC KHÁNH 2/9',
-
+                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/03_2021/thumbs/1500_crop_Thumb_IvyBoston_min_new.jpg',
+                productName5: 'PCP MEDICINE RA MẮT SIRO HO CHO CẢ GIA ĐÌNH - IVYBOSTON',
+                learnMoreLink: 'https://www.lazada.vn'
             },
             {
                 id6: "Tìm hiểu thêm",
-                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2023/thumbs/1500_crop_hinh_molravir.jpg',
-                productName6: 'BOSTON PHARMA ĐỒNG HÀNH CÙNG CHIẾN DỊCH THANH NIÊN',
-
+                imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/03_2021/thumbs/1500_crop_Hinh_27_02_min_new.jpg',
+                productName6: 'PCP MEDICINE CHÚC MỪNG NGÀY THẦY THUỐC VIỆT NAM',
+                learnMoreLink: 'https://www.lazada.vn',
+                imageStyle: { height: '301px', width: ' 370px' }
             },
+
 
         ],
     };
@@ -54,60 +62,31 @@ function Event_2() {
                 <div className="TinTuc">TIN TỨC</div>
             </div>
             <div className="header-2">
-                <button className="list ">TẤT CẢ</button>
-                <button className="list ">KHOẺ MỖI NGÀY</button>
-                <button className="list ">HOẠT ĐỘNG CỦA PCP</button>
-                <button className="list ">KHO TÀI LIỆU Y DƯỢC</button>
+                <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
+                <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>
+                <a href="https://tiki.vn"><button className="list">HOẠT ĐỘNG PCP</button></a>
+                <a href="https://www.sendo.vn"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
             </div>
             <br></br>
             <div className="bodyy">
                 <div className="khungbody ">
                     <div className="body-1">
-                        <img className="product-body1" src="https://bostonpharma.com.vn/vnt_upload/news/10_2023/thumbs/1500_crop_Hinh_1___HNKH.jpg" />
+                        <img className="product-body1" src="https://bostonpharma.com.vn/vnt_upload/news/11_2021/thumbs/1500_crop_Thong_bao_chuc_mung.jpg" />
 
                     </div>
                     <div className="body-2">
-                        <h1>LỄ CÔNG BỐ PCP ĐẠT MỤC TIÊU</h1>
+                        <h1>THÔNG BÁO KHÁCH HÀNG TRÚNG GIẢI CHƯƠNG TRÌNH ĐẶT APP THẢ GA - ĐÓN Ô TÔ VỀ NHÀ</h1>
                         <hr></hr>
-                        <p>Ngày 30/9/2023 vừa qua, tại Trung tâm Hội nghị White Palace, Boston Pharma đã tổ chức thành công Hội nghị khách hàng 2023 khu vực Hồ Chí Minh – Miền Đông hướng đến mục tiêu “Hợp tác bền vững – Cùng nhau phát triển”.</p>
-                        <button className="timhieuthem">TÌM HIỂU HÊM</button>
+                        <p>Boston Pharma xin thông báo danh sách các khách hàng trúng Giải Đặc Biệt, Giải Nhất, Giải Nhì, Giải Ba và 100 Giải khuyến kích trong chương trình "Đặt App thả ga - Đón ô tô về nhà.</p>
+                        <button className="timhieuthem" onClick={handleButtonClick}>TÌM HIỂU THÊM</button>
                     </div>
                 </div>
             </div >
             <div>
-                <ProductList_2 products={initialState.products} />
+                <ProductList2 products={initialState.products} />
 
             </div>
-            <div className='Chuyentrang'>
-                <nav aria-label="Page navigation example">
-                    <ul className="pagination">
-                        <li className="page-item">
-                            <Link className="page-link" to="/event">
-                                <span aria-hidden="true">&laquo;</span>
-                            </Link>
-                        </li>
-                        <li className="page-item"><Link className="page-link" to={`/event2`}>1</Link></li>
-                        <li className="page-item"><Link className="page-link" to={`/event1`}>2</Link></li>
-                        <li className="page-item"><Link className="page-link" to={`/event2`}>3</Link></li>
-                        <li className="page-item"><Link className="page-link" to={`/event2`}>4</Link></li>
-                        <li className="page-item"><Link className="page-link" to={`/event2`}>5</Link></li>
-                        <li className="page-item"><Link className="page-link" to={`/event2`}>6</Link></li>
-                        <li className="page-item">
-                            <Link className="page-link" to="" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <main>
-                <Routes>
-                    <Route path="/event" element={Event} />
-                    <Route path="/event2" element={<Event_2 />} />
-                    <Route path="/event1" element={<Event_1 />} />
-                </Routes>
-            </main>
-        </div >
+        </div>
     )
 }
 export default Event_2;

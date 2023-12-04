@@ -11,7 +11,7 @@
     margin-left: 100px;
     font-size: 80px;
     line-height: 150px;
-    color: #0e0303;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
@@ -28,19 +28,31 @@
     background-color: aqua;
 }
 
+.body-2 button:hover {
+    background-color: aqua;
+}
 
+.b button:hover {
+    background-color: aqua;
+}
 
 
 h1 {
     font-size: 20px;
 }
 
+/* Thêm vào cuối file CSS hoặc tạo một file mới và import vào project của bạn */
+
+.khungchua {
+    max-width: 1400px;
+    /* Điều chỉnh chiều rộng tối đa của khung chứa nếu cần thiết */
+    margin: 0 auto;
+}
+
 .Chuyentrang {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    /* Điều này có thể thay đổi tùy thuộc vào khoảng cách bạn muốn giữa thanh chuyển trang và nội dung trang khác */
 }
 
 .pagination {
@@ -52,21 +64,32 @@ h1 {
 
 .page-item {
     margin: 0 5px;
-    /* Điều này có thể thay đổi tùy thuộc vào khoảng cách giữa các page-item */
+    /* Điều chỉnh khoảng cách giữa các trang nếu cần thiết */
 }
 
 .page-link {
-    text-decoration: none;
-    padding: 10px;
-    border: 1px solid #ccc;
-    color: #333;
+    display: block;
+    padding: 10px 15px;
     background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page-link:hover,
+.page-link:focus {
+    background-color: #eee;
 }
 
 .page-item.active .page-link {
     background-color: #007bff;
     color: #fff;
+    border: 1px solid #007bff;
 }
+
+
+
 
 .khungbody {
     height: 400px;
@@ -104,46 +127,77 @@ h1 {
 
 }
 
-.a {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-.b {
-    width: 400px;
-    margin: 20px;
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-
-
-.List-tintuc {
-    display: block;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-
-    overflow: hidden;
-    text-align: center;
-    text-decoration: none;
-    /* xoá bỏ gạch dưới chân chữ  text-decoration: none; */
-}
 
 .List-tintuc:hover {
     color: #028174;
 }
 
-.amg {
-    max-width: 100%;
-    height: auto;
+/* even.css */
 
+.a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.b {
+    width: 30%;
+    /* Điều chỉnh chiều rộng nếu cần thiết */
+    margin-bottom: 20px;
+    /* Điều chỉnh khoảng cách dưới nếu cần thiết */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.amg {
+    padding-top: 80px;
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    /* Thêm góc bo tròn nếu muốn */
+}
+
+.List-tintuc {
+    display: block;
+    margin-top: 10px;
+    /* Điều chỉnh khoảng cách trên nếu cần thiết */
+    text-decoration: none;
+    color: #333;
+    /* Đặt màu chữ nếu cần thiết */
+    font-weight: bold;
+}
+
+.timhieuthem {
+    margin-top: 10px;
+    /* Điều chỉnh khoảng cách trên nếu cần thiết */
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    /* Đặt màu nền nút nếu cần thiết */
+    color: #fff;
+    /* Đặt màu chữ nếu cần thiết */
+    border: none;
+    border-radius: 4px;
+    /* Thêm góc bo tròn nút nếu muốn */
+    cursor: pointer;
+}
+
+/* Tùy chọn: Thêm các thiết lập responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .b {
+        width: 48%;
+        /* Điều chỉnh chiều rộng cho màn hình nhỏ hơn */
+    }
+}
+
+@media (max-width: 576px) {
+    .b {
+        width: 100%;
+        /* Điều chỉnh chiều rộng cho màn hình rất nhỏ */
+    }
+}
+
+
 
 .product-body1 {
     margin: 40px;

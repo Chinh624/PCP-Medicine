@@ -1,11 +1,12 @@
 import './even.css';
+
 import React, { useState } from 'react';
 import ProductList_5 from './Productlist5';
-import { Link } from 'react-router-dom'; // Import Link từ React Router
+
 function Event_5() {
     const handleButtonClick = () => {
         // Redirect to the desired URL using href
-        window.location.href = 'https://bostonpharma.com.vn/vn/thong-bao-khach-hang-trung-giai-chuong-trinh-dat-hang-trung-vang-.html';
+        window.location.href = 'https://shopee.vn/';
     };
     const initialState = {
         products: [
@@ -13,37 +14,37 @@ function Event_5() {
                 id1: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/08_2022/thumbs/1500_crop_Hinh_08___Ba_Na.jpg',
                 productName: 'PCP MEDICINE DU NGOẠN HỘI AN - ĐÀ NẴNG 2022 CÙNG KHÁCH ',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/boston-pharma-du-ngoan-hoi-an-da-nang-2022-cung-khach-hang-.html'
+                learnMoreLink: 'https://shopee.vn'
             },
             {
                 id2: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/06_2022/thumbs/1500_crop_Hinh_Bosphagel_B___Thumbnail_Eng.jpg',
                 productName2: 'BOSPHAGEL B - DẠ DÀY KHỎE - NHẸ NỖI LO',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/bosphagel-b-da-day-khoe-nhe-noi-lo.html'
+                learnMoreLink: 'https://shopee.vn'
             },
             {
                 id3: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/06_2022/thumbs/1500_crop_Hinh_01___Nha_may_EU.jpg',
                 productName3: 'PCP MEDICINE HOÀN THIỆN XÂY DỰNG NHÀ MÁY ĐẠT TIÊU CHUẨN',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/boston-pharma-hoan-thien-xay-dung-nha-may-dat-tieu-chuan-eu-gmp.html'
+                learnMoreLink: 'https://shopee.vn'
             },
             {
                 id4: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2021/thumbs/1500_crop_Hinh_01___Dat_hang_trung_vang.jpg',
                 productName4: 'THÔNG BÁO KHÁCH HÀNG TRÚNG GIẢI CHƯƠNG TRÌNH “ĐẶT HÀNG',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/thong-bao-khach-hang-trung-giai-chuong-trinh-dat-hang-trung-vang-.html'
+                learnMoreLink: 'https://shopee.vn'
             },
             {
                 id5: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/02_2022/thumbs/1500_crop_Hinh_01___Thuoc_Molravir_400.jpg',
                 productName5: 'MOLRAVIR 400 (HOẠT CHẤT MOLNUPIRAVIR) - THUỐC ĐIỀU TRỊ',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/boston-pharma-tai-tro-hoc-bong-danh-cho-sinh-vien-khoa-y-dai-hoc-quoc-gia-tp-hcm.html'
+                learnMoreLink: 'https://shopee.vn'
             },
             {
                 id6: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/04_2022/thumbs/1500_crop_Eng_Banner_Molravir.jpg',
                 productName6: 'PCP MEDICINE CHÍNH THỨC ĐƯỢC CẤP PHÉP LƯU HÀNH SẢN',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/boston-pharma-chinh-thuc-duoc-cap-phep-luu-hanh-san-pham-molravir-400-hoat-chat-molnupiravir-.html'
+                learnMoreLink: 'https://shopee.vn'
             },
 
         ],
@@ -56,10 +57,10 @@ function Event_5() {
                 <div className="TinTuc">TIN TỨC</div>
             </div>
             <div className="header-2">
-                <Link to="/event" ><button className="list">TẤT CẢ</button></Link>
-                <Link to="/event1"><button className="list">KHOẺ MỖI NGÀY</button></Link>
-                <Link to="/event2"><button className="list">HOẠT ĐỘNG PCP</button></Link>
-                <Link to="/event3"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></Link>
+                <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
+                <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>
+                <a href="https://tiki.vn"><button className="list">HOẠT ĐỘNG PCP</button></a>
+                <a href="https://www.sendo.vn"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
             </div>
             <br></br>
             <div className="bodyy">

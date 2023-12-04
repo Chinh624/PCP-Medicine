@@ -1,12 +1,13 @@
 import './even.css';
+
 import React, { useState } from 'react';
 import ProductList_4 from './Productlist4';
-import { Link } from 'react-router-dom'; // Import Link từ React Router
+
 
 function Event_4() {
     const handleButtonClick = () => {
         // Redirect to the desired URL using href
-        window.location.href = 'https://bostonpharma.com.vn/vn/lo-hang-xuat-khau-dau-tien-trong-nam-2022.html';
+        window.location.href = 'https://shopee.vn/';
     };
     const initialState = {
         products: [
@@ -14,37 +15,37 @@ function Event_4() {
                 id1: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_1___Copy.jpg',
                 productName: 'TEAM BUILDING NHA TRANG 2022 - WE ARE PCP MEDICINE ',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/team-building-nha-trang-2022-we-are-boston-pharma.html'
+                learnMoreLink: 'https://tiki.vn'
             },
             {
                 id2: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_BK___Hinh_05.jpg',
                 productName2: 'PCP MEDICINE– NHÃN HÀNG TOCOMAX PLUS “NẠP NĂNG',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/boston-pharma-dong-hanh-cung-bk-marathon-2022.html'
+                learnMoreLink: 'https://www.lazada.vn'
             },
             {
                 id3: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_Hinh_02.png',
                 productName3: 'PCP MEDICINE TĂNG TỐC VẬN HÀNH CÙNG BASE.VN',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/boston-pharma-tang-toc-van-hanh-cung-base-vn.html'
+                learnMoreLink: 'https://shopee.vn'
             },
             {
                 id4: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_tim.jpg',
                 productName4: 'PCP MEDICINE CHIA SẺ GÁNH NẶNG CÙNG QUÝ KHÁCH HÀNGH',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/boston-pharma-chia-se-ganh-nang-cung-quy-khach-hang-khu-vuc-mien-trung.html'
+                learnMoreLink: 'https://www.lazada.vn'
             },
             {
                 id5: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_Hinh_02.jpg',
                 productName5: 'PCP MEDICINE ĐỒNG HÀNH CÙNG KHOA Y TRƯỜNG ĐẠI HỌC',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/boston-pharma-dong-hanh-cung-khoa-y-truong-dai-hoc-quoc-gia-ho-chi-minh-phat-trien-dao-tao-nguon-nhan-luc-tre.html'
+                learnMoreLink: 'https://shopee.vn'
             },
             {
                 id6: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2022/thumbs/1500_crop_3.jpg',
                 productName6: 'PCP MEDICINE ĐỒNG HÀNH CÙNG INTEL TECH FUN RUN 2022',
-                learnMoreLink: 'https://bostonpharma.com.vn/vn/boston-pharma-dong-hanh-cung-intel-tech-fun-run-2022-dem-den-dieu-ky-dieu-cho-tre-em-mo-coi-do-dich-covid-19.html'
+                learnMoreLink: 'https://tiki.vn'
             },
 
         ],
@@ -57,10 +58,10 @@ function Event_4() {
                 <div className="TinTuc">TIN TỨC</div>
             </div>
             <div className="header-2">
-                <Link to="/event" ><button className="list">TẤT CẢ</button></Link>
-                <Link to="/event1"><button className="list">KHOẺ MỖI NGÀY</button></Link>
-                <Link to="/event2"><button className="list">HOẠT ĐỘNG PCP</button></Link>
-                <Link to="/event3"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></Link>
+                <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
+                <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>
+                <a href="https://tiki.vn"><button className="list">HOẠT ĐỘNG PCP</button></a>
+                <a href="https://www.sendo.vn"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
             </div>
             <br></br>
             <div className="bodyy">

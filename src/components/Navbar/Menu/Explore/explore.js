@@ -1,18 +1,15 @@
 
 import React, { useState } from "react";
 import "../Explore/explore.css";
+import Data from "../../../../Database/data";
 const ExploreMedicine = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedMedicine, setSelectedMedicine] = useState(null);
 
-  const medicineData = [
-    { id: 1, name: "Ly", image: "medicine1.jpg", description: "Description " },
-    { id: 2, name: "picture medicine", image: "medicine2.jpg", description: "Description " },
-    { id: 3, name: "picture medicine", image: "medicine3.jpg", description: "Description " },
-  ];
+  
 
-  const handleSearch = (e) => {
-    setSearchTerm(e.target.value.toLowerCase());
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value.toLowerCase());
   };
 
   const openModal = (medicine) => {
@@ -34,7 +31,7 @@ const ExploreMedicine = () => {
       </div>
 
       <section className="explore-section">
-        {medicineData
+        {Data.medicineData
           .filter((medicine) => medicine.name.toLowerCase().includes(searchTerm))
           .map((medicine) => (
             <div className="medicine-card" key={medicine.id} onClick={() => openModal(medicine)}>
