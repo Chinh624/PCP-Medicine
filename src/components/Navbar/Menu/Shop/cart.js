@@ -1,5 +1,5 @@
 import React from "react";
-import "../Shop/shop.css";
+import "../Shop/shop.cs";
 export default function cart({ showCart }) {
   const product2 = [
     {
@@ -40,7 +40,9 @@ export default function cart({ showCart }) {
     <>
       <div className="cart">
         <div className="cart-container-title">
-          <h1 className="cart-title">My cart</h1>
+          <div className="cart-title">
+            <h1>My cart</h1>
+          </div>
           <button className="cart-button-close" onClick={showCart}>
             &#10006;
           </button>
