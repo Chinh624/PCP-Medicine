@@ -48,7 +48,6 @@ function Event_2() {
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/03_2021/thumbs/1500_crop_Hinh_27_02_min_new.jpg',
                 productName6: 'PCP MEDICINE CHÚC MỪNG NGÀY THẦY THUỐC VIỆT NAM',
                 learnMoreLink: 'https://www.lazada.vn',
-                imageStyle: { height: '301px', width: ' 370px' }
             },
 
 
@@ -57,10 +56,6 @@ function Event_2() {
     return (
 
         <div className="khungchua">
-            <div>
-                <img className="img-header" src="https://icdn.24h.com.vn/upload/2-2022/images/2022-05-17/picture-1-1652776802-797-width660height440.jpg" alt="header" />
-                <div className="TinTuc">TIN TỨC</div>
-            </div>
             <div className="header-2">
                 <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
                 <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>

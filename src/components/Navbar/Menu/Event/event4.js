@@ -53,10 +53,6 @@ function Event_4() {
     return (
 
         <div className="khungchua">
-            <div>
-                <img className="img-header" src="https://icdn.24h.com.vn/upload/2-2022/images/2022-05-17/picture-1-1652776802-797-width660height440.jpg" alt="header" />
-                <div className="TinTuc">TIN TỨC</div>
-            </div>
             <div className="header-2">
                 <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
                 <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>

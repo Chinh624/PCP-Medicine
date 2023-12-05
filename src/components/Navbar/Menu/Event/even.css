@@ -20,20 +20,24 @@
 
 
 .header-2 {
+    border-top: solid #fff;
     text-align: center;
     background-color: #028174;
 }
 
 .header-2 button:hover {
-    background-color: aqua;
+    background-color: #fff;
+    color: #028174;
 }
 
 .body-2 button:hover {
-    background-color: aqua;
+    background-color: #fff;
+    color: #028174;
 }
 
 .b button:hover {
-    background-color: aqua;
+    background-color: #fff;
+    color: #028174;
 }
 
 
@@ -138,7 +142,7 @@ h1 {
 .a {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .b {
@@ -152,8 +156,8 @@ h1 {
 
 .amg {
     padding-top: 80px;
-    height: 300px;
     width: 300px;
+    height: 250PX;
     border-radius: 8px;
     /* Thêm góc bo tròn nếu muốn */
 }
