@@ -1,5 +1,5 @@
 import React from "react";
-import "../Shop/shop.cs";
+import "../Shop/shop.css";
 export default function cart({ showCart }) {
   const product2 = [
     {
