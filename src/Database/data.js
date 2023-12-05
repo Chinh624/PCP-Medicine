@@ -17,86 +17,126 @@ const data = {
     {
       id: "1",
       name: "Acetylcystein 200 Imexpharm",
-      title: "",
+      title: "product-pcp",
       price: "147.0000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P17315_1_l.webp",
     },
     {
       id: "2",
       name: "Acetylcystein",
-      title: "",
+      title: "product-pcp",
       price: "65.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P16412_1_l.webp",
     },
     {
       id: "3",
       name: "Acetylcystein 200mg Vidipha",
-      title: "",
+      title: "product-pcp",
       price: "100.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P25186_1-thumbnail-510x510-70.jpg",
     },
     {
       id: "4",
       name: "AcetylCystein Boston 200",
-      title: "",
+      title: "product-pcp",
       price: "55.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P17480_1_l-thumbnail-510x510.webp",
     },
     {
       id: "5",
       name: "Agilodin 10g",
-      title: "",
+      title: "product-pcp",
       price: "350.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P20414_1_l.webp",
     },
     {
       id: "6",
       name: "A.T Ascorbic 100mg/5ml ",
-      title: "",
+      title: "product-pcp",
       price: "114.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P12775_1_l.webp",
     },
     {
       id: "7",
       name: "A.T Arginin 200mg",
-      title: "",
+      title: "product-pcp",
       price: "60.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P20074_1_l.webp",
     },
     {
       id: "8",
       name: "Altamin",
-      title: "",
+      title: "product-pcp",
       price: "109.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P14649_1_l.webp",
     },
     {
       id: "9",
       name: "Ampelop",
-      title: "",
+      title: "product-pcp",
       price: "117.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P03923_1_l.webp",
     },
     {
       id: "10",
       name: "Amcinol-Paste",
-      title: "",
+      title: "product-pcp",
       price: "10.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P19886_1_l.webp",
     },
     {
       id: "11",
       name: "Antilox Forte 10g",
-      title: "",
+      title: "product-pcp",
       price: "69.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P14774_1_l.webp",
     },
     {
       id: "12",
       name: "Avarino",
-      title: "",
+      title: "product-pcp",
       price: "120.000 VNĐ",
       img: "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P12954_1.JPG",
+    },
+
+    {
+      id: "13",
+      name: "Avarino",
+      title: "skincare",
+      price: "120.000 VNĐ",
+      img: "https://images-eu.ssl-images-amazon.com/images/I/71t9JRry+3L._AC_UL330_SR330,330_.jpg",
+    },
+
+    {
+      id: "13",
+      name: "Avarino",
+      title: "skincare",
+      price: "120.000 VNĐ",
+      img: "https://images-eu.ssl-images-amazon.com/images/I/71t9JRry+3L._AC_UL330_SR330,330_.jpg",
+    },
+
+    {
+      id: "13",
+      name: "Avarino",
+      title: "skincare",
+      price: "120.000 VNĐ",
+      img: "https://images-eu.ssl-images-amazon.com/images/I/71t9JRry+3L._AC_UL330_SR330,330_.jpg",
+    },
+
+    {
+      id: "13",
+      name: "vitamin",
+      title: "vitamin",
+      price: "120.000 VNĐ",
+      img: "https://thumbs.dreamstime.com/b/vitamins-supplements-as-capsule-fruit-vegetables-nuts-beans-inside-nutrient-pill-natural-medicine-health-treatment-d-110319057.jpg",
+    },
+
+    {
+      id: "13",
+      name: "heath-conditon",
+      title: "healthcondition",
+      price: "120.000 VNĐ",
+      img: "https://images-eu.ssl-images-amazon.com/images/I/71t9JRry+3L._AC_UL330_SR330,330_.jpg",
     },
   ],
   menu: [
@@ -223,6 +263,34 @@ const data = {
       name: "picture medicine",
       image: "medicine3.jpg",
       description: "Description ",
+    },
+  ],
+
+  dropdown: [
+    { id: 1, name: "Choose", value: "Choose" },
+
+    {
+      id: 2,
+      name: "Product - PCP",
+      value: "Product-PCP",
+    },
+
+    {
+      id: 3,
+      name: "Skin Care",
+      value: "Skin-Care",
+    },
+
+    {
+      id: 4,
+      name: "Vitamins",
+      value: "Vitamins",
+    },
+
+    {
+      id: 5,
+      name: "Health - Condition",
+      value: "Heath-condition",
     },
   ],
 };

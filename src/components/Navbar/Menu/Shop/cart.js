@@ -87,7 +87,7 @@ export default function cart({ showCart }) {
             <div className="cart-product-total-quantity">Quantity: </div>
             <div className="cart-product-total">Order Total: $ </div>
           </div>
-          <button className="cart-product-pay">Pay</button>
+          <button className="cart-product-pay">Discharge</button>
         </div>
       </div>
     </>

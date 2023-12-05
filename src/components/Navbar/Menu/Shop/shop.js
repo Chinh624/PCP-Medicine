@@ -1,106 +1,83 @@
 import React, { useState } from "react";
 import "../Shop/shop.css";
-import Data from "../../../../Database/data.json";
 import "../../../Button/buttoncart.css";
 import "../../../Header/header.css";
 import drugstore from "../../../../img-icon/drugstore.png";
 import Cart from "./cart";
-function Shop() {
-  // set cart
+import Data from "../../../../Database/data";
+
+const Shop = () => {
   const [cart, setCart] = useState(false);
-  // set search
   const [searchItem, setSearchItem] = useState("");
   const [selected, setSelected] = useState(null);
-  //set dropdown menu items
-  const [selectedItem, setSelectedItem] = useState();
+  const [selectedCategory, setSelectedCategory] = useState("Choose");
 
-
-  // use switch case show product 
-  const renderSelectedItem = () => {
-    switch (selectedItem) {
-      case "A":
-        return (
-          <>
-            {Data.product
-              .filter((medicine) =>
-                medicine.name.toLowerCase().includes(searchItem)
-              )
-              .map((product) => (
-                <div
-                  className="product"
-                  key={product.id}
-                  onClick={openMedicine}
-                >
-                  <div className="product-item">
-                    <img
-                      className="product-img"
-                      src={product.img}
-                      alt={product.name}
-                    />
-                    <h3 className="product-item-name">{product.name}</h3>
-                    <h4 className="product-item-price">{product.price}</h4>
-                    <button type="button" className="product-button">
-                      ADD TO CART
-                    </button>
-                  </div>
-                </div>
-              ))}
-          </>
-        );;
-      case "B":
-        return <h1>Data Skin - Care</h1>;
-      case "C":
-        return <h1>Data vitamins</h1>
-      case "D":
-        return <h1>Data heath - Condition</h1>
-      default:
-        return (
-          <>
-            {Data.product
-              .filter((medicine) =>
-                medicine.name.toLowerCase().includes(searchItem)
-              )
-              .map((product) => (
-                <div
-                  className="product"
-                  key={product.id}
-                  onClick={openMedicine}
-                >
-                  <div className="product-item">
-                    <img
-                      className="product-img"
-                      src={product.img}
-                      alt={product.name}
-                    />
-                    <h3 className="product-item-name">{product.name}</h3>
-                    <h4 className="product-item-price">{product.price}</h4>
-                    <button type="button" className="product-button">
-                      ADD TO CART
-                    </button>
-                  </div>
-                </div>
-              ))}
-          </>
-        );
-    }
-  };
-  // set dropdown menu
-  const handleChangeDropDown = (event) => {
-    setSelectedItem(event.target.value);
+  const handleDropdownChange = (event) => {
+    const selectedCategory = event.target.value;
+    setSelectedCategory(selectedCategory);
   };
 
-  // set show hide cart
   const showCart = () => {
     setCart(!cart);
   };
-  // set change from input
+
   const handleSearch = (e) => {
     setSearchItem(e.target.value.toLowerCase());
   };
-  // return search
+
   const openMedicine = (medicine) => {
     setSelected(medicine);
   };
+
+  const getProducts = () => {
+    const mapProducts = Data.product.map(
+      (product) => product 
+    );
+
+    const filterProductsPCP = Data.product.filter(
+      (product) => product.title === "product-pcp"
+    );
+
+    const filterProductVitamins = Data.product.filter(
+      (product) => product.title === "vitamin"
+    );
+
+    const filterProductSkincare = Data.product.filter(
+      (product) => product.title === "skincare"
+    );
+
+    const filterProductHealthCondition = Data.product.filter(
+      (product) => product.title === "healthcondition"
+    );
+
+    return {
+      mapProducts,
+      filterProductsPCP,
+      filterProductVitamins,
+      filterProductSkincare,
+      filterProductHealthCondition,
+    };
+  };
+
+  const renderProducts = (products, searchItem, openMedicine) =>
+    products
+      .filter((medicine) => medicine.name.toLowerCase().includes(searchItem))
+      .map((product) => (
+        <div
+          className="product"
+          key={product.id}
+          onClick={() => openMedicine(product)}
+        >
+          <div className="product-item">
+            <img className="product-img" src={product.img} alt={product.name} />
+            <h3 className="product-item-name">{product.name}</h3>
+            <h4 className="product-item-price">{product.price}</h4>
+            <button type="button" className="product-button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      ));
 
   return (
     <div className="Body-shop">
@@ -116,32 +93,54 @@ function Shop() {
           ></input>
         </div>
         <div>
-          <select value={selectedItem} onChange={handleChangeDropDown} className="Dropdown">
-            <option  value="A" >Product - PCP</option>
-            <option value="B">Vitamins</option>
-            <option value="C">Skin Care</option>
-            <option value="D">Health - Condition</option>
+          <select className="Dropdown" onChange={handleDropdownChange}>
+            {Data.dropdown.map((dropdown) => (
+              <option key={dropdown.id} value={dropdown.value}>
+                {dropdown.name}
+              </option>
+            ))}
           </select>
         </div>
         <div className="button-cart" onClick={showCart}>
           <img src={drugstore} className="cart-icon"></img>
         </div>
       </div>
-      <div className="container-item">{renderSelectedItem()}</div>
+      <div className="container-item">
+        {selectedCategory === "Choose" &&
+          renderProducts(getProducts().mapProducts, searchItem, openMedicine)}
+        {selectedCategory === "Product-PCP" &&
+          renderProducts(
+            getProducts().filterProductsPCP,
+            searchItem,
+            openMedicine
+          )}
+        {selectedCategory === "Skin-Care" &&
+          renderProducts(
+            getProducts().filterProductSkincare,
+            searchItem,
+            openMedicine
+          )}
+        {selectedCategory === "Vitamins" &&
+          renderProducts(
+            getProducts().filterProductVitamins,
+            searchItem,
+            openMedicine
+          )}
+        {selectedCategory === "Heath-condition" &&
+          renderProducts(
+            getProducts().filterProductHealthCondition,
+            searchItem,
+            openMedicine
+          )}
+        {selected && <></>}
+      </div>
       {/* show cart */}
       {cart && (
         <>
           <Cart showCart={showCart} />
         </>
       )}
-
-      {selected && (
-        <></>
-      )}
     </div>
-
-    // {/* show cart */}
   );
-}
-
+};
 export default Shop;
