@@ -64,9 +64,9 @@ const Shop = () => {
     };
   };
 
-  const renderProducts = (products, searchItem, openMedicine ,) =>
+  const renderProducts = (products, searchItem, openMedicine ) =>
     products
-      .filter((medicine) => medicine.name.toLowerCase().includes(searchItem))
+      .filter((medicine) => medicine.name.toLowerCase().includes(searchItem.toLowerCase()))
       .map((product) => (
         <div
           className="product"
@@ -116,6 +116,8 @@ const Shop = () => {
         </div>
       </div>
       <div className="container-item">
+
+
         {selectedCategory === "Choose" &&
           renderProducts(getProducts().mapProducts, searchItem, openMedicine)}
         {selectedCategory === "Product-PCP" &&
@@ -143,6 +145,8 @@ const Shop = () => {
             openMedicine
           )}
         {selected && <></>}
+
+
       </div>
 
       {selectedProduct && (
@@ -161,13 +165,13 @@ const Shop = () => {
                 />
               </div>
               <div className="right">
-                <p>Công dụng: {selectedProduct.title}</p>
-                <p>Đối tượng sử dụng: {selectedProduct.object}</p>
-                <p>Hình thức: {selectedProduct.formality}</p>
-                <p>Thương hiệu: {selectedProduct.trademark}</p>
-                <p>Nơi sản xuất: {selectedProduct.made}</p>
-                <p>Thành phần: {selectedProduct.ingredient}</p>
-                <p>Chỉ định: {selectedProduct.allocate}</p>
+                <p>Uses: {selectedProduct.title}</p>
+                <p>Subjects of use: {selectedProduct.object}</p>
+                <p>Form: {selectedProduct.formality}</p>
+                <p>Trademark: {selectedProduct.trademark}</p>
+                <p>Where production: {selectedProduct.made}</p>
+                <p>Ingredient {selectedProduct.ingredient}</p>
+                <p>Nominate: {selectedProduct.allocate}</p>
               </div>
             </div>
 

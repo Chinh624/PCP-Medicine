@@ -23,9 +23,10 @@ export default function Footer() {
     setShowSuccessConfirm(false);
     setShowErrorConfirm(false);
   };
+    var checkEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
 
   const handleJoinNowClick = () => {
-    if (inputEmail !== "" && inputEmail.includes("@")) {
+    if (inputEmail !== checkEmail && inputEmail.includes("@")) {
       const isConfirmed = window.confirm(`Do you want to join with us?`);
       if (isConfirmed) {
         //confirm ok

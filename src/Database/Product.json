@@ -170,7 +170,7 @@
         },
         {
             "id": "13",
-            "name": "Sữa rửa mặt Acne-Aid Liquid Cleanser",
+            "name": "Acne-Aid Liquid Cleanser",
             "title": "Sữa rửa mặt Acne-Aid Liquid Cleanser làm sạch da dịu nhẹ, giúp loại bỏ dầu cho da. Thích hợp sử dụng hàng ngày, đặc biệt cho da dầu và mụn.",
             "object": "Dành cho da dầu & da mụn",
             "formality": "",
@@ -184,7 +184,7 @@
         },
         {
             "id": "14",
-            "name": "Gel rửa mặt COSRX Low pH Good Morning Gel Cleanser Cosrx",
+            "name": "Cosrx Tràm Trà",
             "title": "Gel rửa mặt COSRX Low pH Good Morning Gel Cleanser Cosrx (150ml) là sản phẩm giúp làm sạch da, loại bỏ dầu cho da",
             "object": "Phù hợp với mọi loại da",
             "formality": "",
@@ -198,7 +198,7 @@
         },
         {
             "id": "15",
-            "name": "Gel rửa mặt sạch sâu, ngừa mụn chứa bùn hoạt tính Dermacos",
+            "name": "Dermacos",
             "title": "Sản phẩm chứa Than Bùn (Peat Extract) & thành phần rửa sinh học Cocamidopropyl Betaine làm sạch da, loại bỏ lượng dầu dư thừa trên da & làm thông thoáng lỗ chân lông trên bề mặt da. Da trở nên sạch, khô thoáng sau sử dụng. Axit Salicylic tự nhiên từ Vỏ cây Liễu (Salix Alba Bark) giúp giảm mụn, ngừa mụn, làm dịu nhẹ kích ứng, mẩn đỏ da & giảm bóng nhờn da. Nước ép Lá Lô Hội (Aloe Barbadensis Leaf Juice) dưỡng ẩm & dưỡng da. Sản phẩm dành cho da hỗn hợp, da dầu & da bị mụn trứng cá.",
             "object": "",
             "formality": "",
@@ -212,7 +212,7 @@
         },
         {
             "id": "16",
-            "name": "Sữa rửa mặt chuyên dụng Gammaphil Gentle Cleanser ",
+            "name": "Gammaphil Gentle Cleanser ",
             "title": "Sữa rửa mặt chuyên dụng Gammaphil Gentle Cleanser là sữa rửa mặt hỗ trợ vệ sinh da, giữ ẩm da dành cho người có làn da nhạy cảm.",
             "object": "Người có làn da nhạy cảm",
             "formality": "Gel lỏng màu trắng đục",
@@ -226,7 +226,7 @@
         },
         {
             "id": "17",
-            "name": "Sữa rửa mặt dịu nhẹ cho mọi loại da Cetaphil Gentle Skin Cleanser",
+            "name": "Cetaphil Gentle Skin Cleanser",
             "title": "Sữa rửa mặt dịu nhẹ Cetaphil Gentle Skin Cleanser giúp loại bỏ bụi bẩn, lớp trang điểm và các tạp chất một cách hiệu quả, đồng thời vẫn duy trì màng ẩm tự nhiên của da.",
             "object": "Thích hợp sử dụng cho mọi loại da, kể cả da nhạy cảm",
             "formality": "",
@@ -240,7 +240,7 @@
         },
         {
             "id": "18",
-            "name": "Hỗ trợ ngủ ngon FAROSON Sleep Cycle",
+            "name": "FAROSON Sleep Cycle",
             "title": "Giúp dễ ngủ, hỗ trợ ngủ ngon",
             "object": "Người lớn khó ngủ, ngủ không ngon giấc",
             "formality": "viên nang cứng",
@@ -254,7 +254,7 @@
         },
         {
             "id": "19",
-            "name": "Viên uống tăng cường tuần hoàn não Felix Ginkgo Biloba, Mg, B6",
+            "name": "Felix Ginkgo Biloba, Mg, B6",
             "title": "Bổ sung chiết xuất bạch quả, Magiê, Vitamin B6 giúp tăng cường tuần hoãn não, tốt cho não bộ. Hỗ trợ cải thiện tình trạng suy giảm trí nhớ do thiểu năng tuần hoàn não",
             "object": "Người thiểu năng tuần hoàn não, người bị suy giảm trí nhớ do thiểu năng tuần hoàn não.",
             "formality": "viên nang cứng",
@@ -268,7 +268,7 @@
         },
         {
             "id": "20",
-            "name": "Viên hỗ trợ giảm viêm loét dạ dày VỊ NGUYÊN",
+            "name": "Viên hỗ trợ giảm viêm loét dạ dày",
             "title": "Hỗ trợ giảm acid dịch vị, giúp bảo vệ niêm mạc dạ dày. Hỗ trợ cải thiện các triệu chứng và giảm nguy cơ viêm loét dạ dày, tá tràng.   ",
             "object": "Người bị viêm loét dạ dày, tá tràng với các biểu hiện đau thượng vị, đầy hơi, khó tiêu, ợ hơi, ợ chua, người bị trào ngược dạ dày. Người có nguy cơ viêm loét dạ dày, tá tràng.",
             "formality": "viên nang cứng",
@@ -307,7 +307,38 @@
             "price": "117.000 VNĐ",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P22791_1_l.webp",
             "category": "healthcondition"
+        },
+        {
+            "id": "23",
+            "name": "Viên hỗ trợ giảm viêm loét dạ dày",
+            "title": "Hỗ trợ giảm acid dịch vị, giúp bảo vệ niêm mạc dạ dày. Hỗ trợ cải thiện các triệu chứng và giảm nguy cơ viêm loét dạ dày, tá tràng.   ",
+            "object": "Người bị viêm loét dạ dày, tá tràng với các biểu hiện đau thượng vị, đầy hơi, khó tiêu, ợ hơi, ợ chua, người bị trào ngược dạ dày. Người có nguy cơ viêm loét dạ dày, tá tràng.",
+            "formality": "viên nang cứng",
+            "trademark": "TỒN SANH PHARMA",
+            "made": "CÔNG TY TNHH DƯỢC PHẨM TỒN SANH",
+            "ingredient": "240 mg Hỗn hợp cao chiết xuất bởi các thảo mộc(Chi tử 510 mg, Hương phụ 560mg, Huyền hồ 396 mg). Bột ô tặc cốt 235mg. Tinh bột nghệ 28mg. Cao khô cam thảo 34mg. Phụ liệu vừa đủ: Natri benzoate, Talc,…",
+            "allocate": "Nuốt trọn viên hoặc nhai. Ngày uống 3 lần (trưa, chiều, tối trước khi đi ngủ), mỗi lần 2-3 viên với nước ấm. Có thể sử dụng lượng tăng gấp đôi để tăng hiệu quả.",
+            "price": "188.000 VNĐ ",
+            "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26038_1.jpg",
+            "category": "vitamin"
+        },
+
+        {
+            "id": "24",
+            "name": "Viên hỗ trợ giảm viêm loét dạ dày",
+            "title": "Hỗ trợ giảm acid dịch vị, giúp bảo vệ niêm mạc dạ dày. Hỗ trợ cải thiện các triệu chứng và giảm nguy cơ viêm loét dạ dày, tá tràng.   ",
+            "object": "Người bị viêm loét dạ dày, tá tràng với các biểu hiện đau thượng vị, đầy hơi, khó tiêu, ợ hơi, ợ chua, người bị trào ngược dạ dày. Người có nguy cơ viêm loét dạ dày, tá tràng.",
+            "formality": "viên nang cứng",
+            "trademark": "TỒN SANH PHARMA",
+            "made": "CÔNG TY TNHH DƯỢC PHẨM TỒN SANH",
+            "ingredient": "",
+            "allocate": "Nuốt trọn viên hoặc nhai. Ngày uống 3 lần (trưa, chiều, tối trước khi đi ngủ), mỗi lần 2-3 viên với nước ấm. Có thể sử dụng lượng tăng gấp đôi để tăng hiệu quả.",
+            "price": "188.000 VNĐ ",
+            "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26038_1.jpg",
+            "category": "vitamin"
         }
+
+        
     ],
     "dropdown": [
         {

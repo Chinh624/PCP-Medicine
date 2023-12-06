@@ -9,13 +9,11 @@ import OurTherapies from "./components/Navbar/Menu/OurTherapies/ourtherapies";
 import ExploreMedicine from "./components/Navbar/Menu/Explore/explore";
 import Footer from "./components/Footer/footer";
 import EventchaEvent from "./components/Navbar/Menu/Event/eventchaevent";
-// import Login from "./components/Navbar/Menu/User/Login";
 function App() {
   return (
     <>
         <div>
           <Header />
-          {/* <Login/> */}
           <Routes>
             <Route path="/" element={<Content />} />
             <Route path="/shop" element={<Shop />} />
