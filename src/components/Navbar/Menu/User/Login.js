@@ -1,77 +1,163 @@
-import React, { useState, useEffect } from "react";
+// // Login.js
+// import React, { useState } from "react";
+// import "./Login.css";
 
-function Login() {
-    const  [userSignUp , setUserSignUp] = useState ({
-        userName : "",
-        email:  "",
-        passWord: "",
-        phoneNumber: "",
-    })
+// const Login = () => {
+//   const [isSignUp, setSignUp] = useState(true);
+//   const [isLogin, setLogin] = useState(true);
+//   const [confirmPassword, setConfirmPassword] = useState("");
+//   const [password, setPassword] = useState("");
+//   const [userName, setUserName] = useState("");
+//   const [signupSuccess, setSignupSuccess] = useState(false);
+
+//  // set change from input
+//   const handChangeUser = (event) => {
+//     const userName = event.target.value;
+//     setUserName(userName);
+//   };
+//   const handChangePassWord = (event) => {
+//     const password = event.target.value;
+//     setPassword(password);
+//   };
+//   const handleChangeConfirmPassword = (event) => {
+//     const confirmPassword = event.target.value;
+//     setConfirmPassword(confirmPassword);
+//   };
+
+//   const goToSignUp = () => {
+//         setSignUp(true); 
+//   };
+
+//   const checkLogin = () => {
+//       if (userName === password) {
+//         setUserName("")
+//         setPassword("")
+//         alert("Login Successful!");
+//       } else {
+//         alert("Invalid username or password");
+//       }
+//     }
+
+//   const checkSignup = () => {
+//     if(password === confirmPassword) {
+//       setUserName("")
+//       setPassword("")
+//       setLogin(true);
+//       setSignupSuccess(true);
+
+//       alert("signup successful!");
+//     }else{
+//       alert("signup failed!");
+//     }
+//   };
 
 
+//   return (
+//     <>
+//       {/* inter face show */}
+//       {/* <div className="form-login">
+//         <h1 className="title-login">Login</h1>
+//         <div className="form-text">USERNAME</div>
+//         <input
+//           type="text"
+//           className="login-account"
+//           onChange={handChangeUser}
+//         ></input>
+//         <div className="form-text">PASSWORD</div>
+//         <input
+//           type="password"
+//           className="login-password"
+//           onChange={handChangePassWord}
+//         ></input>
+//         <div className="container-button">
+//                 <button
+//                   type="submit"
+//                   className="button-log-in"
+//                   onClick={checkLogin}
+//                 >
+//                   Login
+//                 </button>
+//                 <button
+//                   type="button"
+//                   className="button-sign-up"
+//                 onclick={goToSignUp}>
+//                   SignUp
+//                 </button>
+//         </div>
+//       </div> */}
+//         {/* into signup */}
+//       {isSignUp && (
+//           <>
+//             <div className="form-login">
+//               <h1 className="title-login">Login</h1>
+//               <div className="form-text">USERNAME</div>
+//               <input
+//                 type="text"
+//                 className="login-account"
+//                 onChange={handChangeUser}
+//               ></input>
+//               <div className="form-text">PASSWORD</div>
+//               <input
+//                 type="password"
+//                 className="login-password"
+//                 onChange={handChangePassWord}
+//               ></input>
+//               <div className="form-text">CONFIRM PASSWORD</div>
+//               <input
+//                 type="password"
+//                 className="login-password"
+//                 onChange={handleChangeConfirmPassword}
+//                 placeholder="CONFIRM PASSWORD"
+//               ></input>
+
+//               <div className="container-button">
+//                 <button
+//                   type="button"
+//                   className="button-sign-up"
+//                   onClick={checkSignup}
+//                 >
+//                   SignUp
+//                 </button>
+//               </div>
+//             </div>
+//           </>
+//         )}
+//           {/* into login */}
+//       {isLogin && (
+//          <div className="form-login">
+//          <h1 className="title-login">Login</h1>
+//          <div className="form-text">USERNAME</div>
+//          <input
+//            type="text"
+//            className="login-account"
+//            onChange={handChangeUser}
+//          ></input>
+//          <div className="form-text">PASSWORD</div>
+//          <input
+//            type="password"
+//            className="login-password"
+//            onChange={handChangePassWord}
+//          ></input>
+//          <div className="container-button">
+//                  <button
+//                    type="submit"
+//                    className="button-log-in"
+//                    onClick={checkLogin}
+//                  >
+//                    Login
+//                  </button>
+//                  <button
+//                   type="button"
+//                   className="button-sign-up"
+//                 onclick={goToSignUp}>
+//                   SignUp
+//                 </button>
+//          </div>
+//        </div>
+//       )}
+//     </>
+//   );
+// }
 
 
-
-
-
-  // State for user data
-  const [userData, setUserData] = useState({
-    username: "",
-    email: "",
-  });
-
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setUserData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  useEffect(() => {
-    // Retrieve user data from localStorage
-    const storedUserData = localStorage.getItem("userData");
-    if (storedUserData) {
-      setUserData(JSON.parse(storedUserData));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("userData", JSON.stringify(userData));
-  }, [userData]);
-
-  const handleLogin = () => {
-    console.log("User logged in:", userData);
-  };
-
-  return (
-    <div>
-      <h1>User Information</h1>
-      <form>
-        <label>
-          Username:
-          <input
-            type="text"
-            name="username"
-            value={userData.username}
-            onChange={handleInputChange}
-          />
-        </label>
-        <br />
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={userData.email}
-            onChange={handleInputChange}
-          />
-        </label>
-      </form>
-
-      <button onClick={handleLogin}>Login</button>
-    </div>
-  );
-}
-
-export default Login;
+// export default Login;

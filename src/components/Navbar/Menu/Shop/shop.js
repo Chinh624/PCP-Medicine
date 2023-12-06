@@ -4,23 +4,28 @@ import "../../../Button/buttoncart.css";
 import "../../../Header/header.css";
 import drugstore from "../../../../img-icon/drugstore.png";
 import Cart from "./cart";
-import Data from "../../../../Database/data";
-
+import Data from "../../../../Database/Product.json";
 const Shop = () => {
-  const [cart, setCart] = useState(false);
-  const [searchItem, setSearchItem] = useState("");
-  const [selected, setSelected] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("Choose");
+  const [cart, setCart] = useState(false); // set cart
+  const [searchItem, setSearchItem] = useState(""); // set search iteam
+  const [selected, setSelected] = useState(null); 
+  const [selectedCategory, setSelectedCategory] = useState("Choose"); // dropwdown
+  const [selectedProduct, setSelectedProduct] = useState(null); // set cartgory
 
+  // set change from input search
   const handleDropdownChange = (event) => {
     const selectedCategory = event.target.value;
     setSelectedCategory(selectedCategory);
   };
-
+  // hide card
   const showCart = () => {
     setCart(!cart);
   };
-
+  // show detail product
+  const showDetail = (product) => {
+    setSelectedProduct(product);
+  }
+  // set input from input search
   const handleSearch = (e) => {
     setSearchItem(e.target.value.toLowerCase());
   };
@@ -30,24 +35,24 @@ const Shop = () => {
   };
 
   const getProducts = () => {
-    const mapProducts = Data.product.map(
-      (product) => product 
-    );
-
+    // show all
+    const mapProducts = Data.product.map((product) => product);
+    // show of - product-pcp
     const filterProductsPCP = Data.product.filter(
-      (product) => product.title === "product-pcp"
+      (product) => product.category === "product-pcp"
     );
-
+    // show category ->> vitamin
     const filterProductVitamins = Data.product.filter(
-      (product) => product.title === "vitamin"
+      (product) => product.category === "vitamin"
     );
+    // show category ->> skin care
 
     const filterProductSkincare = Data.product.filter(
-      (product) => product.title === "skincare"
+      (product) => product.category === "skincare"
     );
-
+    // show category ->> heathcondition
     const filterProductHealthCondition = Data.product.filter(
-      (product) => product.title === "healthcondition"
+      (product) => product.category === "healthcondition"
     );
 
     return {
@@ -59,7 +64,7 @@ const Shop = () => {
     };
   };
 
-  const renderProducts = (products, searchItem, openMedicine) =>
+  const renderProducts = (products, searchItem, openMedicine ,) =>
     products
       .filter((medicine) => medicine.name.toLowerCase().includes(searchItem))
       .map((product) => (
@@ -69,7 +74,12 @@ const Shop = () => {
           onClick={() => openMedicine(product)}
         >
           <div className="product-item">
-            <img className="product-img" src={product.img} alt={product.name} />
+            <img
+              className="product-img"
+              src={product.img}
+              alt={product.name}
+              onClick={() => showDetail(product)}
+            />
             <h3 className="product-item-name">{product.name}</h3>
             <h4 className="product-item-price">{product.price}</h4>
             <button type="button" className="product-button">
@@ -134,6 +144,38 @@ const Shop = () => {
           )}
         {selected && <></>}
       </div>
+
+      {selectedProduct && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={() => setSelectedProduct(null)}>
+              &times;
+            </span>
+            <div className="left-right">
+              <div className="left">
+                <h2>{selectedProduct.name}</h2>
+                <img
+                  className="selectedProduct-img"
+                  src={selectedProduct.img}
+                  alt={selectedProduct.name}
+                />
+              </div>
+              <div className="right">
+                <p>Công dụng: {selectedProduct.title}</p>
+                <p>Đối tượng sử dụng: {selectedProduct.object}</p>
+                <p>Hình thức: {selectedProduct.formality}</p>
+                <p>Thương hiệu: {selectedProduct.trademark}</p>
+                <p>Nơi sản xuất: {selectedProduct.made}</p>
+                <p>Thành phần: {selectedProduct.ingredient}</p>
+                <p>Chỉ định: {selectedProduct.allocate}</p>
+              </div>
+            </div>
+
+            <p className="product-item-price">Price: {selectedProduct.price}</p>
+          </div>
+        </div>
+      )}
+
       {/* show cart */}
       {cart && (
         <>

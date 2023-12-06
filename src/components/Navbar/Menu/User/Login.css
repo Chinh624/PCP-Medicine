@@ -1,0 +1,50 @@
+.form-login {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #028174;
+    padding: 60px;
+    justify-content: flex-start;
+    gap: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    border-radius: 22pt;
+}
+
+.container-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.form-text{
+    color: white;
+    font-weight: 700;
+}
+  
+
+.button-sign-up,
+.button-log-in {
+    border: none;
+    padding: 10px;
+    border-radius: 30pt;
+}
+
+.login-password,
+.login-account {
+    padding: 7px;
+    border-radius: 26pt;
+    outline: none;
+    border: 0;
+}
+
+.title-login {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
