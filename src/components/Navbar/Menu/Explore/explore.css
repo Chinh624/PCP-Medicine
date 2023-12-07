@@ -54,6 +54,20 @@
     cursor: pointer;
   }
 
+  .medicine-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .medicine-card img {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  
+
+  
 
   
 
