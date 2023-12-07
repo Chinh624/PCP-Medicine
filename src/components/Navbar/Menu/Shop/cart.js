@@ -1,8 +1,14 @@
-import React  from "react";
+import React from "react";
 import "../Shop/shop.css";
-import Data from "../../../../Database/Product.json";
-export default function cart({showCart}) {
-  
+export default function cart({
+  cart,
+  showCarts,
+  updateQuantity,
+  removeCart,
+  dischargeCart
+}) {
+  const totalQuantity = cart.reduce((total, cartItem) => total + cartItem.quantity, 0);
+  const orderTotal = cart.reduce((total, cartItem) => total + cartItem.price * cartItem.quantity, 0);
   return (
     <>
       <div className="cart">
@@ -10,53 +16,65 @@ export default function cart({showCart}) {
           <div className="cart-title">
             <h1>My cart</h1>
           </div>
-          <button className="cart-button-close" onClick={showCart}>
+          <button className="cart-button-close" onClick={showCarts}>
             &#10006;
           </button>
         </div>
         <div className="cart-list-products">
-          {Data.product.map((product2) => (
-            <div className="cart-product" key={product2.id}>
+          {cart.map((cartItem) => (
+            <div className="cart-product" key={cartItem.id}>
               <img
                 className="cart-product-image"
-                src={product2.img}
-                alt={product2.name}
+                src={cartItem.img}
+                alt={cartItem.name}
               />
               <div className="cart-product-container-text">
-                <div className="cart-product-name">{product2.name}</div>
-                <div className="cart-product-quantity">Quantity</div>
-                <div className="cart-product-price">${product2.price}</div>
+                <div className="cart-product-name">{cartItem.name}</div>
+                <div className="cart-product-quantity">{cartItem.category}</div>
+                <div className="cart-product-price">${cartItem.price}</div>
               </div>
               <input
                 type="button"
                 className="cart-product-quantity-up"
                 value={"+"}
-                // onClick={upQuantity}
+                onClick={() => updateQuantity(cartItem.id, cartItem.quantity + 1)}
               ></input>
 
               <input
                 type="number"
                 className="cart-product-show-quantity"
-                value={0}
+                value={cartItem.quantity}
               ></input>
 
               <input
                 type="button"
                 className="cart-product-quantity-down"
                 value={"-"}
-                // onClick={downQuantity}
-              ></input>
+                onClick={() => {
+                  const newQuantity = Math.max(0,cartItem.quantity - 1);
+                  if (newQuantity === 0) {
+                    removeCart(cartItem.id);
+                  } else {
+                    updateQuantity(cartItem.id, newQuantity);
+                  }
+                }}
+                ></input>
 
-              <button className="cart-product-remove">&#10006;</button>
+              <button
+                className="cart-product-remove"
+                onClick={() => removeCart(cartItem.id)}
+              >
+                &#10006;
+              </button>
             </div>
           ))}
         </div>
         <div className="cart-container-payment">
           <div className="cart-container-show-total">
-            <div className="cart-product-total-quantity">Quantity: </div>
-            <div className="cart-product-total">Order Total: $ </div>
+            <div className="cart-product-total-quantity">Quantity: {totalQuantity} </div>
+            <div className="cart-product-total">Order Total: $ {orderTotal.toFixed(2)} </div>
           </div>
-          <button className="cart-product-pay">Discharge</button>
+          <button className="cart-product-pay" onClick={dischargeCart}>Discharge</button>
         </div>
       </div>
     </>

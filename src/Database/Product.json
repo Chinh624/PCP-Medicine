@@ -10,9 +10,9 @@
             "made": "Việt Nam",
             "ingredient": "Acetylcysteine 200mg Tá dược: Đường trắng, Mannitol, Dinatri hydrophosphat khan, Bột mùi dâu, Aspartam, Colloidal anhydrous silica.",
             "allocate": "Thuốc Acetylcystein 200 mg được chỉ định dùng trong các trường hợp sau:  Điều trị các bệnh lý đường hô hấp có đờm nhầy quánh như viêm phế quản cấp và mạn. Dùng làm thuốc tiêu chất nhầy trong bệnh nhầy nhớt (mucoviscidosis) như xơ nang tuyến tụy.",
-            "price": "147.000 VNĐ",
+            "price": "147",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P17315_1_l.webp",
-            "category": "product-pcp"
+            "category": "Product-PCP"
         },
         {
             "id": "2",
@@ -24,9 +24,9 @@
             "made": "Công ty Cổ phần Dược phẩm Khánh Hòa (Việt Nam)",
             "ingredient": "Acetylcystein 200mg",
             "allocate": "Tiêu chất nhầy trong bệnh nhầy nhớt, bệnh lý hô hấp có đờm nhầy quánh như trong viêm phế quản cấp và mạn tính và làm sạch thường quy trong mở khí quản.",
-            "price": "65.000 VNĐ",
+            "price": "65",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P16412_1_l.webp",
-            "category": "product-pcp"
+            "category": "Product-PCP"
         },
         {
             "id": "3",
@@ -38,9 +38,9 @@
             "made": "Việt Nam",
             "ingredient": "Acetylcystein 200mg",
             "allocate": "Dùng trong các chứng bệnh đường hô hấp kèm theo tiết chất nhầy: Bệnh về phổi: Viêm phế quản, viêm khí phế quản, ngăn ngừa các biến chứng hô hấp ở bệnh nhân nhiễm khuẩn,tăng tiết phế quản, khí phế thủng. Bệnh tai mũi họng: Viêm xoang, viêm mũi, viêm họng.",
-            "price": "100.000 VNĐ",
+            "price": "100",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P25186_1-thumbnail-510x510-70.jpg",
-            "category": "product-pcp"
+            "category": "Product-PCP"
         },
         {
             "id": "4",
@@ -52,9 +52,9 @@
             "made": "Việt Nam",
             "ingredient": "Công ty Cổ phần Dược phẩm Boston (Việt Nam)",
             "allocate": "Mỗi gói 1g có chứa: Hoạt chất: Acetylcystein 200mg, Tá dược: Lactose monohydrat, aspartam, acid ascorbic, màu vàng số 6 lake, mùi cam, silicon dioxid.",
-            "price": "55.000 VNĐ",
+            "price": "55",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P17480_1_l-thumbnail-510x510.webp",
-            "category": "product-pcp"
+            "category": "Product-PCP"
         },
         {
             "id": "5",
@@ -66,9 +66,9 @@
             "made": "Công ty Cổ phần Dược phẩm Agimexpharm (Việt Nam)",
             "ingredient": "Mỗi viên nén chứa: Loratadin 10mg; Tá dược vừa đủ 1 viên.",
             "allocate": "Viêm mũi dị ứng. Viêm kết mạc dị ứng. Ngứa và mày đay liên quan đến histamin",
-            "price": "350.000 VNĐ",
+            "price": "350",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P20414_1_l.webp",
-            "category": "product-pcp"
+            "category": "Product-PCP"
         },
         {
             "id": "6",
@@ -80,9 +80,9 @@
             "made": "Việt Nam",
             "ingredient": "Hoạt chất: Vitamin C (Ascorbic acid) 100 mg. Tá dược: Acid citric, Natri citrat, Sucralose, Sorbitol 70%, Natri benzoat, Hương cam, Màu Tartrazin, PEG 6000, Sucrose, Natri metabisulfit, Nước tinh khiết vừa đủ 5 ml.",
             "allocate": "Bổ sung vitamin C. Phòng và điều trị bệnh scorbut.",
-            "price": "114.000 VNĐ",
+            "price": "114",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P12775_1_l.webp",
-            "category": "product-pcp"
+            "category": "Product-PCP"
         },
         {
             "id": "7",
@@ -94,9 +94,9 @@
             "made": "Công ty Cổ phần Dược phẩm An Thiên (Việt Nam)",
             "ingredient": "Arginin hydroclorid 200mg. Tá dược vừa đủ 1 viên(Tinh bột sắn, PVP K30, Magnesi stearat, Talc, Aerosil, Nang số 1)",
             "allocate": "Điều trị duy tri tăng amoniac máu ở bệnh nhân thiếu carbamylphosphat synthetase, thiếu ornithin carbamyl tranferase. Điều trị hỗ trợ các rồi loạn khó tiêu. máu bị citrulin máu, arginosuccinic niệu. Điều trị duy trì cho bệnh nhân tăng amoniac. Điều trị hỗ trợ nhằm cải thiện khả năng luyện tập ở những người bị bệnh tim mạch ổn định. Bổ sung dinh dưỡng cho người bị rối loạn chu trình ure như tăng amoniac máu tuýp I và II, tăng citrulin máu, arginosuccinic niệu và thiếu men N-acetyl glutamate synthetase.",
-            "price": "60.000 VNĐ",
+            "price": "60",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P20074_1_l.webp",
-            "category": "product-pcp"
+            "category": "Product-PCP"
         },
         {
             "id": "8",
@@ -108,9 +108,9 @@
             "made": "Công ty cổ phần Dược - Trang thiết bị y tế Bình Định (Việt Nam)",
             "ingredient": "Mỗi viên nang mềm chứa: Cao khô Actiso (Extractum Folium Cynarae scolymi) 100mg(tương ứng 2,5g lá Actiso). Cao khô Rau đắng đất (Extractum Glini oppositifolii siccum) 75mg (tuongtmg 0,525g Rau dang dat). Cao khô hạt Bìm bìm biếc (Extractum Semen Pharbitidis ) 5,245mg(tương ứng 75mg bột hạt Bìm bìm biếc). Tá dược vừa đủ 1 viên(Tá dược: Lecithin, Magnesi stearat, Aerosil, dầu đậu nành tinh luyện, Gelatin, Glycerin, Nâu oxyd sắt, Đen oxyd sắt, Nipagin(0,249 mg), Nipazol (0,073 mg), Vanilin, Nước tỉnh khiết)",
             "allocate": "Dùng cho những người thiểu năng gan, viêm gan gây mệt mỏi, khó tiêu, vàng da, mụn nhọt lở ngứa, bí đại tiểu tiện, táo bón. Giải độc, chống dị ứng. Đặc biệt người suy giảm chức năng gan do dùng nhiều bia rượu. Hỗ trợ xơ vữa động mạch, mỡ trong máu cao.",
-            "price": "109.000 VNĐ",
+            "price": "109",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P14649_1_l.webp",
-            "category": "product-pcp"
+            "category": "Product-PCP"
         },
         {
             "id": "9",
@@ -122,9 +122,9 @@
             "made": "Công ty Cổ phần Traphaco (Việt Nam)",
             "ingredient": "Cao đặc lá chè dây 7:1 625mg. Tá dược: colloidal silicon dioxid, Magnesi stearat, Talc vừa đủ",
             "allocate": "- Điều trị viêm loét dạ dày, hành tá tràng do tăng tiết acid dịch vị. Dự phòng tái phát viêm loét dạ dày tá tràng do tăng tiết acid dịch vị và do Helicobacter pylori. Phối hợp với kháng sinh theo phác đồ điều trị được dùng trong các trường hợp viêm loét dạ dày - tá tràng có liên quan tới Helicobacter pylori.",
-            "price": "117.000 VNĐ",
+            "price": "117",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P03923_1_l.webp",
-            "category": "healthcondition"
+            "category": "HealthCondition"
         },
         {
             "id": "10",
@@ -136,9 +136,9 @@
             "made": "Việt Nam",
             "ingredient": "Triamcinolone acetonide  0,005 g. Tá dược  vừa đủ 5 g (Carboxymethylcellulose sodium, Polysorbate 80, Glycerin, Propylene glycol, Methyl hydroxybenzoate, Propyl hydroxybenzoate, màu xanh Indigo carmin, màu vàng Tartrazin, nước tinh khiết)",
             "allocate": "Dùng ngoài: các bệnh ngoài da đáp ứng với steroid. Các chứng viêm đau ở miệng, lợi và môi.",
-            "price": "10.000 VNĐ",
+            "price": "10",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P19886_1_l.webp",
-            "category": "healthcondition"
+            "category": "HealthCondition"
         },
         {
             "id": "11",
@@ -150,9 +150,9 @@
             "made": "Công ty cổ phần dược phẩm An Thiên (Việt Nam)",
             "ingredient": "Công thức (cho một gói):Magnesi hydroxyd 800mg, Nhôm hydroxyd 800mg(Dưới dạng nhôm hydroxyd gel khô) 1000mg, Simethicon 100mg(Dưới dạng simethicon nhũ dịch30%) 333.33mg(Cremophor RH40, HPMC 615, PVP K30, PEG 6000, Aerosil, Sucralose, Sorbitol 70%, Glycerin, Methyl paraben, Propyl paraben, Propylen glycol, Hương dâu, Nước tinh khiết)            ",
             "allocate": "Làm dịu các triệu chứng do tăng acid dạ dày (chứng ợ nóng, ợ chua, đầy bụng khó tiêu do tăng acid). Điều trị triệu chứng trào ngược dạ dày - thực quản.",
-            "price": "69.000 VNĐ",
+            "price": "69",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P14774_1_l.webp",
-            "category": "healthcondition"
+            "category": "HealthCondition"
         },
         {
             "id": "12",
@@ -164,9 +164,9 @@
             "made": " Công ty TNHH Mega Lifesciences (Australia)",
             "ingredient": " Hoạt chất: Simethicone 300mg, Alverine citrate 60mg. Tá dược: Silicon dioxide, Gelatin, Glycerin, nước tinh khiết, oxyd sắt vàng, xanh Briliant, oxyd sắt đen, titanium dioxide.",
             "allocate": "Điều trị triệu chứng rối loạn tiêu hóa như hội chứng ruột kích thích và những triệu chứng khó chịu ở bụng (đầy hơi, trướng bụng, cảm giác khó tiêu, bị đè ép và căng, đau ở vùng thượng vị).",
-            "price": "120.000 VNĐ",
+            "price": "120",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P12954_1.JPG",
-            "category": "healthcondition"
+            "category": "HealthCondition"
         },
         {
             "id": "13",
@@ -178,9 +178,9 @@
             "made": " Thái Lan",
             "ingredient": "Aqua, Sodium Lauroyl Sarcosinate, Myristic Acid, Disodium Laureth Sulfosuccinate, Glycerin, PEG-7 Glyceryl Cocoate, Cocamidopropyl Betaine, Sulfated Olive Oil, Glycol Distearate, Paraffinum Liquidum, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Disodium EDTA, Imidazolidinyl Urea, Parfum, Sorbitan Oleate, Sodium Hydroxide",
             "allocate": "Lắc kỹ trước khi dùng. Mát xa một lượng sữa rửa mặt lên da ướt, rửa sạch.",
-            "price": "175.000 VNĐ",
+            "price": "175",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P22986_1.jpg",
-            "category": "skincare"
+            "category": "SkinCare"
         },
         {
             "id": "14",
@@ -192,9 +192,9 @@
             "made": "Hàn Quốc",
             "ingredient": "Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Polysorbate 20, Styrax Japonicus Branch/Fruit/Leaf Extract, Butylene Glycol, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract. Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Allantoin, Caprylyl Glycol, Ethylhexylglycerin, Betaine Salicylate, Citric Acid, Ethyl Hexanediol, 1,2-Hexanediol, Trisodium Ethylenediamine Disuccinate, Sodium Benzoate, Disodium EDTA",
             "allocate": "Nên dùng kem chống nắng có SPF 30 trở lên.",
-            "price": "339.000 VNĐ",
+            "price": "339",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P23372_1.jpg",
-            "category": "skincare"
+            "category": "SkinCare"
         },
         {
             "id": "15",
@@ -206,9 +206,9 @@
             "made": " Balan",
             "ingredient": "Aqua (Water), Sodium Laureth Sulfate, Acrylates Copolymer, Propylene Glycol, Cocamidopropyl Betaine, Peat Extract,...",
             "allocate": "Tránh vùng da quanh mắt. Trường hợp tiếp xúc với mắt rửa mắt ngay bằng nước sạch nhiều lần. Không dùng cho trẻ dưới 3 tuổi.",
-            "price": "338.000 VNĐ",
+            "price": "338",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P25815_1new.jpg",
-            "category": "skincare"
+            "category": "SkinCare"
         },
         {
             "id": "16",
@@ -220,9 +220,9 @@
             "made": "Doanh nghiệp tư nhân sản xuất hóa mỹ phẩm GAMMA",
             "ingredient": "Water, Propylene Glycol, Cetearyl Alcohol, Sodium Lauryl Sulfate, Potassium Sorbate.",
             "allocate": "Sản phẩm dùng ngoài da, tránh xa tầm tay trẻ em",
-            "price": "40.000 VNĐ",
+            "price": "40",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P24238_1.jpg",
-            "category": "skincare"
+            "category": "SkinCare"
         },
         {
             "id": "17",
@@ -234,9 +234,9 @@
             "made": " G Production Inc. (Canada)",
             "ingredient": "Aqua, Glycerin, Cetearyl Alcohol, Panthenol, Niacinamide, Pantolactone, Xanthan Gum, Sodium Cocoyl Isethionate, Sodium Benzoate, Citric Acid. FIL.1747.V00",
             "allocate": "Hướng dẫn rửa mặt khô: Lấy một lượng vừa đủ sữa rửa mặt thoa lên da và xoa nhẹ nhàng. Làm sạch phần sữa rửa mặt thừa bằng khăn mềm, để lại trên da cảm giác sạch nhẹ nhàng mà vẫn mịn màng. Hướng dẫn rửa mặt với nước: Thoa đều sữa rửa mặt lên da và massage nhẹ nhàng. Sau đó rửa sạch lại với nước.",
-            "price": "276.000 VNĐ",
+            "price": "276",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P22162_4.jpg",
-            "category": "skincare"
+            "category": "SkinCare"
         },
         {
             "id": "18",
@@ -248,9 +248,9 @@
             "made": " Mỹ",
             "ingredient": "Melatonin 3 mg, Bạch quả 50 mg, L-Tryptophan 250 mg, L-Theanine 100 mg, Magnesi (magnesi oxide) 100 mg, Vitamin B3 (Niaciamide) 16 mg, Vitamin B5 (d-calcium pantothenate) 5 mg, Vitamin B6 (pyridoxine hydrochloride) 1,7 mg, Vitamin B2 (Riboflavin) 1,3 mg, Vitamin B1 (Thiamine Mononitrate) 1,2 mg, Folate (Vitamin B9) 334 mcg DFE (200 mcg folic acid), Biotin (Vitamin B7) 30 mcg, Vitamin B12 (Cyanocobalamin) 2,4 mcg.",
             "allocate": "Người lớn uống 1 viên trước khi đi ngủ 30 phút hoặc theo hướng dẫn của chuyên gia y tế",
-            "price": "335.000 VNĐ",
+            "price": "335",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26040_1.jpg",
-            "category": "healthcondition"
+            "category": "HealthCondition"
         },
         {
             "id": "19",
@@ -262,9 +262,9 @@
             "made": " MỸ",
             "ingredient": "Trong 1 viên nang cứng 663,27 mg chứa: Ma giê (dạng ma giê ô xít) (180mg), Chiết xuất Bạch quả (110mg) (1:50) (tương đương 5,500mg tươi), Vitamin B6",
             "allocate": "Người lớn, uống một viên mỗi ngày, tốt nhất là sau bữa ăn hoặc theo chỉ dẫn của bác sĩ",
-            "price": "477.000 VNĐ",
+            "price": "477",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P25175_5.jpg",
-            "category": "healthcondition"
+            "category": "HealthCondition"
         },
         {
             "id": "20",
@@ -276,9 +276,9 @@
             "made": "CÔNG TY TNHH DƯỢC PHẨM TỒN SANH",
             "ingredient": "240 mg Hỗn hợp cao chiết xuất bởi các thảo mộc(Chi tử 510 mg, Hương phụ 560mg, Huyền hồ 396 mg). Bột ô tặc cốt 235mg. Tinh bột nghệ 28mg. Cao khô cam thảo 34mg. Phụ liệu vừa đủ: Natri benzoate, Talc,…",
             "allocate": "Nuốt trọn viên hoặc nhai. Ngày uống 3 lần (trưa, chiều, tối trước khi đi ngủ), mỗi lần 2-3 viên với nước ấm. Có thể sử dụng lượng tăng gấp đôi để tăng hiệu quả.",
-            "price": "188.000 VNĐ ",
+            "price": "188 ",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26038_1.jpg",
-            "category": "healthcondition"
+            "category": "HealthCondition"
         },
         {
             "id": "21",
@@ -290,9 +290,9 @@
             "made": "Việt Nam",
             "ingredient": "100% Nano Curcumin (chứa 20% curcuminoids)",
             "allocate": "Pha với 100 – 200ml nước đun sôi để nguội hoặc nước ấm, hòa tan rồi uống có thể thêm mật ong uống càng tốt. Cũng có thể dùng thêm với sữa chua hoặc các loại nước hoa quả (nước cam, chanh…). Mỗi lần dùng 250 – 500mg, tương ứng 1/2 – 1 thìa đong (có sẵn trong hộp). Ngày dùng 1-2 lần. Tối thiểu dùng trong 12 tuần. Lâu khô thìa nước và sau khi sử dụng. Nên uống trước khi ăn 30 phút hoặc sau khi ăn 1h để đạt được kết quả tốt nhất.",
-            "price": "406.000 VNĐ",
+            "price": "406",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P20998_2.jpg",
-            "category": "healthcondition"
+            "category": "HealthCondition"
         },
         {
             "id": "22",
@@ -304,9 +304,9 @@
             "made": "Công ty Cổ phần Dược Phẩm công nghệ cao Abipha",
             "ingredient": "Đẳng sâm, Bạch truật, Lá khôi, Mạch nha, Mộc hương bắc, Hương phụ, Cam thảo bắc, Ô tặc cốt, Hoài sơn.",
             "allocate": "Không dùng cho phụ nữ có thai hoặc cho con bú và người mẫn cảm với bất kỳ thành phần nào của sản phẩm.",
-            "price": "117.000 VNĐ",
+            "price": "117",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P22791_1_l.webp",
-            "category": "healthcondition"
+            "category": "HealthCondition"
         },
         {
             "id": "23",
@@ -318,7 +318,7 @@
             "made": "CÔNG TY TNHH DƯỢC PHẨM TỒN SANH",
             "ingredient": "240 mg Hỗn hợp cao chiết xuất bởi các thảo mộc(Chi tử 510 mg, Hương phụ 560mg, Huyền hồ 396 mg). Bột ô tặc cốt 235mg. Tinh bột nghệ 28mg. Cao khô cam thảo 34mg. Phụ liệu vừa đủ: Natri benzoate, Talc,…",
             "allocate": "Nuốt trọn viên hoặc nhai. Ngày uống 3 lần (trưa, chiều, tối trước khi đi ngủ), mỗi lần 2-3 viên với nước ấm. Có thể sử dụng lượng tăng gấp đôi để tăng hiệu quả.",
-            "price": "188.000 VNĐ ",
+            "price": "188 ",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26038_1.jpg",
             "category": "vitamin"
         },
@@ -333,7 +333,7 @@
             "made": "CÔNG TY TNHH DƯỢC PHẨM TỒN SANH",
             "ingredient": "",
             "allocate": "Nuốt trọn viên hoặc nhai. Ngày uống 3 lần (trưa, chiều, tối trước khi đi ngủ), mỗi lần 2-3 viên với nước ấm. Có thể sử dụng lượng tăng gấp đôi để tăng hiệu quả.",
-            "price": "188.000 VNĐ ",
+            "price": "188 ",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26038_1.jpg",
             "category": "vitamin"
         }
