@@ -13,7 +13,19 @@
     z-index: 99999;
     border-radius: 22pt;
 }
+.login-close{
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+}
 
+.container-login-title{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+}
 .container-button {
     display: flex;
     align-items: center;

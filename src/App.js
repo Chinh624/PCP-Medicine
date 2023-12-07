@@ -16,6 +16,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Content />} />
+            
             <Route path="/shop" element={<Shop />} />
             <Route path="/event" element={<EventchaEvent/>} />
             <Route path="/aboutus" element={<Aboutus />} />

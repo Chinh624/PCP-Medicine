@@ -1,4 +1,3 @@
-// // Login.js
 import React, { useState } from "react";
 import "./Login.css";
 
@@ -8,21 +7,32 @@ const Login = ({ showLogin }) => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
-
+  const [account, setAccount] = useState([]);
+  const [setPassWordSignUp, setPasswordSignUp] = useState("");
+  const [userNameSignUp, setUserNameSignUp] = useState("");
   // set change from input
-  const handChangeUser = (event) => {
-    const userName = event.target.value;
-    setUserName(userName);
-  };
+  const handleChange = (type, event) => {
+    const value = event.target.value;
 
-  const handChangePassWord = (event) => {
-    const password = event.target.value;
-    setPassword(password);
-  };
-
-  const handleChangeConfirmPassword = (event) => {
-    const confirmPassword = event.target.value;
-    setConfirmPassword(confirmPassword);
+    switch (type) {
+      case "loginUsername":
+        setUserName(value);
+        break;
+      case "loginPassword":
+        setPassword(value);
+        break;
+      case "signUpUsername":
+        setUserNameSignUp(value);
+        break;
+      case "signUpPassword":
+        setPasswordSignUp(value);
+        break;
+      case "confirmPassword":
+        setConfirmPassword(value);
+        break;
+      default:
+        break;
+    }
   };
 
   const goToSignUp = () => {
@@ -35,13 +45,10 @@ const Login = ({ showLogin }) => {
   };
 
   const checkLogin = () => {
-    // let regex = /^[a-z0-9_-]{3,16}$/
-    // //tối thiểu tám ký tự, ít nhất một chữ cái và một số
-    // let checkPass = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
-    if ((userName) === (password) ) {
+    if (userName === password) {
       setUserName("");
       setPassword("");
-    //   setLogin(false)
+      //   setLogin(false)
       alert("Login Successful!");
     } else {
       alert("Invalid username or password");
@@ -52,7 +59,8 @@ const Login = ({ showLogin }) => {
     if (password === confirmPassword) {
       setUserName("");
       setPassword("");
-    //   setSignUp(false);
+      goToLogIn(true);
+      //   setSignUp(false);
       setLogin(true);
       alert("Signup successful!");
     } else {
@@ -62,86 +70,68 @@ const Login = ({ showLogin }) => {
 
   return (
     <>
-      <div className="form-login">
-        <button type="submit" onClick={showLogin}>
-          &#10006;
-        </button>
-        <h1 className="title-login">{isSignUp ? "SignUp" : "Login"}</h1>
+      <div className="form-login" onClick={showLogin}>
+        <div className="container-login-title">
+          <h1 className="title-login">Login</h1>
+        </div>
         <div className="form-text">USERNAME</div>
         <input
           type="text"
           className="login-account"
-          onChange={handChangeUser}
+          onChange={(e) => handleChange("loginUsername", e)}
         ></input>
         <div className="form-text">PASSWORD</div>
         <input
           type="password"
           className="login-password"
-          onChange={handChangePassWord}
+          onChange={(e) => handleChange("loginPassword", e)}
         ></input>
+        <div className="container-button">
+          <button type="submit" className="button-log-in" onClick={checkLogin}>
+            Log In
+          </button>
+          <button type="button" className="button-sign-up" onClick={goToSignUp}>
+            Sign Up
+          </button>
+        </div>
+      </div>
 
-        {isSignUp && (
-          <>
+      {isSignUp && (
+        <>
+          <div className="form-login">
+            <h1 className="title-login">Sign Up</h1>
+            <div className="form-text">USERNAME</div>
+            <input
+              type="text"
+              className="login-account"
+              onChange={(e) => handleChange("signUpUsername", e)}
+            ></input>
+            <div className="form-text">PASSWORD</div>
+            <input
+              type="password"
+              className="login-password"
+              onChange={(e) => handleChange("signUpPassword", e)}
+            ></input>
             <div className="form-text">CONFIRM PASSWORD</div>
             <input
               type="password"
               className="login-password"
-              onChange={handleChangeConfirmPassword}
+              onChange={(e) => handleChange("confirmPassword", e)}
               placeholder="CONFIRM PASSWORD"
             ></input>
-          </>
-        )}
 
-        <div className="container-button">
-          <button
-            type="submit"
-            className="button-log-in"
-            onClick={isSignUp ? checkSignup : checkLogin}
-          >
-            {isSignUp ? "SignUp" : "Login"}
-          </button>
-          <button
-            type="button"
-            className="button-sign-up"
-            onClick={isSignUp ? goToLogIn : goToSignUp}
-          >
-            {isSignUp ? "Back to Login" : "SignUp"}
-          </button>
-        </div>
-      </div>
+            <button
+              type="button"
+              className="button-sign-up"
+              onClick={checkSignup}
+            >
+              Sign Up
+            </button>
+          </div>
+        </>
+      )}
     </>
   );
 };
 
 export default Login;
-
-
-// let nextId = 0;
-
-// function Login() {
-//   const [name, setName] = useState('');
-//   const [artists, setArtists] = useState([]);
-
-//   return (
-//     <>
-//       <h1>Inspiring sculptors:</h1>
-//       <input
-//         value={name}
-//         onChange={e => setName(e.target.value)}
-//       />
-//       <button onClick={() => {
-//         setArtists([
-//           ...artists,
-//           { id: nextId++, name: name }
-//         ]);
-//       }}>Add</button>
-//       <ul>
-//         {artists.map(artist => (
-//           <li key={artist.id}>{artist.name}</li>
-//         ))}
-//       </ul>
-//     </>
-//   );
-// }
-
-// export default Login;

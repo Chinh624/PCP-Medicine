@@ -1,41 +1,8 @@
-import React from "react";
+import React  from "react";
 import "../Shop/shop.css";
-export default function cart({ showCart }) {
-  const product2 = [
-    {
-      img: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
-      name: "Acetylcystein 200 Imexpharm ",
-      price: 12.0,
-    },
-
-    {
-      img: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
-      name: "Acetylcystein Acetylcystein 200 Imexpharm",
-      price: 12.0,
-    },
-
-    {
-      img: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
-      name: "Name",
-      price: 12.0,
-    },
-
-    {
-      img: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
-      name: "Name",
-      price: 12.0,
-    },
-    {
-      img: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
-      name: "Name",
-      price: 12.0,
-    },
-    {
-      img: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
-      name: "Name",
-      price: 12.0,
-    },
-  ];
+import Data from "../../../../Database/Product.json";
+export default function cart({showCart}) {
+  
   return (
     <>
       <div className="cart">
@@ -48,7 +15,7 @@ export default function cart({ showCart }) {
           </button>
         </div>
         <div className="cart-list-products">
-          {product2.map((product2) => (
+          {Data.product.map((product2) => (
             <div className="cart-product" key={product2.id}>
               <img
                 className="cart-product-image"
@@ -64,6 +31,7 @@ export default function cart({ showCart }) {
                 type="button"
                 className="cart-product-quantity-up"
                 value={"+"}
+                // onClick={upQuantity}
               ></input>
 
               <input
@@ -76,6 +44,7 @@ export default function cart({ showCart }) {
                 type="button"
                 className="cart-product-quantity-down"
                 value={"-"}
+                // onClick={downQuantity}
               ></input>
 
               <button className="cart-product-remove">&#10006;</button>

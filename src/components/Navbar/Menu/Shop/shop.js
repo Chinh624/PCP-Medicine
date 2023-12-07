@@ -8,10 +8,10 @@ import Data from "../../../../Database/Product.json";
 const Shop = () => {
   const [cart, setCart] = useState(false); // set cart
   const [searchItem, setSearchItem] = useState(""); // set search iteam
-  const [selected, setSelected] = useState(null); 
+  const [selected, setSelected] = useState(null); // set detail
   const [selectedCategory, setSelectedCategory] = useState("Choose"); // dropwdown
   const [selectedProduct, setSelectedProduct] = useState(null); // set cartgory
-
+  
   // set change from input search
   const handleDropdownChange = (event) => {
     const selectedCategory = event.target.value;
@@ -64,9 +64,8 @@ const Shop = () => {
     };
   };
 
-  const renderProducts = (products, searchItem, openMedicine ) =>
-    products
-      .filter((medicine) => medicine.name.toLowerCase().includes(searchItem.toLowerCase()))
+  const renderProducts = (products, searchItem, openMedicine ) => 
+  products.filter((medicine) => medicine.name.toLowerCase().includes(searchItem.toLowerCase()))
       .map((product) => (
         <div
           className="product"
@@ -150,14 +149,10 @@ const Shop = () => {
       </div>
 
       {selectedProduct && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={() => setSelectedProduct(null)}>
-              &times;
-            </span>
+          <div className="modal">
             <div className="left-right">
               <div className="left">
-                <h2>{selectedProduct.name}</h2>
+                <>{selectedProduct.name}</>
                 <img
                   className="selectedProduct-img"
                   src={selectedProduct.img}
@@ -165,25 +160,26 @@ const Shop = () => {
                 />
               </div>
               <div className="right">
-                <p>Uses: {selectedProduct.title}</p>
-                <p>Subjects of use: {selectedProduct.object}</p>
-                <p>Form: {selectedProduct.formality}</p>
-                <p>Trademark: {selectedProduct.trademark}</p>
-                <p>Where production: {selectedProduct.made}</p>
-                <p>Ingredient {selectedProduct.ingredient}</p>
-                <p>Nominate: {selectedProduct.allocate}</p>
+                <p><b>Uses:</b> {selectedProduct.title}</p>
+                <p><b>Subjects of use: </b>{selectedProduct.object}</p>
+                <p><b>Form: </b>{selectedProduct.formality}</p>
+                <p><b>Trademark: </b>{selectedProduct.trademark}</p>
+                <p><b>Where production: </b>{selectedProduct.made}</p>
+                <p><b>Ingredient: </b> {selectedProduct.ingredient}</p>
+                <p><b>Nominate: </b>{selectedProduct.allocate}</p>
+                <h1 className="product-item-detail-price">Price: {selectedProduct.price}</h1>
               </div>
+              <span className="close" onClick={() => setSelectedProduct(null)}>
+              &#10006;
+            </span>
             </div>
-
-            <p className="product-item-price">Price: {selectedProduct.price}</p>
           </div>
-        </div>
       )}
 
       {/* show cart */}
       {cart && (
         <>
-          <Cart showCart={showCart} />
+          <Cart showCart = {showCart}/>
         </>
       )}
     </div>
