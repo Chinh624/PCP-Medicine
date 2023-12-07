@@ -70,10 +70,13 @@ const Login = ({ showLogin }) => {
 
   return (
     <>
-      <div className="form-login" onClick={showLogin}>
-        <div className="container-login-title">
-          <h1 className="title-login">Login</h1>
-        </div>
+        <div className="form-login">
+          <button className="cart-button-close" onClick={showLogin}>
+                &#10006;
+          </button>
+          <div className="container-login-title">
+            <h1 className="title-login">Login</h1>
+          </div>
         <div className="form-text">USERNAME</div>
         <input
           type="text"
@@ -94,7 +97,7 @@ const Login = ({ showLogin }) => {
             Sign Up
           </button>
         </div>
-      </div>
+        </div>
 
       {isSignUp && (
         <>

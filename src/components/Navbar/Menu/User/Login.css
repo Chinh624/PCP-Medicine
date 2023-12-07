@@ -21,6 +21,11 @@
     font-size: 40px;
 }
 
+.form-login-container{
+    display: flex;
+    align-items: center;
+}
+
 .container-login-title{
     display: grid;
     align-items: center;
