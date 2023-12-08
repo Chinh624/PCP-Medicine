@@ -5,10 +5,11 @@ export default function cart({
   showCarts,
   updateQuantity,
   removeCart,
-  dischargeCart
+  dischargeCart,
+  orderTotal,
+  totalProduct
 }) {
-  const totalQuantity = cart.reduce((total, cartItem) => total + cartItem.quantity, 0);
-  const orderTotal = cart.reduce((total, cartItem) => total + cartItem.price * cartItem.quantity, 0);
+  
   return (
     <>
       <div className="cart">
@@ -71,8 +72,8 @@ export default function cart({
         </div>
         <div className="cart-container-payment">
           <div className="cart-container-show-total">
-            <div className="cart-product-total-quantity">Quantity: {totalQuantity} </div>
-            <div className="cart-product-total">Order Total: $ {orderTotal.toFixed(2)} </div>
+            <div className="cart-product-total-quantity">Total product quantity: {totalProduct} </div>
+            <div className="cart-product-total">Order total: $ {orderTotal.toFixed(2)} </div>
           </div>
           <button className="cart-product-pay" onClick={dischargeCart}>Discharge</button>
         </div>

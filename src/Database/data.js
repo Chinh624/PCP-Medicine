@@ -162,8 +162,8 @@ const data = {
     },
     {
       number: "5",
-      text: "Event",
-      link: "/event",
+      text: "Events",
+      link: "/events",
     },
   ],
   information: [

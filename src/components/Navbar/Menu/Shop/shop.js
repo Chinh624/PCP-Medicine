@@ -98,6 +98,10 @@ const Shop = () => {
       filterProductHealthCondition,
     };
   };
+  const orderTotal = cart.reduce((total, cartItem) => total + cartItem.price * cartItem.quantity, 0);
+  // const totalQuantity = cart.reduce((total, cartItem) => total + cartItem.quantity, 0);
+
+  const totalProduct = Array.from(new Set(cart.map(cartItem => cartItem.id))).length;
 
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -162,8 +166,13 @@ const Shop = () => {
             ))}
           </select>
         </div>
-        <div className="button-cart" onClick={showCarts}>
-          <img src={drugstore} className="cart-icon"></img>
+        <div className="container-button-cart-show">
+            <div className="button-cart" onClick={showCarts}>
+              <img src={drugstore} className="cart-icon"></img>
+            </div >
+            <div className="total-quantity-product-cart">
+                {totalProduct}
+            </div>
         </div>
       </div>
       <div className="container-item">
@@ -253,6 +262,8 @@ const Shop = () => {
             removeCart={removeCart}
             updateQuantity={updateQuantity}
             dischargeCart={dischargeCart}
+            orderTotal ={orderTotal}
+            totalProduct={totalProduct}
           />
         </>
       )}
