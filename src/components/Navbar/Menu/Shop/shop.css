@@ -22,7 +22,6 @@
 .container-navbar-shop {
     display: grid;
     align-items: center;
-    justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
     grid-template-columns: auto auto auto auto;
@@ -111,6 +110,7 @@
     width: 20px;
     border: none;
     font-weight: 700;
+    font-size: 20px;
 }
 
 .cart-product-price {

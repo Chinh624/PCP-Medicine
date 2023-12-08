@@ -152,16 +152,11 @@ const data = {
     },
     {
       number: "3",
-      text: "Our Team",
-      link: "/ourteam",
-    },
-    {
-      number: "4",
       text: "About Us",
       link: "/aboutus",
     },
     {
-      number: "5",
+      number: "4",
       text: "Events",
       link: "/events",
     },

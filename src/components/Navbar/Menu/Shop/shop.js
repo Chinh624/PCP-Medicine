@@ -14,13 +14,13 @@ const Shop = () => {
   const [cart, setCart] = useState([]); // set cart create array
 
   const addToCart = (product) => {
-    const existingProductIndex = cart.findIndex((item) => item.id === product.id);
-    if (existingProductIndex !== -1) {
+    const ProductIndex = cart.findIndex((item) => item.id === product.id);
+    if (ProductIndex !== -1) {
       const updatedCart = [...cart];
-      updatedCart[existingProductIndex].quantity += 1;
+      updatedCart[ProductIndex].quantity += 1;
       setCart(updatedCart);
     } else {
-      setCart((prevCart) => [...prevCart, { ...product, quantity: 1 }]);
+      setCart((beforeCart) => [...beforeCart, { ...product, quantity: 1 }]);
     }
   };
 

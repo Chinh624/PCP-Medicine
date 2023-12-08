@@ -4,7 +4,6 @@ import Header from "./components/Header/header";
 import Content from "./components/Content/content";
 import Shop from "./components/Navbar/Menu/Shop/shop";
 import Aboutus from "./components/Navbar/Menu/AboutUs/aboutus";
-import Ourteam from "./components/Navbar/Menu/OurTeam/ourteam";
 import OurTherapies from "./components/Navbar/Menu/OurTherapies/ourtherapies";
 import ExploreMedicine from "./components/Navbar/Menu/Explore/explore";
 import Footer from "./components/Footer/footer";
@@ -19,7 +18,6 @@ function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/events" element={<EventchaEvent/>} />
             <Route path="/aboutus" element={<Aboutus />} />
-            <Route path="/ourteam" element={<Ourteam />} />
             <Route path="/explore" element={<ExploreMedicine />} />
             <Route path="/ourtherapies" element={<OurTherapies />} />
           </Routes>

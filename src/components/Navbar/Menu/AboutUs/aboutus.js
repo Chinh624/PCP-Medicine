@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutus.css"; 
-
+import "../OurTeam/ourteam.css";
+import OurTeam from "../OurTeam/ourteam";
 export default function Aboutus() {
   return (
     <div className="body-aboutus">
@@ -37,6 +38,7 @@ export default function Aboutus() {
         </p>
       </div>
 
+    <OurTeam/>
     </div>
   );
 }
