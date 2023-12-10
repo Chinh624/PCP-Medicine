@@ -322,7 +322,6 @@
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26038_1.jpg",
             "category": "vitamin"
         },
-
         {
             "id": "24",
             "name": "Viên hỗ trợ giảm viêm loét dạ dày",
@@ -337,8 +336,6 @@
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26038_1.jpg",
             "category": "vitamin"
         }
-
-        
     ],
     "dropdown": [
         {

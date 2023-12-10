@@ -1,6 +1,6 @@
 import "../Shop/shop.css";
-import React, {useState} from 'react';
-
+import React from 'react';
+import QR from '../../../../img-icon/QR.jpg'
 function billLing({
   showQuickResponse,
   showPayCash,
@@ -63,7 +63,7 @@ function billLing({
                 </div>
                 <div>
                     <img
-                      src="https://synergy-print.co.uk/wp-content/uploads/2020/07/Synergy_QRcode.png"
+                      src={QR}
                       className="billing-image-qr"
                     />
                   </div>
