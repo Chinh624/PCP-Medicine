@@ -7,7 +7,7 @@ export default function cart({
   removeCart,
   dischargeCart,
   orderTotal,
-  totalProduct
+  totalProduct,
 }) {
   
   return (
@@ -78,6 +78,7 @@ export default function cart({
           <button className="cart-product-pay" onClick={dischargeCart}>Discharge</button>
         </div>
       </div>
+
     </>
   );
 }

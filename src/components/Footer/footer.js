@@ -74,8 +74,8 @@ export default function Footer() {
           <div className="container-footer-input">
             <div className="footer-input-out">
               <input
-                typeof="text"
-                type="text"
+                typeof="email"
+                type="email"
                 className="footer-input"
                 placeholder="Enter your email address"
                 value={inputEmail}

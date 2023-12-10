@@ -1,10 +1,12 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../Shop/shop.css";
 import "../../../Button/buttoncart.css";
 import "../../../Header/header.css";
 import drugstore from "../../../../img-icon/drugstore.png";
 import Cart from "./cart";
 import Data from "../../../../Database/Product.json";
+import Billing from "../Shop/billing";
+
 const Shop = () => {
   const [showCart, setShowCart] = useState(false); // set show
   const [searchItem, setSearchItem] = useState(""); // set search iteam
@@ -12,6 +14,22 @@ const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState("Choose"); // dropwdown
   const [selectedProduct, setSelectedProduct] = useState(null); // set cartgory
   const [cart, setCart] = useState([]); // set cart create array
+  const [payCash, setPayCash] = useState(false); // set show type pay
+  const [payQuickResponse,setPayQuickResponse] = useState(false); // set show type pay
+  const [bilLing, setShowBilling] = useState(false); // set show tbilling
+
+  const showPayCash = () =>{
+      setPayCash(true);
+      setPayQuickResponse(false)
+      };
+
+  const showBilling = () =>{
+      setShowBilling(!bilLing);
+  };
+  const showQuickResponse = () => {
+    setPayQuickResponse(true)
+    setPayCash(false)
+  };
 
   const addToCart = (product) => {
     const ProductIndex = cart.findIndex((item) => item.id === product.id);
@@ -30,12 +48,14 @@ const Shop = () => {
   };
   // () => removeFromCart(cartItem.id)
   const dischargeCart = () => {
-    const confirmed = window.confirm("Are you sure you want to discharge");
-    if (confirmed) {
-      setCart([]);
-      alert("Pay success");
-    }
+      setShowBilling(true);
+      setShowCart(false);
   };
+
+  const placeOrder = () =>{
+      // setCart([])
+      alert("Order Successfully")
+  }
 
 
   const updateQuantity = (productId, newQuantity) => {
@@ -45,8 +65,6 @@ const Shop = () => {
     setCart(updatedCart);
   };
   // () => updateQuantity(cartItem.id, cartItem.quantity + 1)
-
-
 
   const handleDropdownChange = (event) => {
     const selectedCategory = event.target.value;
@@ -74,16 +92,16 @@ const Shop = () => {
     const mapProducts = Data.product.map((product) => product);
     // show of - product-pcp
     const filterProductsPCP = Data.product.filter(
-      (product) => product.category.toLowerCase()  === "product-pcp"
+      (product) => product.category.toLowerCase() === "product-pcp"
     );
     // show category ->> vitamin
     const filterProductVitamins = Data.product.filter(
-      (product) => product.category.toLowerCase()  === "vitamin"
+      (product) => product.category.toLowerCase() === "vitamin"
     );
     // show category ->> skin care
 
     const filterProductSkincare = Data.product.filter(
-      (product) => product.category.toLowerCase()  === "skincare"
+      (product) => product.category.toLowerCase() === "skincare"
     );
     // show category ->> heathcondition
     const filterProductHealthCondition = Data.product.filter(
@@ -98,20 +116,24 @@ const Shop = () => {
       filterProductHealthCondition,
     };
   };
-  const orderTotal = cart.reduce((total, cartItem) => total + cartItem.price * cartItem.quantity, 0);
-  // const totalQuantity = cart.reduce((total, cartItem) => total + cartItem.quantity, 0);
+  const orderTotal = cart.reduce(
+    (total, cartItem) => total + cartItem.price * cartItem.quantity,
+    0
+  );
+  const totalQuantity = cart.reduce((total, cartItem) => total + cartItem.quantity, 0);
 
-  const totalProduct = Array.from(new Set(cart.map(cartItem => cartItem.id))).length;
+  const totalProduct = Array.from(
+    new Set(cart.map((cartItem) => cartItem.id))
+  ).length;
 
   useEffect(() => {
-    const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    const savedCart = JSON.parse(localStorage.getItem("cart"));
     setCart(savedCart);
   }, []);
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
-
 
   const renderProducts = (products, searchItem, openMedicine) =>
     products
@@ -167,12 +189,10 @@ const Shop = () => {
           </select>
         </div>
         <div className="container-button-cart-show">
-            <div className="button-cart" onClick={showCarts}>
-              <img src={drugstore} className="cart-icon"></img>
-            </div >
-            <div className="total-quantity-product-cart">
-                {totalProduct}
-            </div>
+          <div className="button-cart" onClick={showCarts}>
+            <img src={drugstore} className="cart-icon"></img>
+          </div>
+          <div className="total-quantity-product-cart">{totalProduct}</div>
         </div>
       </div>
       <div className="container-item">
@@ -258,13 +278,30 @@ const Shop = () => {
         <>
           <Cart
             showCarts={showCarts}
-            cart ={cart}
+            cart={cart}
             removeCart={removeCart}
             updateQuantity={updateQuantity}
             dischargeCart={dischargeCart}
-            orderTotal ={orderTotal}
+            orderTotal={orderTotal}
             totalProduct={totalProduct}
+            // payCash={payCash}
+            // PayQuickResponse={payQuickResponse}
           />
+        </>
+      )}
+
+      {bilLing && (
+        <>
+        <Billing showQuickResponse= {showQuickResponse}
+        showPayCash={showPayCash}
+        payQuickResponse={payQuickResponse}
+        payCash={payCash}
+        orderTotal={orderTotal}
+        showBilling ={showBilling} 
+        totalProduct={totalProduct}
+        totalQuantity={totalQuantity}
+        placeOrder={placeOrder}
+        />
         </>
       )}
     </div>

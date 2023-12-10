@@ -271,7 +271,12 @@ input::-webkit-inner-spin-button {
 h4 {
     margin: 0px 10px 10px 10px;
 }
-
+.container-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
 .product-button {
     background-color: #4CAF50;
     /* Màu xanh */
@@ -382,6 +387,7 @@ nav {
 }
 
 
+
 .p-price {
     font-style: italic;
     text-align: center;
@@ -462,4 +468,214 @@ nav {
 
 .right::-webkit-scrollbar{
     width: 0;
+}
+
+input[type="text" i],input[type="tel" i]{
+    outline: none;
+    border-radius: 22pt;
+    border: none;
+    padding: 10px 10px;
+    color: #028174;
+    font-weight: 700;
+    width: 270px;
+}
+.billing-text-email{
+    outline: none;
+    border-radius: 22pt;
+    border: none;
+    padding: 10px 10px;
+    color: #028174;
+    font-weight: 700;
+    width: 270px;
+}
+
+.billing-payQuickResponse{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+}
+.billing-payCash{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contaner-billing-qr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.billing{
+    background-color: #028174;
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 22pt;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0px 0px 20px 0px hsl(0, 0%, 100%)
+}
+
+.billing-container-payQuickResponse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-radio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 300px;
+    gap: 20px;
+}
+
+.billing-type-payment{
+    color: #028174;
+    background-color: #028174;
+}
+
+
+
+  :root {
+    --form-control-color: #028174;
+  }
+
+
+label{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.billing-method-text{
+    font-size: 16px;
+}
+.billing-method-text-input{
+    font-size: 15px;
+}
+
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+  }
+  
+  .form-control + .form-control {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    /* border: 0.15em solid currentColor; */
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  }
+
+  input[type="radio"] {
+    /* ...existing styles */
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
+  input[type="radio"]::before {
+    /* ...existing styles */
+  
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+  }
+
+.billing-button-submit{
+    font-weight: 700;
+    border: none;
+    margin-left: 10px;
+    padding: 15px 30px;
+    color: #028174;
+    border-radius: 22pt;
+    font-size: 25px;
+}
+
+.container-billing{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    z-index: 99999;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+
+}
+
+.billing-image-qr{
+    width: 160px;
+}
+
+.billing-title{
+    font-weight: 700;
+}
+
+input[type="file" i]{
+    display: inline-block;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.contaner-billing-cash{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

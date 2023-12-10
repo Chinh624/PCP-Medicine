@@ -8,11 +8,13 @@ import OurTherapies from "./components/Navbar/Menu/OurTherapies/ourtherapies";
 import ExploreMedicine from "./components/Navbar/Menu/Explore/explore";
 import Footer from "./components/Footer/footer";
 import EventchaEvent from "./components/Navbar/Menu/Event/eventchaevent";
+// import Billing from "./components/Navbar/Menu/Shop/billing";
 function App() {
   return (
     <>
         <div>
           <Header />
+          {/* <Billing/> */}
           <Routes>
             <Route path="/" element={<Content />} />
             <Route path="/shop" element={<Shop />} />

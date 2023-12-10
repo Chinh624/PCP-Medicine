@@ -79,7 +79,7 @@ const Login = ({ showLogin }) => {
           </div>
         <div className="form-text">USERNAME</div>
         <input
-          type="text"
+          type="value"
           className="login-account"
           onChange={(e) => handleChange("loginUsername", e)}
         ></input>
