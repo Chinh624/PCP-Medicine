@@ -471,7 +471,7 @@ nav {
     width: 0;
 }
 
-input[type="text" i],input[type="tel" i]{
+input[type="text" i]{
     outline: none;
     border-radius: 22pt;
     border: none;
@@ -480,6 +480,28 @@ input[type="text" i],input[type="tel" i]{
     font-weight: 700;
     width: 270px;
 }
+
+input[type="tel" i]{
+    outline: none;
+    border-radius: 22pt;
+    border: none;
+    color: #028174;
+    font-weight: 700;
+
+
+}
+
+.billing-input-tel{
+    width: 270px;
+    background-color: white;
+    outline: none;
+    border-radius: 22pt;
+    border: none;
+    padding: 10px 10px;
+    color: #028174;
+    font-weight: 700;
+}
+
 .billing-text-email{
     outline: none;
     border-radius: 22pt;

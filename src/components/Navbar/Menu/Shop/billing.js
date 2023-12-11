@@ -1,7 +1,10 @@
 import "../Shop/shop.css";
-import React from 'react';
-import QR from '../../../../img-icon/QR.jpg'
-function billLing({
+import React, { useState, useEffect } from "react";
+import QR from "../../../../img-icon/QR.jpg";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+
+function BillLing({
   showQuickResponse,
   showPayCash,
   payQuickResponse,
@@ -9,15 +12,45 @@ function billLing({
   orderTotal,
   showBilling,
   totalQuantity,
-  placeOrder
-
 }) {
+  const [name, setFullName] = useState("");
+  const [tel, setTel] = useState("");
+  const [email, setEmail] = useState("");
 
-  // const [name,setFullName] = useState("");
-  // const [tel,setTel] = useState("");
-  // const [email,setEmail] = useState("");
+  const placeOrder = () => {
+    if (email.toLocaleLowerCase() && email.includes("@") && !isNaN(tel) && name.toLocaleLowerCase() &&  totalQuantity > 1) {
+      alert("Order Successfully.");
+    } else {
+      alert("Please Enter Full Information.");
+    }
+  };
 
+  const handleChangeName = (e) => {
+    const inputName = e.target.value;
+    setFullName(inputName);
+  };
 
+  const handleChangeTel = (value) => {
+    setTel(value);
+  };
+
+  const handleChangeEmail = (e) => {
+    const inputEmail = e.target.value;
+    setEmail(inputEmail);
+  };
+
+  useEffect(() => {
+    // create object
+    const userInformation = {
+      name: name,
+      tel: tel,
+      email: email,
+      totalQuantity: totalQuantity,
+    };
+  
+    localStorage.setItem("Information-Person-Buy", JSON.stringify(userInformation));
+  }, [name, tel, email, totalQuantity]);
+    // set form array have element
 
   return (
     <>
@@ -27,19 +60,15 @@ function billLing({
         </button>
         <form className="billing">
           <div className="container-radio">
-          <div className="billing-title">Payment Methods</div>
-          <label class="form-control">
-            <input type="radio" name="radio" onClick={showPayCash}/>
-            <div className="billing-method-text">
-              Cash on Delivery
-            </div>
-          </label>
-          <label class="form-control">
-            <input type="radio" name="radio" onClick={showQuickResponse} />
-            <div className="billing-method-text">
-              QR Payment
-            </div>
-          </label>
+            <div className="billing-title">Payment Methods</div>
+            <label className="form-control">
+              <input type="radio" name="radio" onClick={showPayCash} />
+              <div className="billing-method-text">Cash on Delivery</div>
+            </label>
+            <label className="form-control">
+              <input type="radio" name="radio" onClick={showQuickResponse} />
+              <div className="billing-method-text">QR Payment</div>
+            </label>
           </div>
           {payQuickResponse && (
             <>
@@ -47,29 +76,50 @@ function billLing({
                 <div className="contaner-billing-qr">
                   <form className="billing-payQuickResponse">
                     <span className="billing-method-text-input">Full Name</span>
-                    <input type="text" placeholder="Full Name"/>
+                    <input
+                      type="text"
+                      placeholder="Full Name"
+                      onChange={handleChangeName}
+                    />
                     <span className="billing-method-text-input">
                       Telephone Number
                     </span>
-                    <input type="tel" placeholder="Input telephone Number" />
+                    <div className="billing-input-tel">
+                      <PhoneInput
+                        international
+                        countryCallingCodeEditable={false}
+                        defaultCountry="VN"
+                        placeholder="Enter telephone Number"
+                        value={tel}
+                        onChange={handleChangeTel}
+                      />
+                    </div>
                     <span className="billing-method-text-input">Email</span>
-                    <input type="text" placeholder="Enter Email" className="billing-text-email"/>
-                    <div className="cart-product-total-billing quantity">Total quantity: {totalQuantity} </div>
+                    <input
+                      type="text"
+                      placeholder="Enter Email"
+                      className="billing-text-email"
+                      onChange={handleChangeEmail}
+                    />
+                    <div className="cart-product-total-billing quantity">
+                      Total quantity: {totalQuantity}
+                    </div>
 
                     <div className="cart-product-total-billing">
-                    Total Payment: $ {orderTotal.toFixed(2)}
+                      Total Payment: $ {orderTotal.toFixed(2)}
                     </div>
                   </form>
                 </div>
                 <div>
-                    <img
-                      src={QR}
-                      className="billing-image-qr"
-                    />
-                  </div>
+                  <img src={QR} className="billing-image-qr" alt="QR Code" />
+                </div>
                 <div className="container-button">
-                  <button type="submit" className="billing-button-submit">
-                  Place Order
+                  <button
+                    type="button"
+                    className="billing-button-submit"
+                    onClick={placeOrder}
+                  >
+                    Place Order
                   </button>
                 </div>
               </form>
@@ -81,25 +131,49 @@ function billLing({
               <div className="contaner-billing-cash">
                 <form className="billing-payCash">
                   <span className="billing-method-text-input">Full Name</span>
-                  <input type="text" placeholder="Full Name" />
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    onChange={handleChangeName}
+                  />
                   <span className="billing-method-text-input">
                     Telephone Number
                   </span>
-                  <input type="tel" placeholder="Input telephone Number" />
+                  <div className="billing-input-tel">
+                    <PhoneInput
+                      international
+                      countryCallingCodeEditable={false}
+                      defaultCountry="VN"
+                      placeholder="Enter telephone Number"
+                      value={tel}
+                      onChange={handleChangeTel}
+                    />
+                  </div>
                   <span className="billing-method-text-input">Email</span>
-                  <input type="Email" placeholder="Enter Email" className="billing-text-email" />
-                  <div className="cart-product-total-billing quantity" >Total quantity: {totalQuantity} </div>
+                  <input
+                    type="email"
+                    placeholder="Enter Email"
+                    className="billing-text-email"
+                    onChange={handleChangeEmail}
+                  />
+                  <div className="cart-product-total-billing quantity">
+                    Total quantity: {totalQuantity}
+                  </div>
 
                   <div className="cart-product-total-billing">
-                  Total Payment: $ {orderTotal.toFixed(2)}
+                    Total Payment: $ {orderTotal.toFixed(2)}
                   </div>
                 </form>
               </div>
               <div className="container-button">
-                    <button type="submit" className="billing-button-submit" onClick={placeOrder}>
-                      Place Order
-                    </button>
-                  </div>
+                <button
+                  type="button"
+                  className="billing-button-submit"
+                  onClick={placeOrder}
+                >
+                  Place Order
+                </button>
+              </div>
             </>
           )}
         </form>
@@ -108,4 +182,4 @@ function billLing({
   );
 }
 
-export default billLing;
+export default BillLing;

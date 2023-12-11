@@ -15,22 +15,24 @@ const Shop = () => {
   const [selectedProduct, setSelectedProduct] = useState(null); // set cartgory
   const [cart, setCart] = useState([]); // set cart create array
   const [payCash, setPayCash] = useState(false); // set show type pay
-  const [payQuickResponse,setPayQuickResponse] = useState(false); // set show type pay
+  const [payQuickResponse, setPayQuickResponse] = useState(false); // set show type pay
   const [bilLing, setShowBilling] = useState(false); // set show tbilling
 
-  const showPayCash = () =>{
-      setPayCash(true);
-      setPayQuickResponse(false)
-      };
-
-  const showBilling = () =>{
-      setShowBilling(!bilLing);
+  // set show paycash
+  const showPayCash = () => {
+    setPayCash(true);
+    setPayQuickResponse(false);
   };
+  // set show billing
+  const showBilling = () => {
+    setShowBilling(!bilLing);
+  };
+  // set show payment qr
   const showQuickResponse = () => {
-    setPayQuickResponse(true)
-    setPayCash(false)
+    setPayQuickResponse(true);
+    setPayCash(false);
   };
-
+  // add to cart
   const addToCart = (product) => {
     const ProductIndex = cart.findIndex((item) => item.id === product.id);
     if (ProductIndex !== -1) {
@@ -41,23 +43,18 @@ const Shop = () => {
       setCart((beforeCart) => [...beforeCart, { ...product, quantity: 1 }]);
     }
   };
-
+  // delete cart 
   const removeCart = (productId) => {
     const updatedCart = cart.filter((item) => item.id !== productId);
     setCart(updatedCart);
   };
   // () => removeFromCart(cartItem.id)
+  // set show dischanrge
   const dischargeCart = () => {
-      setShowBilling(true);
-      setShowCart(false);
+    setShowBilling(true);
+    setShowCart(false);
   };
-
-  const placeOrder = () =>{
-      // setCart([])
-      alert("Order Successfully")
-  }
-
-
+  // set quantity when + - 
   const updateQuantity = (productId, newQuantity) => {
     const updatedCart = cart.map((item) =>
       item.id === productId ? { ...item, quantity: newQuantity } : item
@@ -65,7 +62,7 @@ const Shop = () => {
     setCart(updatedCart);
   };
   // () => updateQuantity(cartItem.id, cartItem.quantity + 1)
-
+  // set detail
   const handleDropdownChange = (event) => {
     const selectedCategory = event.target.value;
     setSelectedCategory(selectedCategory);
@@ -83,10 +80,11 @@ const Shop = () => {
     setSearchItem(e.target.value.toLowerCase());
   };
 
+  // set search 
   const openMedicine = (medicine) => {
     setSelected(medicine);
   };
-
+  // set category
   const getProducts = () => {
     // show all
     const mapProducts = Data.product.map((product) => product);
@@ -116,25 +114,25 @@ const Shop = () => {
       filterProductHealthCondition,
     };
   };
+    // total order
   const orderTotal = cart.reduce(
     (total, cartItem) => total + cartItem.price * cartItem.quantity,
     0
   );
-  const totalQuantity = cart.reduce((total, cartItem) => total + cartItem.quantity, 0);
-
+    // total quantity
+  const totalQuantity = cart.reduce(
+    (total, cartItem) => total + cartItem.quantity,
+    0
+  );
+    // total product quantity
   const totalProduct = Array.from(
     new Set(cart.map((cartItem) => cartItem.id))
   ).length;
-
+  // save cart form localstorage
   useEffect(() => {
-    const savedCart = JSON.parse(localStorage.getItem("cart"));
-    setCart(savedCart);
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("Cart", JSON.stringify(cart));
   }, [cart]);
-
+  
   const renderProducts = (products, searchItem, openMedicine) =>
     products
       .filter((medicine) =>
@@ -292,16 +290,16 @@ const Shop = () => {
 
       {bilLing && (
         <>
-        <Billing showQuickResponse= {showQuickResponse}
-        showPayCash={showPayCash}
-        payQuickResponse={payQuickResponse}
-        payCash={payCash}
-        orderTotal={orderTotal}
-        showBilling ={showBilling} 
-        totalProduct={totalProduct}
-        totalQuantity={totalQuantity}
-        placeOrder={placeOrder}
-        />
+          <Billing
+            showQuickResponse={showQuickResponse}
+            showPayCash={showPayCash}
+            payQuickResponse={payQuickResponse}
+            payCash={payCash}
+            orderTotal={orderTotal}
+            showBilling={showBilling}
+            totalProduct={totalProduct}
+            totalQuantity={totalQuantity}
+          />
         </>
       )}
     </div>
