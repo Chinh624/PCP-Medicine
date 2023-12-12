@@ -217,7 +217,7 @@ input::-webkit-inner-spin-button {
     background-color: transparent;
 }
 .product-item-detail-price {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -239,7 +239,7 @@ input::-webkit-inner-spin-button {
 .Title-shop {
     font-weight: 700;
     color: #008CBA;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .cart-product-quantity {
@@ -437,12 +437,12 @@ nav {
 
 .left-right {
     display: flex ;
-    align-items: stretch;
+    align-items: flex-start;
     background-color: #028174;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 940px;
     border-radius: 22pt;
-    padding: 20px 40px;
+    padding: 20px 10px;
 }
 
 .left {
@@ -455,15 +455,15 @@ nav {
     justify-content: center;
     gap: 20px;
     color: white;
-    margin: 40px;
+    margin: 40px 0px 0px 20px;
 }
 
 .right{
     font-family: 'Open Sans', sans-serif;
     color: white !important;
     margin: 20px 15px;
-    width: 400px;
-    height: 430px;
+    width: 380px;
+    height: 400px;
     overflow: scroll;
 }
 
@@ -489,6 +489,12 @@ input[type="tel" i]{
     font-weight: 700;
 
 
+}
+
+.Container-price-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .billing-input-tel{

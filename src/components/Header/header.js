@@ -30,7 +30,7 @@ function Header() {
             })}
 
             <div className="button-menu" onClick={showLogin}>
-                Login
+              Login
             </div>
           </div>
           <div className="container-icon">
@@ -84,7 +84,7 @@ function Header() {
 
       {login && (
         <>
-          <Login showLogin = {showLogin}/>
+          <Login showLogin={showLogin} />
         </>
       )}
     </>

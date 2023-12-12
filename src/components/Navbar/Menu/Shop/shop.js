@@ -57,12 +57,14 @@ const Shop = () => {
   // set quantity when + - 
   const updateQuantity = (productId, newQuantity) => {
     const updatedCart = cart.map((item) =>
-      item.id === productId ? { ...item, quantity: newQuantity } : item
+      item.id === productId ? 
+      { ...item, quantity: newQuantity } 
+      : item
     );
     setCart(updatedCart);
   };
   // () => updateQuantity(cartItem.id, cartItem.quantity + 1)
-  // set detail
+  //set input choose category
   const handleDropdownChange = (event) => {
     const selectedCategory = event.target.value;
     setSelectedCategory(selectedCategory);
@@ -261,14 +263,23 @@ const Shop = () => {
                 <b>Nominate: </b>
                 {selectedProduct.allocate}
               </p>
+              <div className="Container-price-button">
               <h1 className="product-item-detail-price">
                 Price: ${selectedProduct.price}
               </h1>
+              <button
+              type="button"
+              className="product-button"
+              onClick={() => addToCart(selectedProduct)}
+            >
+              ADD TO CART
+            </button>
             </div>
-            <span className="close" onClick={() => setSelectedProduct(null)}>
+          </div>
+          <span className="close" onClick={() => setSelectedProduct(null)}>
               &#10006;
             </span>
-          </div>
+        </div>
         </div>
       )}
 
