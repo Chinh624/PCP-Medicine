@@ -3,9 +3,9 @@ import "../content.css";
 import ButtonClick from "../../Button/button";
 import Triangle from "../../../img/Triangle.png";
 import Specialties from "../specialties/specialties";
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import OurTherapies from "../../Navbar/Menu/OurTherapies/ourtherapies";
-import ExploreMedicine from "../../Navbar/Menu/Explore/explore";
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+// import OurTherapies from "../../Navbar/Menu/OurTherapies/ourtherapies";
+// import ExploreMedicine from "../../Navbar/Menu/Explore/explore";
 
 function Informationsection() {
   return (

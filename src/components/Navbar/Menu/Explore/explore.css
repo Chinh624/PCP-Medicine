@@ -42,6 +42,12 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    overflow: scroll;
+    height: 650px;
+  }
+
+  .explore-section::-webkit-scrollbar{
+    width: 0;
   }
   
   .medicine-card {

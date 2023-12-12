@@ -13,18 +13,17 @@ function BillLing({
   showBilling,
   totalQuantity,
   cart,
-  setCart
 }) {
   const [name, setFullName] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
 
   const placeOrder = () => {
-    if (email.toLocaleLowerCase() && email.includes("@") && !isNaN(tel) && name.toLocaleLowerCase() &&  totalQuantity > 0 {
+    if (email.toLocaleLowerCase() && email.includes("@") && !isNaN(tel) && name.toLocaleLowerCase() &&  totalQuantity > 0) {
       alert("Order Successfully.");
       // setCart([]);
     } else {
-      alert("Please Enter Full Information.");
+      alert("Please Enter Information.");
     }
   };
 

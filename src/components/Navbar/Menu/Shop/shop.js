@@ -6,7 +6,6 @@ import drugstore from "../../../../img-icon/drugstore.png";
 import Cart from "./cart";
 import Data from "../../../../Database/Product.json";
 import Billing from "../Shop/billing";
-
 const Shop = () => {
   const [showCart, setShowCart] = useState(false); // set show
   const [searchItem, setSearchItem] = useState(""); // set search iteam
@@ -51,8 +50,12 @@ const Shop = () => {
   // () => removeFromCart(cartItem.id)
   // set show dischanrge
   const dischargeCart = () => {
+    if (totalProduct > 0){
     setShowBilling(true);
     setShowCart(false);
+    }else{
+    alert("Please Order")
+    }
   };
   // set quantity when + - 
   const updateQuantity = (productId, newQuantity) => {

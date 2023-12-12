@@ -11,6 +11,11 @@ import slide2 from "../img/slide2.jpg";
 import slide3 from "../img/slide3.jpg";
 import slide4 from "../img/slide4.jpg";
 import slide5 from "../img/slide5.jpg";
+import banner1 from "../img/banner1.jpg";
+import banner2 from "../img/banner2.jpg";
+import banner3 from "../img/banner3.jpg";
+import banner4 from "../img/banner4.jpg";
+
 
 const data = {
   menu: [
@@ -108,7 +113,23 @@ const data = {
       img: slide5,
     },
   ],
-  explore: [],
+  banner: [
+    {
+      img: banner1,
+    },
+    {
+      img: banner2,
+    },
+    {
+      img: banner3,
+    },
+    {
+      img: banner4,
+    },
+  ],
+  explore: [
+
+  ],
   ourtherapies: [
     { id: 1, name: "Therapy 1", description: "Description of Therapy 1." },
     { id: 2, name: "Therapy 2", description: "Description of Therapy 2." },
