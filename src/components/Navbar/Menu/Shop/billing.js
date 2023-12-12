@@ -20,7 +20,7 @@ function BillLing({
   const [email, setEmail] = useState("");
 
   const placeOrder = () => {
-    if (email.toLocaleLowerCase() && email.includes("@") && !isNaN(tel) && name.toLocaleLowerCase() &&  totalQuantity > 1) {
+    if (email.toLocaleLowerCase() && email.includes("@") && !isNaN(tel) && name.toLocaleLowerCase() &&  totalQuantity > 0 {
       alert("Order Successfully.");
       // setCart([]);
     } else {
