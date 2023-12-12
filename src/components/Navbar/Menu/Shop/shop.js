@@ -310,6 +310,8 @@ const Shop = () => {
             showBilling={showBilling}
             totalProduct={totalProduct}
             totalQuantity={totalQuantity}
+            cart={cart}
+            setCart={setCart}
           />
         </>
       )}

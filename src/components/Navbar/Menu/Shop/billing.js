@@ -12,6 +12,8 @@ function BillLing({
   orderTotal,
   showBilling,
   totalQuantity,
+  cart,
+  setCart
 }) {
   const [name, setFullName] = useState("");
   const [tel, setTel] = useState("");
@@ -20,6 +22,7 @@ function BillLing({
   const placeOrder = () => {
     if (email.toLocaleLowerCase() && email.includes("@") && !isNaN(tel) && name.toLocaleLowerCase() &&  totalQuantity > 1) {
       alert("Order Successfully.");
+      // setCart([]);
     } else {
       alert("Please Enter Full Information.");
     }
@@ -46,10 +49,11 @@ function BillLing({
       tel: tel,
       email: email,
       totalQuantity: totalQuantity,
+      cart: cart,
     };
   
     localStorage.setItem("Information-Person-Buy", JSON.stringify(userInformation));
-  }, [name, tel, email, totalQuantity]);
+  }, [name, tel, email, totalQuantity, cart]);
     // set form array have element
 
   return (
