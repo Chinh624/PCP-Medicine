@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 export default function Footer() {
   // show alert when user imput valid
   const [showErrorAlert, setShowErrorAlert] = useState(false);
-  // show alert when click ok 
+  // show alert when click ok
   const [showSuccessConfirm, setShowSuccessConfirm] = useState(false);
   // show email if confirm cancel
   const [showErrorConfirm, setShowErrorConfirm] = useState(false);
@@ -33,7 +33,6 @@ export default function Footer() {
         // input ->> " "
         setEmail("");
 
-
         setSuccessfulEmails((prevEmails) => {
           return [...prevEmails, showEmail];
         });
@@ -54,7 +53,7 @@ export default function Footer() {
       }, 2000);
     }
   };
-  
+
   // set change
   useEffect(() => {
     // swap array success email - >> string --> add localStorage
@@ -62,8 +61,6 @@ export default function Footer() {
     localStorage.setItem('DataSuccessEmails', successEmailArray);
   }, [successEmails]
   );
-
-
 
   return (
     <div className="medicine-footer">
@@ -104,33 +101,31 @@ export default function Footer() {
             )}
           </div>
         </div>
-        <div className="container-footer-menu-products-investors">
-          <div className="container-footer-menu">
-            <div className="footer-menu">Home</div>
-            <div className="footer-menu">Programs</div>
-            <div className="footer-menu">Why Us</div>
-            <div className="footer-menu">About Us</div>
-          </div>
-          <div className="container-footer-products-investors">
-            <div className="container-footer-products">
-              <div className="footer-text-main-products">PRODUCTS</div>
-              <div className="footer-text-extra-products">Generics</div>
-              <div className="footer-text-extra-products">Biosimilars</div>
-              <div className="footer-text-extra-products">Over-The-Counter</div>
-            </div>
-            <div class="container-footer-investors">
-              <div className="footer-text-main-investors">INVESTORS</div>
-              <div className="footer-text-extra-investors">Financials</div>
-              <div className="footer-text-extra-investors">News and Events</div>
-              <div className="footer-text-extra-investors">
-                Reports and fillings
-              </div>
-            </div>
-          </div>
-        </div>
+<div className="container-footer-menu-products-investors">
+  <div className="container-footer-menu">
+    <div className="footer-menu">Home</div>
+    <div className="footer-menu">Programs</div>
+    <div className="footer-menu">Why Us</div>
+    <div className="footer-menu">About Us</div>
+  </div>
+  <div className="container-footer-products-investors">
+    <div className="container-footer-products">
+      <div className="footer-text-main-products">PRODUCTS</div>
+      <div className="footer-text-extra-products">Generics</div>
+      <div className="footer-text-extra-products">Biosimilars</div>
+      <div className="footer-text-extra-products">Over-The-Counter</div>
+    </div>
+    <div class="container-footer-investors">
+      <div className="footer-text-main-investors">INVESTORS</div>
+      <div className="footer-text-extra-investors">Financials</div>
+      <div className="footer-text-extra-investors">News and Events</div>
+      <div className="footer-text-extra-investors">
+        Reports and fillings
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   );
 }
-
-

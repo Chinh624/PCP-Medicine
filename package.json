@@ -5,6 +5,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.3.2",
+    "nodemailer": "^6.9.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
@@ -42,5 +43,12 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.20.0"
-  }
+  },
+  "name": "pcp-medicine",
+  "description": "This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.",
+  "version": "1.0.0",
+  "main": "myfirst.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
