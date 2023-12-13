@@ -145,7 +145,6 @@ const Shop = () => {
       )
       .map((product) => (
         <div
-          className="product"
           key={product.id}
           onClick={() => openMedicine(product)}
         >
