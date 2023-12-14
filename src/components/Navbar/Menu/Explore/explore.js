@@ -84,13 +84,13 @@ const ExploreMedicine = () => {
               <h1 className="product-item-detail-price">
                 Price: ${selectedMedicine.price}
               </h1>
-              <Link to="/shop"
+            </div>
+            <Link to="/shop"
               type="button"
               className="product-button"
             >
               Go to shop
             </Link>
-            </div>
           </div>
           <span className="close" onClick={() => setSelectedMedicine(null)}>
               &#10006;

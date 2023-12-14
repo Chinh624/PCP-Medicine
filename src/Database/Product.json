@@ -339,7 +339,7 @@
         },
         {
             "id": "25",
-            "name": " Pharmacity Vitamin C 1000mg",
+            "name": "Vitamin C 1000mg",
             "title": "Pharmacity Vitamin C 1000mg + Zinc & Rosehip giúp hỗ trợ tăng cường sức đề kháng, giúp nâng cao sức khỏe, hỗ trợ tăng sức bền thành mạch.   ",
             "object": "Trẻ em trên 9 tuổi và người lớn. Người có sức đề kháng kém hay mệt mỏi do thiếu vitamin C. Người bị chảy máu chân răng do thành mạch yếu",
             "formality": "Chai 60 viên",
@@ -395,7 +395,7 @@
         },
         {
             "id": "29",
-            "name": "Vitamin D3 K2 dạng xịt",
+            "name": "Vitamin D3 K2",
             "title": "Hỗ trợ bổ sung vitamin D3 và vitamin K2; Hỗ trợ tăng cường hấp thu calci; Hỗ trợ giúp xương và răng chắc khỏe; Hỗ trợ giúp nguy cơ còi xương ở trẻ em;",
             "object": "Trẻ còi xương, chậm mọc răng, rụng tóc vành khăn, trẻ cần bổ sung vitamin D3 và vitamin K2 do chế độ ăn thiếu hụt.",
             "formality": "Chai xịt",
@@ -409,7 +409,7 @@
         },
         {
             "id": "30",
-            "name": "KUDOS Immunity - Extra Strength",
+            "name": "KUDOS Immunity",
             "title": "Thực phẩm bảo vệ sức khỏe KUDOS Immunity - Extra Strength với công thức vượt trội gồm các vitamin và khoáng chất giúp tăng cường sức đề kháng. Phòng ngừa và giảm những triệu chứng của cảm cúm và cảm lạnh. ",
             "object": "Người trưởng thành có nhu cầu bổ sung vitamin (C, D3, E) và khoáng chất (kẽm, selen).",
             "formality": "Tuýp 20 viên sủi",
@@ -418,7 +418,7 @@
             "ingredient": "Trong mỗi viên sủi 4,1 g chứa: Vitamin C (Acid L-ascorbic): 1000 mg. Vitamin E (DL-alpha-tocopheryl acetat): 12 mg. Kẽm (Kẽm citrat): 10 mg. Selen (Natri selenit): 55 µg. Vitamin D3 (Cholecalciferol): 10 µg. Phụ liệu: Chất điều chỉnh độ acid: acid citric, natri hydro carbonat; chất độn: sorbitol; hương liệu tổng hợp (hương chanh-gừng); chất tạo ngọt tổng hợp: aspartam; chất độn: maltodextrin; chất tạo màu tổng hợp: riboflavin.",
             "allocate": "Dùng 1 viên mỗi ngày, hòa tan trong một cốc nước (200 ml).",
             "price": "104",
-            "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26038_1.jpg",
+            "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P25911_1.jpg",
             "category": "vitamin"
         },
         {

@@ -83,9 +83,10 @@ function BillLing({
                       type="text"
                       placeholder="Full Name"
                       onChange={handleChangeName}
+                      className="billing-input-name"
                     />
                     <span className="billing-method-text-input">
-                      Telephone Number
+                      Telephone
                     </span>
                     <div className="billing-input-tel">
                       <PhoneInput
@@ -138,9 +139,10 @@ function BillLing({
                     type="text"
                     placeholder="Full Name"
                     onChange={handleChangeName}
+                    className="billing-input-name"
                   />
                   <span className="billing-method-text-input">
-                    Telephone Number
+                    Telephone
                   </span>
                   <div className="billing-input-tel">
                     <PhoneInput

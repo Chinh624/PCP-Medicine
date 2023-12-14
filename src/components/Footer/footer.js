@@ -113,7 +113,7 @@ export default function Footer() {
       <div className="footer-text-main-products">PRODUCTS</div>
       <div className="footer-text-extra-products">Generics</div>
       <div className="footer-text-extra-products">Biosimilars</div>
-      <div className="footer-text-extra-products">Over-The-Counter</div>
+      <div className="footer-text-extra-products">Over The Counter</div>
     </div>
     <div class="container-footer-investors">
       <div className="footer-text-main-investors">INVESTORS</div>

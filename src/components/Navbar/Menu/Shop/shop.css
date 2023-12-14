@@ -288,10 +288,9 @@ h4 {
     text-align: center;
     text-decoration: none;
     display: block;
-    font-size: 16px;
     margin: 4px 32px;
     transition-duration: 0.4s;
-    /* Thời gian chuyển đổi màu sắc */
+    font-weight: 700;
 
 }
 
@@ -474,6 +473,13 @@ input[type="text" i]{
     outline: none;
     border-radius: 22pt;
     border: none;
+    /* padding: 10px 10px;
+    color: #028174;
+    font-weight: 700;
+    width: 270px; */
+}
+
+.billing-input-name{
     padding: 10px 10px;
     color: #028174;
     font-weight: 700;
@@ -493,7 +499,7 @@ input[type="tel" i]{
 .Container-price-button{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .billing-input-tel{

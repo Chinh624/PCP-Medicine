@@ -1,140 +1,125 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Login.css";
+import SignUp from "./Signup";
 
-const Login = ({ showLogin }) => {
-  const [isSignUp, setSignUp] = useState(false);
-  const [isLogin, setLogin] = useState(false);
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const [password, setPassword] = useState("");
-  const [userName, setUserName] = useState("");
-  const [account, setAccount] = useState([]);
-  const [setPassWordSignUp, setPasswordSignUp] = useState("");
-  const [userNameSignUp, setUserNameSignUp] = useState("");
-  // set change from input
+const Login = ({ showLogin, onSignupComplete }) => {
+  const [user, setUser] = useState({
+    username: "",
+    password: ""
+  });
+  const [loginError, setLoginError] = useState("");
+  const [signupSuccess, setSignupSuccess] = useState(null);
+  const [isSigningUp, setIsSigningUp] = useState(false);
+
+  useEffect(() => {
+    if (signupSuccess) {
+      setUser({
+        username: signupSuccess.username,
+        password: signupSuccess.password
+      });
+    }
+  }, [signupSuccess]);
+
   const handleChange = (type, event) => {
     const value = event.target.value;
-
     switch (type) {
       case "loginUsername":
-        setUserName(value);
+        setUser((prevUser) => ({ ...prevUser, username: value }));
         break;
       case "loginPassword":
-        setPassword(value);
-        break;
-      case "signUpUsername":
-        setUserNameSignUp(value);
-        break;
-      case "signUpPassword":
-        setPasswordSignUp(value);
-        break;
-      case "confirmPassword":
-        setConfirmPassword(value);
+        setUser((prevUser) => ({ ...prevUser, password: value }));
         break;
       default:
         break;
     }
   };
 
-  const goToSignUp = () => {
-    setSignUp(true); // show
-  };
-
-  const goToLogIn = () => {
-    setSignUp(false); // hide
-    setLogin(true); // show
-  };
-
   const checkLogin = () => {
-    if (userName === password) {
-      setUserName("");
-      setPassword("");
-      //   setLogin(false)
-      alert("Login Successful!");
+    if (user.username && user.password) {
+      setLoginError("");
+      alert("Đăng nhập thành công!");
     } else {
-      alert("Invalid username or password");
+      setLoginError("Tên người dùng hoặc mật khẩu không hợp lệ");
     }
   };
 
-  const checkSignup = () => {
-    if (password === confirmPassword) {
-      setUserName("");
-      setPassword("");
-      goToLogIn(true);
-      //   setSignUp(false);
-      setLogin(true);
-      alert("Signup successful!");
-    } else {
-      alert("Signup failed!");
+  const handleSignupClick = () => {
+    setIsSigningUp(true);
+  };
+
+  const handleSignupComplete = (userData) => {
+    setIsSigningUp(false);
+    setSignupSuccess(userData);
+    if (typeof onSignupComplete === "function") {
+      onSignupComplete(userData);
     }
   };
 
   return (
-    <>
-        <div className="form-login">
-          <button className="cart-button-close" onClick={showLogin}>
-                &#10006;
-          </button>
-          <div className="container-login-title">
-            <h1 className="title-login">Login</h1>
-          </div>
-        <div className="form-text">USERNAME</div>
-        <input
-          type="value"
-          className="login-account"
-          onChange={(e) => handleChange("loginUsername", e)}
-        ></input>
-        <div className="form-text">PASSWORD</div>
-        <input
-          type="password"
-          className="login-password"
-          onChange={(e) => handleChange("loginPassword", e)}
-        ></input>
-        <div className="container-button">
-          <button type="submit" className="button-log-in" onClick={checkLogin}>
-            Log In
-          </button>
-          <button type="button" className="button-sign-up" onClick={goToSignUp}>
-            Sign Up
-          </button>
-        </div>
-        </div>
+    <div className="form-login">
+      <button className="cart-button-close" onClick={showLogin}>
+        &#10006;
+      </button>
+      <div className="container-login-title">
+        <h1 className="title-login">{isSigningUp ? "Đăng Ký" : "Đăng Nhập"}</h1>
+      </div>
+      <div className="form-text">TÊN NGƯỜI DÙNG</div>
+      <input
+        type="text"
+        className="login-account"
+        onChange={(e) => handleChange("loginUsername", e)}
+        value={user.username}
+      />
+      <div className="form-text">MẬT KHẨU</div>
+      <input
+        type="password"
+        className="login-password"
+        onChange={(e) => handleChange("loginPassword", e)}
+        value={user.password}
+      />
 
-      {isSignUp && (
-        <>
-          <div className="form-login">
-            <h1 className="title-login">Sign Up</h1>
-            <div className="form-text">USERNAME</div>
-            <input
-              type="text"
-              className="login-account"
-              onChange={(e) => handleChange("signUpUsername", e)}
-            ></input>
-            <div className="form-text">PASSWORD</div>
-            <input
-              type="password"
-              className="login-password"
-              onChange={(e) => handleChange("signUpPassword", e)}
-            ></input>
-            <div className="form-text">CONFIRM PASSWORD</div>
-            <input
-              type="password"
-              className="login-password"
-              onChange={(e) => handleChange("confirmPassword", e)}
-              placeholder="CONFIRM PASSWORD"
-            ></input>
+      {loginError && <div className="error-message">{loginError}</div>}
 
-            <button
-              type="button"
-              className="button-sign-up"
-              onClick={checkSignup}
-            >
-              Sign Up
+      <div className="container-button">
+        {isSigningUp ? (
+          <SignUp showSignUp={() => setIsSigningUp(false)} onSignupComplete={handleSignupComplete} />
+        ) : (
+          <>
+            <button type="button" className="button-log-in" onClick={checkLogin}>
+              Đăng Nhập
             </button>
+            <button type="button" className="button-sign-up" onClick={handleSignupClick}>
+              Đăng Ký
+            </button>
+          </>
+        )}
+      </div>
+
+      {signupSuccess && !isSigningUp && (
+        <div className="user-info-container">
+          <h2>Thông Tin Người Dùng</h2>
+          <div>
+            <strong>Tên người dùng:</strong> {user.username}
           </div>
-        </>
+          <div>
+            <strong>Mật khẩu:</strong> {user.password}
+          </div>
+        </div>
       )}
-    </>
+    </div>
   );
 };
 
 export default Login;
+
+
+
+
+
+
+
+
+
+
+
+

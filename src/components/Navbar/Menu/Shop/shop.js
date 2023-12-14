@@ -269,7 +269,9 @@ const Shop = () => {
               <h1 className="product-item-detail-price">
                 Price: ${selectedProduct.price}
               </h1>
-              <button
+            </div>
+            <div className="Container-price-button">
+            <button
               type="button"
               className="product-button"
               onClick={() => addToCart(selectedProduct)}
@@ -295,8 +297,6 @@ const Shop = () => {
             dischargeCart={dischargeCart}
             orderTotal={orderTotal}
             totalProduct={totalProduct}
-            // payCash={payCash}
-            // PayQuickResponse={payQuickResponse}
           />
         </>
       )}

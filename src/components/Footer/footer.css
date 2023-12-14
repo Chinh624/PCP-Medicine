@@ -3,11 +3,9 @@
     background: #028174;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 30px 50px 30px 50px;
-    Gap:50px;
 
 
     
@@ -34,7 +32,7 @@
     border-radius: 28pt;
     border: 1px solid #FFF;
     background: transparent;
-    padding: 5px 5px 6px 30px;
+    padding: 5px 5px 5px 20px;
     outline: none;
     color: #FFF;
     font-family: 'Open Sans';
@@ -105,8 +103,7 @@
 .container-input-information{
     display: flex;
     align-items: center;
-    flex-direction: row;
-    gap:160px;
+    gap: 150px;
 }
 .container-footer-menu {
     display: flex;

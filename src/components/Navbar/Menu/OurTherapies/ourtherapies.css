@@ -15,6 +15,16 @@
     padding: 20px;
 }
 
+.ourtherapies-img{
+    width: 200px;
+    height: 200px;
+}
+.container-therapy-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .therapy-section {
     margin: 20px;
     text-align: center;

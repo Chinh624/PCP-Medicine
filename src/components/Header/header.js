@@ -28,7 +28,6 @@ function Header() {
                 </>
               );
             })}
-
             <div className="button-menu" onClick={showLogin}>
               Login
             </div>
