@@ -1,24 +1,32 @@
 import React, { useState, useEffect } from "react";
 import "./Login.css";
 import SignUp from "./Signup";
-
+import UserInfo from "./UserInfo";
 const Login = ({ showLogin, onSignupComplete }) => {
   const [user, setUser] = useState({
     username: "",
-    password: ""
+    password: "",
   });
   const [loginError, setLoginError] = useState("");
-  const [signupSuccess, setSignupSuccess] = useState(null);
+  const [loggedInUser, setLoggedInUser] = useState(null);
   const [isSigningUp, setIsSigningUp] = useState(false);
+  const [showUserInfo, setShowUserInfo] = useState(false);
 
   useEffect(() => {
-    if (signupSuccess) {
+    const storedUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (storedUser) {
+      setLoggedInUser(storedUser);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (loggedInUser) {
       setUser({
-        username: signupSuccess.username,
-        password: signupSuccess.password
+        username: loggedInUser.username,
+        password: loggedInUser.password,
       });
     }
-  }, [signupSuccess]);
+  }, [loggedInUser]);
 
   const handleChange = (type, event) => {
     const value = event.target.value;
@@ -35,11 +43,23 @@ const Login = ({ showLogin, onSignupComplete }) => {
   };
 
   const checkLogin = () => {
-    if (user.username && user.password) {
+    if (!user.username && !user.password) {
+      setLoginError("Please enter username and password");
+    } else if (!user.username) {
+      setLoginError("Enter username");
+    } else if (!user.password) {
+      setLoginError("Enter password");
+    } else if (
+      user.username === loggedInUser?.username &&
+      user.password === loggedInUser?.password
+    ) {
       setLoginError("");
-      alert("Đăng nhập thành công!");
+      alert("Complete success");
+      setShowUserInfo(true);
+      setLoggedInUser();
     } else {
-      setLoginError("Tên người dùng hoặc mật khẩu không hợp lệ");
+      setLoginError("Invalid username or password");
+      setShowUserInfo(false);
     }
   };
 
@@ -49,11 +69,12 @@ const Login = ({ showLogin, onSignupComplete }) => {
 
   const handleSignupComplete = (userData) => {
     setIsSigningUp(false);
-    setSignupSuccess(userData);
+    setLoggedInUser(userData);
     if (typeof onSignupComplete === "function") {
       onSignupComplete(userData);
     }
   };
+  
 
   return (
     <div className="form-login">
@@ -61,16 +82,16 @@ const Login = ({ showLogin, onSignupComplete }) => {
         &#10006;
       </button>
       <div className="container-login-title">
-        <h1 className="title-login">{isSigningUp ? "Đăng Ký" : "Đăng Nhập"}</h1>
+        <h1 className="title-login">{isSigningUp ? "Signup" : "Login"}</h1>
       </div>
-      <div className="form-text">TÊN NGƯỜI DÙNG</div>
+      <div className="form-text">Username </div>
       <input
         type="text"
         className="login-account"
         onChange={(e) => handleChange("loginUsername", e)}
         value={user.username}
       />
-      <div className="form-text">MẬT KHẨU</div>
+      <div className="form-text">Password</div>
       <input
         type="password"
         className="login-password"
@@ -82,44 +103,33 @@ const Login = ({ showLogin, onSignupComplete }) => {
 
       <div className="container-button">
         {isSigningUp ? (
-          <SignUp showSignUp={() => setIsSigningUp(false)} onSignupComplete={handleSignupComplete} />
+          <SignUp
+            showSignUp={() => setIsSigningUp(false)}
+            onSignupComplete={handleSignupComplete}
+          />
         ) : (
           <>
-            <button type="button" className="button-log-in" onClick={checkLogin}>
-              Đăng Nhập
+            <button
+              type="button"
+              className="button-log-in"
+              onClick={checkLogin}
+            >
+              Login
             </button>
-            <button type="button" className="button-sign-up" onClick={handleSignupClick}>
-              Đăng Ký
+            <button
+              type="button"
+              className="button-sign-up"
+              onClick={handleSignupClick}
+            >
+              Signup
             </button>
           </>
         )}
       </div>
 
-      {signupSuccess && !isSigningUp && (
-        <div className="user-info-container">
-          <h2>Thông Tin Người Dùng</h2>
-          <div>
-            <strong>Tên người dùng:</strong> {user.username}
-          </div>
-          <div>
-            <strong>Mật khẩu:</strong> {user.password}
-          </div>
-        </div>
-      )}
+      {loggedInUser && <UserInfo loggedInUser={loggedInUser} />}
     </div>
   );
 };
 
 export default Login;
-
-
-
-
-
-
-
-
-
-
-
-

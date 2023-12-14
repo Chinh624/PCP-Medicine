@@ -13,7 +13,8 @@
     z-index: 99999;
     border-radius: 22pt;
 }
-.login-close{
+
+.login-close {
     border: none;
     padding: 10px;
     background-color: transparent;
@@ -21,16 +22,17 @@
     font-size: 40px;
 }
 
-.form-login-container{
+.form-login-container {
     display: flex;
     align-items: center;
 }
 
-.container-login-title{
+.container-login-title {
     display: grid;
     align-items: center;
     grid-template-columns: auto auto;
 }
+
 .container-button {
     display: flex;
     align-items: center;
@@ -38,11 +40,11 @@
     gap: 40px;
 }
 
-.form-text{
+.form-text {
     color: white;
     font-weight: 700;
 }
-  
+
 
 .button-sign-up,
 .button-log-in {
@@ -57,12 +59,32 @@
     border-radius: 26pt;
     outline: none;
     border: 0;
-    width: 153px;
 }
 
 .title-login {
     margin: 0;
     color: white;
     font-size: 30px;
+}
+
+.user-info-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-information-name{
+    color: white;
+    font-weight: 700;
+}
+
+.user-information-image{
+    width: 30px;
+    height: 30px;
+}
+
+.user-info-container{
+    font-size: 18px;
+    color: #333;
 }
 

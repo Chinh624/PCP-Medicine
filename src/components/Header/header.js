@@ -4,32 +4,44 @@ import Logo from "../../img/Logo.png";
 import Data from "../../Database/data";
 import { Link } from "react-router-dom";
 import Login from "../Navbar/Menu/User/Login";
+import UserInfo from "../Navbar/Menu/User/UserInfo";
+// import user from "../../img-icon/user.png";
 
-function Header() {
-  const [login, setLogin] = useState(false);
+function Header({ loggedInUser,showUserInfo,isSigningUp,setLoggedInUser }) {
+  const [showLoginModal, setShowLoginModal] = useState(false);
 
   const showLogin = () => {
-    setLogin(!login);
+    setShowLoginModal(!showLoginModal);
   };
+
   return (
     <>
       <div className="header">
         <div className="container-menu">
           <div className="header-logo">
-            <img src={Logo} alt="Logo" className="image-logo"></img>
+            <img src={Logo} alt="Logo" className="image-logo" />
           </div>
           <div className="container-button-menu">
-            {Data.menu.map((menu) => {
-              return (
-                <>
-                  <Link className="header-link" to={menu.link}>
-                    <button className="button-menu">{menu.text}</button>
-                  </Link>
-                </>
-              );
-            })}
+            {Data.menu.map((menu) => (
+              <Link className="header-link" to={menu.link} key={menu.text}>
+                <button className="button-menu">{menu.text}</button>
+              </Link>
+            ))}
+
             <div className="button-menu" onClick={showLogin}>
-              Login
+            <div className="user-info-container">
+            {loggedInUser && showUserInfo && !isSigningUp ? (
+                  <>
+                    <></>
+                  </>
+                ) : (
+                  <>
+                    <UserInfo
+                      loggedInUser={loggedInUser}
+                    />
+                  </>
+                )}
+            </div>
             </div>
           </div>
           <div className="container-icon">
@@ -80,11 +92,10 @@ function Header() {
           </div>
         </div>
       </div>
-
-      {login && (
-        <>
-          <Login showLogin={showLogin} />
-        </>
+      {showLoginModal && (
+              <Login showLogin={showLogin}
+              onSignupComplete={setLoggedInUser}
+                />
       )}
     </>
   );

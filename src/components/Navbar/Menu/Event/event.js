@@ -5,7 +5,7 @@ import React from 'react';
 function Event({ eventType }) {
     const handleButtonClick = () => {
         // Redirect to the desired URL using href
-        window.location.href = 'https://shopee.vn';
+        window.location.href = '';
     };
 
     const initialState = {
@@ -14,13 +14,13 @@ function Event({ eventType }) {
                 id: 1,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2023/thumbs/1500_crop_Hinh_1___Le_cong_bo_EU_GMP.jpg',
                 productName: ' LỄ CÔNG BỐ CHÚC MỪNG PCP MEDICINE ĐẠT TIÊU CHUẨN EU-GMP',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id: 2,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2023/thumbs/1500_crop_Hinh_1___HNKH.jpg',
                 productName2: 'HỘI NGHỊ KHÁCH HÀNG 2023 KHU VỰC HỒ CHÍ MINH – MIỀN ĐÔNG',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id: 3,
@@ -38,13 +38,13 @@ function Event({ eventType }) {
                 id: 5,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2023/thumbs/1500_crop_Thuc_tap___Hinh_1.jpg',
                 productName5: 'PCP MEDICINE CHÀO ĐÓN ĐOÀN THỰC TẬP SINH ĐẾN TỪ',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id: 6,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2023/thumbs/1500_crop_Hinh_3.jpg',
                 productName6: 'PCP MEDICINE KÝ KẾT HỢP TÁC VỚI VIỆN KIỂM NGHIỆM THUỐC',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
 
         ],
@@ -53,10 +53,10 @@ function Event({ eventType }) {
 
         <div className="khungchua">
             <div className="header-2">
-                <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
-                <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>
-                <a href="https://tiki.vn"><button className="list">HOẠT ĐỘNG PCP</button></a>
-                <a href="https://www.sendo.vn"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
+                <a href="" ><button className="list">TẤT CẢ</button></a>
+                <a href=""><button className="list">KHOẺ MỖI NGÀY</button></a>
+                <a href=""><button className="list">HOẠT ĐỘNG PCP</button></a>
+                <a href=""><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
             </div>
             <br></br>
             <div className="bodyy">

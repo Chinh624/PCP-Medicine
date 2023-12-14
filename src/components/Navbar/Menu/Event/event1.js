@@ -7,7 +7,7 @@ import React from 'react';
 function Event_1({ eventType }) {
     const handleButtonClick = () => {
         // Redirect to the desired URL using href
-        window.location.href = 'https://www.lazada.vn';
+        window.location.href = '';
     };
     const initialState = {
         products: [
@@ -15,37 +15,37 @@ function Event_1({ eventType }) {
                 id1: 1,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2023/thumbs/1500_crop_Banner.jpg',
                 productName: 'BOSTON PHARMA ĐƯỢC CHỨNG NHẬN TUÂN THỦ CÁC HƯỚNG DẪN',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id2: 2,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/08_2023/thumbs/1500_crop_EN_Thong_bao.jpg',
                 productName2: 'THÔNG BÁO LỊCH NGHỈ LỄ QUỐC KHÁNH 2/9',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id3: 3,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/08_2023/thumbs/1500_crop_Hinh_5___He_2023.jpg',
                 productName3: 'PCP MEDICINE ĐỒNG HÀNH CÙNG CHIẾN DỊCH THANH NIÊN',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id4: 4,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/08_2023/thumbs/1500_crop_AOAC_1.jpg',
                 productName4: 'PCP MEDICINE ĐỒNG HÀNH CÙNG HỘI NGHỊ QUỐC TẾ AOAC',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id5: 5,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/12_2022/thumbs/1500_crop_Hinh_01.jpg',
                 productName5: 'Điểm chung giúp FPT tiết kiệm hàng trăm tỷ đồng mỗi năm và',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id6: 6,
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/05_2023/thumbs/1500_crop_Hinh_02.jpg',
                 productName6: 'PCP MEDICINE - KICK OFF MEETING 2023',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
 
         ],
@@ -56,10 +56,10 @@ function Event_1({ eventType }) {
             <div>
             </div>
             <div className="header-2">
-                <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
-                <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>
-                <a href="https://tiki.vn"><button className="list">HOẠT ĐỘNG PCP</button></a>
-                <a href="https://www.sendo.vn"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
+                <a href="" ><button className="list">TẤT CẢ</button></a>
+                <a href=""><button className="list">KHOẺ MỖI NGÀY</button></a>
+                <a href=""><button className="list">HOẠT ĐỘNG PCP</button></a>
+                <a href=""><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
             </div>
             <br></br>
             <div className="bodyy">

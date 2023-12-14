@@ -6,7 +6,7 @@ import ProductList_3 from './Productlist3';
 function Event_3() {
     const handleButtonClick = () => {
         // Redirect to the desired URL using href
-        window.location.href = 'https://shopee.vn';
+        window.location.href = '';
     };
     const initialState = {
         products: [
@@ -14,37 +14,37 @@ function Event_3() {
                 id1: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/12_2022/thumbs/1500_crop_hinh_tham_quan_DHQG.jpg',
                 productName: 'SINH VIÊN KHOA Y - ĐẠI HỌC QUỐC GIA TP. HCM ĐẾN THAM ',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id2: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/12_2022/thumbs/1500_crop_Hinh_01_1.jpg',
                 productName2: 'PCP MEDICINE - NHÀ TÀI TRỢ KIM CƯƠNG CHƯƠNG TRÌNH ĐÔNG',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id3: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/12_2022/thumbs/1500_crop_Hinh_03_2.jpg',
                 productName3: 'PCP MEDICINE LÀ THƯƠNG HIỆU HÀNG ĐẦU VIỆT NAM NĂM 2022',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id4: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/12_2022/thumbs/1500_crop_BOSTON_PHARMA_KHCN___Thumbnail.jpg',
                 productName4: 'PCP MEDICINE ĐẠT CHỨNG NHẬN DOANH NGHIỆP KHOA HỌC',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id5: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/11_2022/thumbs/1500_crop_Hinh_01___Ky_niem_15_nam.jpg',
                 productName5: 'SỰ KIỆN KỶ NIỆM 15 NĂM THÀNH LẬP PCP MEDICINE',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id6: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2021/thumbs/1500_crop_Hinh_01___Dat_hang_trung_vang.jpg',
                 productName6: 'THÔNG BÁO KHÁCH HÀNG TRÚNG GIẢI CHƯƠNG TRÌNH “ĐẶT HÀNG',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
 
         ],
@@ -53,10 +53,10 @@ function Event_3() {
 
         <div className="khungchua">
             <div className="header-2">
-                <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
-                <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>
-                <a href="https://tiki.vn"><button className="list">HOẠT ĐỘNG PCP</button></a>
-                <a href="https://www.sendo.vn"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
+                <a href="" ><button className="list">TẤT CẢ</button></a>
+                <a href=""><button className="list">KHOẺ MỖI NGÀY</button></a>
+                <a href=""><button className="list">HOẠT ĐỘNG PCP</button></a>
+                <a href=""><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
             </div>
             <br></br>
             <div className="bodyy">

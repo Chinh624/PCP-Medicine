@@ -1,20 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Signup.css";
-
-const SignUp = ({ showSignUp, onSignupComplete }) => {
+const SignUp = ({ showSignUp,onSignupComplete}) => {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [user, setUser] = useState({
         username: "",
-        password: ""
+        password: "",
     });
-    const [signupError, setSignupError] = useState("");
-    // SAVE DATA USER SIGN UP
+
     useEffect(() => {
-        const saveUser = {
-            userSignUp: user
-        };
-        localStorage.setItem("saveUserSignUp", JSON.stringify(saveUser))
-    }, [user]);
+    }, []);
 
     const handleChange = (type, event) => {
         const value = event.target.value;
@@ -35,10 +29,10 @@ const SignUp = ({ showSignUp, onSignupComplete }) => {
 
     const checkSignup = () => {
         if (user.username.trim() && user.password.trim() && user.password === confirmPassword) {
-            setSignupError("");
-            alert("Signup successful!");
+            onSignupComplete({ username: user.username, password: user.password });
+            alert("Sign Up Success");
         } else {
-            alert("Please Enter full information");
+            alert("Registration failed")
         }
     };
 
@@ -62,18 +56,17 @@ const SignUp = ({ showSignUp, onSignupComplete }) => {
                 className="sign-up-password"
                 onChange={(e) => handleChange("signUpPassword", e)}
             ></input>
-            <div className="form-text">ConfirmPassword</div>
+            <div className="form-text">confirmPassword</div>
             <input
                 type="password"
                 className="sign-up-password"
                 onChange={(e) => handleChange("confirmPassword", e)}
             ></input>
 
-            {signupError && <div className="error-message">{signupError}</div>}
 
             <div className="container-button">
                 <button type="submit" className="button-sign-up" onClick={checkSignup}>
-                    Sign up
+                    SignUp
                 </button>
             </div>
         </div>

@@ -8,7 +8,7 @@ import ProductList2 from './Productlist2';
 function Event_2() {
     const handleButtonClick = () => {
         // Redirect to the desired URL using href
-        window.location.href = 'https://tiki.vn';
+        window.location.href = '';
     };
     const initialState = {
 
@@ -17,37 +17,37 @@ function Event_2() {
                 id1: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/06_2021/thumbs/1500_crop_Mini-game-checkin-28-06.jpg',
                 productName: 'MINIGAME CHECK-IN LIỀN TAY - ĐẨY LÙI DỊCH NGAY!!',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id2: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/04_2022/thumbs/1500_crop_Eng_Paralmax_500_cap.jpg',
                 productName2: 'Paralmax 500 caps - Thêm quy cách mới - Thêm tiện lợi hơn!',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id3: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/04_2022/thumbs/1500_crop_Eng_Khau_trang_y_te.jpg',
                 productName3: 'KHẨU TRANG Y TẾ PCP MEDICINE LỰA CHỌN AN TOÀN CHO',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id4: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/07_2021/thumbs/1500_crop_Dat-app-tha-ga-don-oto-ve-nha.jpg',
                 productName4: 'HOT: CHƯƠNG TRÌNH ƯU ĐÃI ĐẶT APP THẢ GA – ĐÓN Ô TÔ VỀ NHÀ',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id5: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/03_2021/thumbs/1500_crop_Thumb_IvyBoston_min_new.jpg',
                 productName5: 'PCP MEDICINE RA MẮT SIRO HO CHO CẢ GIA ĐÌNH - IVYBOSTON',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id6: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/03_2021/thumbs/1500_crop_Hinh_27_02_min_new.jpg',
                 productName6: 'PCP MEDICINE CHÚC MỪNG NGÀY THẦY THUỐC VIỆT NAM',
-                learnMoreLink: 'https://www.lazada.vn',
+                learnMoreLink: '',
             },
 
 
@@ -57,8 +57,8 @@ function Event_2() {
 
         <div className="khungchua">
             <div className="header-2">
-                <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
-                <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>
+                <a href="" ><button className="list">TẤT CẢ</button></a>
+                <a href=""><button className="list">KHOẺ MỖI NGÀY</button></a>
                 <a href="https://tiki.vn"><button className="list">HOẠT ĐỘNG PCP</button></a>
                 <a href="https://www.sendo.vn"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
             </div>

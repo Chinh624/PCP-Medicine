@@ -7,7 +7,7 @@ import ProductList_4 from './Productlist4';
 function Event_4() {
     const handleButtonClick = () => {
         // Redirect to the desired URL using href
-        window.location.href = 'https://shopee.vn/';
+        window.location.href = '';
     };
     const initialState = {
         products: [
@@ -15,37 +15,37 @@ function Event_4() {
                 id1: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_1___Copy.jpg',
                 productName: 'TEAM BUILDING NHA TRANG 2022 - WE ARE PCP MEDICINE ',
-                learnMoreLink: 'https://tiki.vn'
+                learnMoreLink: ''
             },
             {
                 id2: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_BK___Hinh_05.jpg',
                 productName2: 'PCP MEDICINE– NHÃN HÀNG TOCOMAX PLUS “NẠP NĂNG',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id3: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_Hinh_02.png',
                 productName3: 'PCP MEDICINE TĂNG TỐC VẬN HÀNH CÙNG BASE.VN',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id4: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_tim.jpg',
                 productName4: 'PCP MEDICINE CHIA SẺ GÁNH NẶNG CÙNG QUÝ KHÁCH HÀNGH',
-                learnMoreLink: 'https://www.lazada.vn'
+                learnMoreLink: ''
             },
             {
                 id5: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/10_2022/thumbs/1500_crop_Hinh_02.jpg',
                 productName5: 'PCP MEDICINE ĐỒNG HÀNH CÙNG KHOA Y TRƯỜNG ĐẠI HỌC',
-                learnMoreLink: 'https://shopee.vn'
+                learnMoreLink: ''
             },
             {
                 id6: "Tìm hiểu thêm",
                 imageUrl: 'https://bostonpharma.com.vn/vnt_upload/news/09_2022/thumbs/1500_crop_3.jpg',
                 productName6: 'PCP MEDICINE ĐỒNG HÀNH CÙNG INTEL TECH FUN RUN 2022',
-                learnMoreLink: 'https://tiki.vn'
+                learnMoreLink: ''
             },
 
         ],
@@ -54,10 +54,10 @@ function Event_4() {
 
         <div className="khungchua">
             <div className="header-2">
-                <a href="https://shopee.vn" ><button className="list">TẤT CẢ</button></a>
-                <a href="https://www.lazada.vn"><button className="list">KHOẺ MỖI NGÀY</button></a>
-                <a href="https://tiki.vn"><button className="list">HOẠT ĐỘNG PCP</button></a>
-                <a href="https://www.sendo.vn"><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
+                <a href="" ><button className="list">TẤT CẢ</button></a>
+                <a href=""><button className="list">KHOẺ MỖI NGÀY</button></a>
+                <a href=""><button className="list">HOẠT ĐỘNG PCP</button></a>
+                <a href=""><button className="list">KHO TÀI LIỆU Y DƯỢC</button></a>
             </div>
             <br></br>
             <div className="bodyy">

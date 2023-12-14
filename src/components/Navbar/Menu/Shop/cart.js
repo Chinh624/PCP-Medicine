@@ -78,7 +78,6 @@ export default function cart({
           <button className="cart-product-pay" onClick={dischargeCart}>Discharge</button>
         </div>
       </div>
-
     </>
   );
 }

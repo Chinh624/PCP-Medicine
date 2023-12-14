@@ -93,7 +93,7 @@ const Shop = () => {
   const getProducts = () => {
     // show all
     const mapProducts = Data.product.map((product) => product);
-    // show of - product-pcp
+    // show category - product-pcp
     const filterProductsPCP = Data.product.filter(
       (product) => product.category.toLowerCase() === "product-pcp"
     );
