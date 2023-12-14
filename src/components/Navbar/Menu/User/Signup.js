@@ -8,7 +8,9 @@ const SignUp = ({ showSignUp,onSignupComplete}) => {
     });
 
     useEffect(() => {
-    }, []);
+        const userDataSingUp = JSON.stringify(user);
+        localStorage.setItem('userSignUp',userDataSingUp)
+    }, [user]);
 
     const handleChange = (type, event) => {
         const value = event.target.value;
