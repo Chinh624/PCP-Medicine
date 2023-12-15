@@ -7,7 +7,7 @@ import Login from "../Navbar/Menu/User/Login";
 import UserInfo from "../Navbar/Menu/User/UserInfo";
 // import user from "../../img-icon/user.png";
 
-function Header({ loggedInUser,showUserInfo,isSigningUp,setLoggedInUser }) {
+function Header({ loggedInUser }) {
   const [showLoginModal, setShowLoginModal] = useState(false);
 
   const showLogin = () => {
@@ -30,9 +30,8 @@ function Header({ loggedInUser,showUserInfo,isSigningUp,setLoggedInUser }) {
 
             <div className="button-menu" onClick={showLogin}>
             <div className="user-info-container">
-            {loggedInUser && showUserInfo && !isSigningUp ? (
+            {loggedInUser ? (
                   <>
-                    <></>
                   </>
                 ) : (
                   <>
@@ -94,7 +93,6 @@ function Header({ loggedInUser,showUserInfo,isSigningUp,setLoggedInUser }) {
       </div>
       {showLoginModal && (
               <Login showLogin={showLogin}
-              onSignupComplete={setLoggedInUser}
                 />
       )}
     </>

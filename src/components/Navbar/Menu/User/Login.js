@@ -54,14 +54,14 @@ const Login = ({ showLogin, onSignupComplete }) => {
       user.password === loggedInUser?.password
     ) {
       setLoginError("");
-      alert("Complete success");
+      alert("Login success");
       setShowUserInfo(true);
-      setLoggedInUser();
     } else {
       setLoginError("Invalid username or password");
       setShowUserInfo(false);
     }
   };
+  
 
   const handleSignupClick = () => {
     setIsSigningUp(true);
@@ -127,7 +127,7 @@ const Login = ({ showLogin, onSignupComplete }) => {
         )}
       </div>
 
-      {loggedInUser && <UserInfo loggedInUser={loggedInUser} />}
+      {loggedInUser && showUserInfo && !isSigningUp && <UserInfo loggedInUser={loggedInUser} />}
     </div>
   );
 };

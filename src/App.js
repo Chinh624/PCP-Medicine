@@ -8,11 +8,11 @@ import OurTherapies from "./components/Navbar/Menu/OurTherapies/ourtherapies";
 import ExploreMedicine from "./components/Navbar/Menu/Explore/explore";
 import Footer from "./components/Footer/footer";
 import EventchaEvent from "./components/Navbar/Menu/Event/eventchaevent";
-function App({loggedInUser,showLogin}) {
+function App() {
   return (
     <>
         <div>
-        <Header loggedInUser={loggedInUser} showLogin={showLogin}/>
+        <Header/>
           <Routes>
             <Route path="/" element={<Content />} />
             <Route path="/shop" element={<Shop />} />
