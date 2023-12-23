@@ -9,14 +9,11 @@
 }
 
 .Body-shop {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 0;
-    padding: 0;
-    padding-bottom: 10pt;
+    padding: 0px 0px 10pt 0px;
 }
 
 .container-navbar-shop {
@@ -25,7 +22,7 @@
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
     grid-template-columns: auto auto auto auto;
-    column-gap: 70px;
+    column-gap: 60px;
 }
 
 

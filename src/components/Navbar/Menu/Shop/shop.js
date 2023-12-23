@@ -133,6 +133,7 @@ const Shop = () => {
   const totalProduct = Array.from(
     new Set(cart.map((cartItem) => cartItem.id))
   ).length;
+  
   // save cart form localstorage
   useEffect(() => {
     localStorage.setItem("Cart", JSON.stringify(cart));

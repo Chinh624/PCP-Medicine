@@ -27,7 +27,6 @@ function Header({ loggedInUser }) {
                 <button className="button-menu">{menu.text}</button>
               </Link>
             ))}
-
             <div className="button-menu" onClick={showLogin}>
             <div className="user-info-container">
             {loggedInUser ? (
