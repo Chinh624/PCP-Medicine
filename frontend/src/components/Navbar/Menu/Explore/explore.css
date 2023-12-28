@@ -1,0 +1,88 @@
+
+.body-explore{
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header-explore {
+    border-top: #fff solid;
+    border-right: none;
+    background-color: #028174;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  .search-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .search-input {
+    padding: 10pt 80pt;
+    font-size: 17px;
+    border: none;
+    border-radius: 17pt;
+    outline: none;
+    color: #fff;
+    background-color: #028174;
+  }
+
+  
+  .explore-section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: scroll;
+    height: 650px;
+  }
+
+  .explore-section::-webkit-scrollbar{
+    width: 0;
+  }
+  
+  .medicine-card {
+    width: 200px;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 200px;
+  }
+
+  .medicine-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .medicine-card img {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  
+
+  
+
+  
+
+
+
+ 
+.selectedMedicine-img{
+  width: 340px;
+  height: 290px;
+
+}
