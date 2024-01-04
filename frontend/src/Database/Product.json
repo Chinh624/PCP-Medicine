@@ -12,7 +12,7 @@
             "allocate": "Thuốc Acetylcystein 200 mg được chỉ định dùng trong các trường hợp sau:  Điều trị các bệnh lý đường hô hấp có đờm nhầy quánh như viêm phế quản cấp và mạn. Dùng làm thuốc tiêu chất nhầy trong bệnh nhầy nhớt (mucoviscidosis) như xơ nang tuyến tụy.",
             "price": "147",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P17315_1_l.webp",
-            "category": "Product-PCP"
+            "category": "product-PCP"
         },
         {
             "id": "2",
@@ -26,7 +26,7 @@
             "allocate": "Tiêu chất nhầy trong bệnh nhầy nhớt, bệnh lý hô hấp có đờm nhầy quánh như trong viêm phế quản cấp và mạn tính và làm sạch thường quy trong mở khí quản.",
             "price": "65",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P16412_1_l.webp",
-            "category": "Product-PCP"
+            "category": "product-PCP"
         },
         {
             "id": "3",
@@ -40,7 +40,7 @@
             "allocate": "Dùng trong các chứng bệnh đường hô hấp kèm theo tiết chất nhầy: Bệnh về phổi: Viêm phế quản, viêm khí phế quản, ngăn ngừa các biến chứng hô hấp ở bệnh nhân nhiễm khuẩn,tăng tiết phế quản, khí phế thủng. Bệnh tai mũi họng: Viêm xoang, viêm mũi, viêm họng.",
             "price": "100",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P25186_1-thumbnail-510x510-70.jpg",
-            "category": "Product-PCP"
+            "category": "product-PCP"
         },
         {
             "id": "4",
@@ -54,7 +54,7 @@
             "allocate": "Mỗi gói 1g có chứa: Hoạt chất: Acetylcystein 200mg, Tá dược: Lactose monohydrat, aspartam, acid ascorbic, màu vàng số 6 lake, mùi cam, silicon dioxid.",
             "price": "55",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P17480_1_l-thumbnail-510x510.webp",
-            "category": "Product-PCP"
+            "category": "product-PCP"
         },
         {
             "id": "5",
@@ -68,7 +68,7 @@
             "allocate": "Viêm mũi dị ứng. Viêm kết mạc dị ứng. Ngứa và mày đay liên quan đến histamin",
             "price": "350",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P20414_1_l.webp",
-            "category": "Product-PCP"
+            "category": "product-PCP"
         },
         {
             "id": "6",
@@ -82,7 +82,7 @@
             "allocate": "Bổ sung vitamin C. Phòng và điều trị bệnh scorbut.",
             "price": "114",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P12775_1_l.webp",
-            "category": "Product-PCP"
+            "category": "product-PCP"
         },
         {
             "id": "7",
@@ -96,7 +96,7 @@
             "allocate": "Điều trị duy tri tăng amoniac máu ở bệnh nhân thiếu carbamylphosphat synthetase, thiếu ornithin carbamyl tranferase. Điều trị hỗ trợ các rồi loạn khó tiêu. máu bị citrulin máu, arginosuccinic niệu. Điều trị duy trì cho bệnh nhân tăng amoniac. Điều trị hỗ trợ nhằm cải thiện khả năng luyện tập ở những người bị bệnh tim mạch ổn định. Bổ sung dinh dưỡng cho người bị rối loạn chu trình ure như tăng amoniac máu tuýp I và II, tăng citrulin máu, arginosuccinic niệu và thiếu men N-acetyl glutamate synthetase.",
             "price": "60",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P20074_1_l.webp",
-            "category": "Product-PCP"
+            "category": "product-PCP"
         },
         {
             "id": "8",
@@ -110,7 +110,7 @@
             "allocate": "Dùng cho những người thiểu năng gan, viêm gan gây mệt mỏi, khó tiêu, vàng da, mụn nhọt lở ngứa, bí đại tiểu tiện, táo bón. Giải độc, chống dị ứng. Đặc biệt người suy giảm chức năng gan do dùng nhiều bia rượu. Hỗ trợ xơ vữa động mạch, mỡ trong máu cao.",
             "price": "109",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P14649_1_l.webp",
-            "category": "Product-PCP"
+            "category": "product-PCP"
         },
         {
             "id": "9",
@@ -124,7 +124,7 @@
             "allocate": "- Điều trị viêm loét dạ dày, hành tá tràng do tăng tiết acid dịch vị. Dự phòng tái phát viêm loét dạ dày tá tràng do tăng tiết acid dịch vị và do Helicobacter pylori. Phối hợp với kháng sinh theo phác đồ điều trị được dùng trong các trường hợp viêm loét dạ dày - tá tràng có liên quan tới Helicobacter pylori.",
             "price": "117",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P03923_1_l.webp",
-            "category": "HealthCondition"
+            "category": "heathcondition"
         },
         {
             "id": "10",
@@ -138,7 +138,7 @@
             "allocate": "Dùng ngoài: các bệnh ngoài da đáp ứng với steroid. Các chứng viêm đau ở miệng, lợi và môi.",
             "price": "10",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P19886_1_l.webp",
-            "category": "HealthCondition"
+            "category": "heathcondition"
         },
         {
             "id": "11",
@@ -152,7 +152,7 @@
             "allocate": "Làm dịu các triệu chứng do tăng acid dạ dày (chứng ợ nóng, ợ chua, đầy bụng khó tiêu do tăng acid). Điều trị triệu chứng trào ngược dạ dày - thực quản.",
             "price": "69",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P14774_1_l.webp",
-            "category": "HealthCondition"
+            "category": "heathcondition"
         },
         {
             "id": "12",
@@ -166,7 +166,7 @@
             "allocate": "Điều trị triệu chứng rối loạn tiêu hóa như hội chứng ruột kích thích và những triệu chứng khó chịu ở bụng (đầy hơi, trướng bụng, cảm giác khó tiêu, bị đè ép và căng, đau ở vùng thượng vị).",
             "price": "120",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P12954_1.JPG",
-            "category": "HealthCondition"
+            "category": "heathcondition"
         },
         {
             "id": "13",
@@ -180,7 +180,7 @@
             "allocate": "Lắc kỹ trước khi dùng. Mát xa một lượng sữa rửa mặt lên da ướt, rửa sạch.",
             "price": "175",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P22986_1.jpg",
-            "category": "SkinCare"
+            "category": "skincare"
         },
         {
             "id": "14",
@@ -194,7 +194,7 @@
             "allocate": "Nên dùng kem chống nắng có SPF 30 trở lên.",
             "price": "339",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P23372_1.jpg",
-            "category": "SkinCare"
+            "category": "skincare"
         },
         {
             "id": "15",
@@ -208,7 +208,7 @@
             "allocate": "Tránh vùng da quanh mắt. Trường hợp tiếp xúc với mắt rửa mắt ngay bằng nước sạch nhiều lần. Không dùng cho trẻ dưới 3 tuổi.",
             "price": "338",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P25815_1new.jpg",
-            "category": "SkinCare"
+            "category": "skincare"
         },
         {
             "id": "16",
@@ -222,7 +222,7 @@
             "allocate": "Sản phẩm dùng ngoài da, tránh xa tầm tay trẻ em",
             "price": "40",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P24238_1.jpg",
-            "category": "SkinCare"
+            "category": "skincare"
         },
         {
             "id": "17",
@@ -236,7 +236,7 @@
             "allocate": "Hướng dẫn rửa mặt khô: Lấy một lượng vừa đủ sữa rửa mặt thoa lên da và xoa nhẹ nhàng. Làm sạch phần sữa rửa mặt thừa bằng khăn mềm, để lại trên da cảm giác sạch nhẹ nhàng mà vẫn mịn màng. Hướng dẫn rửa mặt với nước: Thoa đều sữa rửa mặt lên da và massage nhẹ nhàng. Sau đó rửa sạch lại với nước.",
             "price": "276",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P22162_4.jpg",
-            "category": "SkinCare"
+            "category": "skincare"
         },
         {
             "id": "18",
@@ -250,7 +250,7 @@
             "allocate": "Người lớn uống 1 viên trước khi đi ngủ 30 phút hoặc theo hướng dẫn của chuyên gia y tế",
             "price": "335",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26040_1.jpg",
-            "category": "HealthCondition"
+            "category": "heathcondition"
         },
         {
             "id": "19",
@@ -264,7 +264,7 @@
             "allocate": "Người lớn, uống một viên mỗi ngày, tốt nhất là sau bữa ăn hoặc theo chỉ dẫn của bác sĩ",
             "price": "477",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P25175_5.jpg",
-            "category": "HealthCondition"
+            "category": "heathcondition"
         },
         {
             "id": "20",
@@ -278,7 +278,7 @@
             "allocate": "Chỉ dùng ngoài da. Không tiếp xúc với mắt. Nếu sản phẩm dính vào mắt, rửa kỹ với nước sạch. Nếu xảy ra dị ứng, ngưng sử dụng và tham khảo ý kiến bác sĩ nếu cần. Tránh xa tầm tay trẻ em.",
             "price": "60",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P15635_11.jpg",
-            "category": "SkinCare"
+            "category": "skincare"
         },
         {
             "id": "21",
@@ -292,7 +292,7 @@
             "allocate": "Pha với 100 – 200ml nước đun sôi để nguội hoặc nước ấm, hòa tan rồi uống có thể thêm mật ong uống càng tốt. Cũng có thể dùng thêm với sữa chua hoặc các loại nước hoa quả (nước cam, chanh…). Mỗi lần dùng 250 – 500mg, tương ứng 1/2 – 1 thìa đong (có sẵn trong hộp). Ngày dùng 1-2 lần. Tối thiểu dùng trong 12 tuần. Lâu khô thìa nước và sau khi sử dụng. Nên uống trước khi ăn 30 phút hoặc sau khi ăn 1h để đạt được kết quả tốt nhất.",
             "price": "406",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P20998_2.jpg",
-            "category": "HealthCondition"
+            "category": "heathcondition"
         },
         {
             "id": "22",
@@ -306,7 +306,7 @@
             "allocate": "Không dùng cho phụ nữ có thai hoặc cho con bú và người mẫn cảm với bất kỳ thành phần nào của sản phẩm.",
             "price": "117",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P22791_1_l.webp",
-            "category": "HealthCondition"
+            "category": "heathcondition"
         },
         {
             "id": "23",
@@ -320,7 +320,7 @@
             "allocate": "Nuốt trọn viên hoặc nhai. Ngày uống 3 lần (trưa, chiều, tối trước khi đi ngủ), mỗi lần 2-3 viên với nước ấm. Có thể sử dụng lượng tăng gấp đôi để tăng hiệu quả.",
             "price": "188 ",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P26038_1.jpg",
-            "category": "vitamin"
+            "category": "vitamins"
         },
 
         {
@@ -335,7 +335,7 @@
             "allocate": "Người lớn: Uống 1 viên, 2 lần một ngày",
             "price": "175",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P21970_11.jpg",
-            "category": "vitamin"
+            "category": "vitamins"
         },
         {
             "id": "25",
@@ -349,7 +349,7 @@
             "allocate": "Uống 1 viên 1 lần mỗi ngày vào buổi sáng hoặc trưa",
             "price": "210 ",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P21966_6.jpg",
-            "category": "vitamin"
+            "category": "vitamins"
         },
         {
             "id": "26",
@@ -363,7 +363,7 @@
             "allocate": "Ngày 2 lần, mỗi lần 1-2 viên, uống sau ăn. Nên dùng liên tục ít nhất từ 2-3 tháng để có hiệu quả.",
             "price": "105",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P25378_8.jpg",
-            "category": "vitamin"
+            "category": "vitamins"
         },
         {
             "id": "27",
@@ -377,7 +377,7 @@
             "allocate": "Uống vào buổi sáng. Trẻ trên 6 tuổi: Uống 1 viên, 1 lần mỗi ngày. Người lớn: Uống 2 viên, 1 lần mỗi ngày.",
             "price": "320",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P21969_12.jpg",
-            "category": "vitamin"
+            "category": "vitamins"
         },
         {
             "id": "28",
@@ -391,7 +391,7 @@
             "allocate": "Uống 2 viên, 2 lần mỗi ngày. Nên dùng duy trì 3 tháng để có kết quả tốt.",
             "price": "131",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P21971_10.jpg",
-            "category": "vitamin"
+            "category": "vitamins"
         },
         {
             "id": "29",
@@ -405,7 +405,7 @@
             "allocate": "Trẻ em từ 6 tháng đến 1 tuổi: 1 nhát xịt/ngày, dùng 1 lần vào buổi sáng. Trẻ em từ 1 đến 6 tuổi: 1-2 nhát xịt/ngày, dùng 1 lần vào buổi sáng. Trẻ em lớn hơn 6 tuổi và người lớn: 1-3 nhát xịt/ngày, dùng 1 lần vào buổi sáng. 1 nhát xịt tương đương 0,2ml. Lắc kỹ trước khi sử dụng. Xịt trực tiếp vào khoang miệng.",
             "price": "120",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P19407_11.jpg",
-            "category": "vitamin"
+            "category": "vitamins"
         },
         {
             "id": "30",
@@ -419,7 +419,7 @@
             "allocate": "Dùng 1 viên mỗi ngày, hòa tan trong một cốc nước (200 ml).",
             "price": "104",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P25911_1.jpg",
-            "category": "vitamin"
+            "category": "vitamins"
         },
         {
             "id": "31",
@@ -433,7 +433,7 @@
             "allocate": "Dùng mỗi tối. Lấy lượng sản phẩm vừa đủ thoa đều lên cơ thể. Thoa và mát-xa sản phẩm toàn thân. Không cần rửa lại với nước. Tránh thoa lên mắt và vùng da có vết thương, ngưng sử dụng khi có dấu hiệu rát da.​ Rửa bằng nước sạch khi dính vào mắt.",
             "price": "60",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P11482_1.jpg",
-            "category": "SkinCare"
+            "category": "skincare"
         },
         {
             "id": "32",
@@ -447,7 +447,7 @@
             "allocate": "Thấm một lượng vừa đủ ra bông tẩy trang lau nhẹ nhàng trên da mặt, vùng da quanh mắt & môi theo hướng xoay tròn. Không cần rửa lại với nước, tránh tiếp xúc trực tiếp với mắt.",
             "price": "87",
             "img": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P10836_1_l.webp",
-            "category": "SkinCare"
+            "category": "skincare"
         }
         
     ],
@@ -455,27 +455,27 @@
         {
             "id": 1,
             "name": "Choose",
-            "value": "Choose"
+            "category": "choose"
         },
         {
             "id": 2,
             "name": "Popular",
-            "value": "Product-PCP"
+            "category": "product-PCP"
         },
         {
             "id": 3,
             "name": "Skin Care",
-            "value": "Skin-Care"
+            "category": "skincare"
         },
         {
             "id": 4,
             "name": "Vitamins",
-            "value": "Vitamins"
+            "category": "vitamins"
         },
         {
             "id": 5,
             "name": "Health - Condition",
-            "value": "Heath-condition"
+            "category": "heathcondition"
         }
     ]
 }

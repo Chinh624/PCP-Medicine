@@ -6,6 +6,7 @@ import drugstore from "../../../../img-icon/drugstore.png";
 import Cart from "./cart";
 import Data from "../../../../Database/Product.json";
 import Billing from "./billing";
+import data from "../../../../Database/data";
 const Shop = () => {
   const [showCart, setShowCart] = useState(false); // set show
   const [searchItem, setSearchItem] = useState(""); // set search iteam
@@ -66,10 +67,11 @@ const Shop = () => {
   };
   // () => updateQuantity(cartItem.id, cartItem.quantity + 1)
   //set input choose category
+  // Dropdown change handler
   const handleDropdownChange = (event) => {
-    const selectedCategory = event.target.value;
-    setSelectedCategory(selectedCategory);
+    setSelectedCategory(event.target.value);
   };
+
   // hide card
   const showCarts = () => {
     setShowCart(!showCart);
@@ -88,35 +90,23 @@ const Shop = () => {
     setSelected(medicine);
   };
   // set category
+  // Filter products based on the selected category
   const getProducts = () => {
-    // show all
-    const mapProducts = Data.product.map((product) => product);
-    // show category - product-pcp
-    const filterProductsPCP = Data.product.filter(
-      (product) => product.category.toLowerCase() === "product-pcp"
-    );
-    // show category ->> vitamin
-    const filterProductVitamins = Data.product.filter(
-      (product) => product.category.toLowerCase() === "vitamin"
-    );
-    // show category ->> skin care
-
-    const filterProductSkincare = Data.product.filter(
-      (product) => product.category.toLowerCase() === "skincare"
-    );
-    // show category ->> heathcondition
-    const filterProductHealthCondition = Data.product.filter(
-      (product) => product.category.toLowerCase() === "healthcondition"
-    );
-
-    return {
-      mapProducts,
-      filterProductsPCP,
-      filterProductVitamins,
-      filterProductSkincare,
-      filterProductHealthCondition,
-    };
+    if (selectedCategory === "Choose") {
+      return Data.product;
+    } else {
+      const categoryObject = Data.dropdown.find(
+        (category) => category.name === selectedCategory
+      );
+      if (categoryObject) {
+        return Data.product.filter(
+          (product) => product.category === categoryObject.category
+        );
+      }
+    }
+    return Data.product;
   };
+
   // total order
   const orderTotal = cart.reduce(
     (total, cartItem) => total + cartItem.price * cartItem.quantity,
@@ -194,32 +184,10 @@ const Shop = () => {
         </div>
       </div>
       <div className="container-item">
-        {selectedCategory === "Choose" &&
-          renderProducts(getProducts().mapProducts, searchItem, openMedicine)}
-        {selectedCategory === "Product-PCP" &&
-          renderProducts(
-            getProducts().filterProductsPCP,
-            searchItem,
-            openMedicine
-          )}
-        {selectedCategory === "Skin-Care" &&
-          renderProducts(
-            getProducts().filterProductSkincare,
-            searchItem,
-            openMedicine
-          )}
-        {selectedCategory === "Vitamins" &&
-          renderProducts(
-            getProducts().filterProductVitamins,
-            searchItem,
-            openMedicine
-          )}
-        {selectedCategory === "Heath-condition" &&
-          renderProducts(
-            getProducts().filterProductHealthCondition,
-            searchItem,
-            openMedicine
-          )}
+        {selectedCategory === "Choose"
+          ? renderProducts(Data.product, searchItem, openMedicine)
+          : renderProducts(getProducts(), searchItem, openMedicine)}
+
         {selected && <></>}
       </div>
 
