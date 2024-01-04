@@ -2,18 +2,19 @@ import "./footer.css";
 import React, { useState, useEffect } from "react";
 
 export default function Footer() {
-  // show alert when user imput valid
+  // show alert when user input valid
   const [showErrorAlert, setShowErrorAlert] = useState(false);
   // show alert when click ok
   const [showSuccessConfirm, setShowSuccessConfirm] = useState(false);
   // show email if confirm cancel
   const [showErrorConfirm, setShowErrorConfirm] = useState(false);
   // set input from email
-  const [inputEmail, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   // show email
   const [showEmail, setShowEmail] = useState("");
   // show array of email success
   const [successEmails, setSuccessfulEmails] = useState([]);
+
   // input email
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
@@ -24,25 +25,34 @@ export default function Footer() {
     setShowErrorConfirm(false);
   };
 
-  const handleJoinNowClick = () => {
-    if (inputEmail !== " " && inputEmail.includes("@")) {
-      const isConfirmed = window.confirm(`Do you want to join with us?`);
+  const handleJoinNowClick = async () => {
+    const trimmedEmail = email.trim();
+    if (trimmedEmail && trimmedEmail.includes("@")) {
+      const isConfirmed = window.confirm("Do you want to join with us?");
       if (isConfirmed) {
-        //confirm ok
         setShowSuccessConfirm(true);
-        // input ->> " "
         setEmail("");
-
-        setSuccessfulEmails((prevEmails) => {
-          return [...prevEmails, showEmail];
-        });
-
-        setTimeout(() => {
-          setShowSuccessConfirm(false);
-        }, 2000);
+        try {
+          const res = await fetch("/register", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email: trimmedEmail }),
+          });
+          if (res.ok) {
+            setSuccessfulEmails((prevEmails) => [...prevEmails, trimmedEmail]);
+          } else {
+            throw new Error("Failed to send email");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+        } finally {
+          setTimeout(() => {
+            setShowSuccessConfirm(false);
+          }, 2000);
+        }
       } else {
-        // confirm when cancel
-        // visit website
         setEmail("");
         setShowErrorConfirm(true);
       }
@@ -50,17 +60,14 @@ export default function Footer() {
       setShowErrorAlert(true);
       setTimeout(() => {
         setShowErrorAlert(false);
-      }, 2000);
+      }, 1000);
     }
   };
 
-  // set change
   useEffect(() => {
-    // swap array success email - >> string --> add localStorage
     const successEmailArray = JSON.stringify(successEmails);
-    localStorage.setItem('DataSuccessEmails', successEmailArray);
-  }, [successEmails]
-  );
+    localStorage.setItem("DataSuccessEmails", successEmailArray);
+  }, [successEmails]);
 
   return (
     <div className="medicine-footer">
@@ -75,7 +82,7 @@ export default function Footer() {
                 type="email"
                 className="footer-input"
                 placeholder="Enter your email address"
-                value={inputEmail}
+                value={email}
                 onChange={handleInputChange}
               ></input>
               <button className="footer-button" onClick={handleJoinNowClick}>
@@ -101,30 +108,30 @@ export default function Footer() {
             )}
           </div>
         </div>
-<div className="container-footer-menu-products-investors">
-  <div className="container-footer-menu">
-    <div className="footer-menu">Home</div>
-    <div className="footer-menu">Programs</div>
-    <div className="footer-menu">Why Us</div>
-    <div className="footer-menu">About Us</div>
-  </div>
-  <div className="container-footer-products-investors">
-    <div className="container-footer-products">
-      <div className="footer-text-main-products">PRODUCTS</div>
-      <div className="footer-text-extra-products">Generics</div>
-      <div className="footer-text-extra-products">Biosimilars</div>
-      <div className="footer-text-extra-products">Over The Counter</div>
-    </div>
-    <div class="container-footer-investors">
-      <div className="footer-text-main-investors">INVESTORS</div>
-      <div className="footer-text-extra-investors">Financials</div>
-      <div className="footer-text-extra-investors">News and Events</div>
-      <div className="footer-text-extra-investors">
-        Reports and fillings
-      </div>
-    </div>
-  </div>
-</div>
+        <div className="container-footer-menu-products-investors">
+          <div className="container-footer-menu">
+            <div className="footer-menu">Home</div>
+            <div className="footer-menu">Programs</div>
+            <div className="footer-menu">Why Us</div>
+            <div className="footer-menu">About Us</div>
+          </div>
+          <div className="container-footer-products-investors">
+            <div className="container-footer-products">
+              <div className="footer-text-main-products">PRODUCTS</div>
+              <div className="footer-text-extra-products">Generics</div>
+              <div className="footer-text-extra-products">Biosimilars</div>
+              <div className="footer-text-extra-products">Over The Counter</div>
+            </div>
+            <div class="container-footer-investors">
+              <div className="footer-text-main-investors">INVESTORS</div>
+              <div className="footer-text-extra-investors">Financials</div>
+              <div className="footer-text-extra-investors">News and Events</div>
+              <div className="footer-text-extra-investors">
+                Reports and fillings
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
