@@ -1,30 +1,28 @@
-import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header/header";
-import Content from "./components/Content/content";
-import Shop from "./components/Navbar/Menu/Shop/shop";
-import Aboutus from "./components/Navbar/Menu/AboutUs/aboutus";
-import OurTherapies from "./components/Navbar/Menu/OurTherapies/ourtherapies";
-import ExploreMedicine from "./components/Navbar/Menu/Explore/explore";
-import Footer from "./components/Footer/footer";
-import EventchaEvent from "./components/Navbar/Menu/Event/eventchaevent";
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import Home from "./components/pages/Home/home";
+import Shop from "./components/pages/Shop/Shop";
+import AboutUs from "./components/pages/AboutUs/Aboutus";
+import OurTherapies from "./components/pages/OurTherapies/Ourtherapies";
+import ExploreMedicine from "./components/pages/Detail/Explore";
+import Event from "../src/components/pages/Event/eventchaevent";
+import NotFound from "./components/pages/NotFound/NotFound";
+
 function App() {
   return (
-    <>
-      <div>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Content />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/events" element={<EventchaEvent />} />
-          <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/explore" element={<ExploreMedicine />} />
-          <Route path="/ourtherapies" element={<OurTherapies />} />
-        </Routes>
-        <Footer />
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="shop" element={<Shop />} />
+        <Route path="events" element={<Event/>} />
+        <Route path="aboutus" element={<AboutUs />} />
+        <Route path="explore" element={<ExploreMedicine />} />
+        <Route path="ourtherapies" element={<OurTherapies />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
-}
+};
 
 export default App;
