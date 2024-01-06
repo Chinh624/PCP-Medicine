@@ -33,7 +33,7 @@ export default function Footer() {
         setShowSuccessConfirm(true);
         setEmail("");
         try {
-          const res = await fetch("/register", {
+          const res = await fetch("https://server-delta-pink.vercel.app/register", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
